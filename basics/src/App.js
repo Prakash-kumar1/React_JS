@@ -3,12 +3,15 @@ import './App.css';
 
 let name = "kumar-1" ;          //Always declaring above 
 
+// concept of getting data without reloading (Refreashing) the page , is known as  AJAX .
+
 function App() {
   return (
 
 // using <> and </> , when we write something above on  div .
     <>
     <h1> This is me , Prakash {name} </h1>
+    <p>React - JS is a Client side javascript library . ( HTML + JS ==  JSX) it is used to build User Interface (UI designs) . Loading the page is called " Rendering " </p>
     <div className="ist">Lovely</div>
     <img src="C:\Users\Monika Priya Singh\OneDrive\Pictures\Screenshots\github.jpg" alt="nothing Image found" />
 
