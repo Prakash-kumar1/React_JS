@@ -42,14 +42,23 @@
 h1 , h2{
   background-color: aquamarine;
   color: hotpink;
+  word-spacing: 3px;
+  border: 3px dotted blue;
+  border-radius: 6px;
+  text-align: center;
+  margin: 13px 50px 20px 320px;
+  width: 450px;
 }
 
 p{
   background-color: black;
+  border: 3px dashed red;
   color: gold;
   font-size: larger;
   word-spacing: 6px;
   line-height: 2.5rem;
+  margin: 13px;
+  padding: 5px;
 }
 
 
