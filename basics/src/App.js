@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-let name = "kumar-1" ;          //Always declaring above 
+let name = "kumar-(Frontend Engineer)" ;          //Always declaring above 
 
 // concept of getting data without reloading (Refreashing) the page , is known as  AJAX .
 
@@ -10,8 +10,10 @@ function App() {
 
 // using <> and </> , when we write something above on  div .
     <>
+
     <h1> This is me , Prakash {name} </h1>
-    <p>React - JS is a Client side javascript library . ( HTML + JS ==  JSX) it is used to build User Interface (UI designs) . Loading the page is called " Rendering " . react - Js is lightWeight , Fastest and React has Component based Architecture . </p>
+    <p>React - JS is a Client side javascript library . ( HTML + JS ==  JSX) it is used to build User Interface (UI designs) and Single Page Applications (SPA) . Loading the page is called " Rendering " . react - Js is lightWeight , Fastest and React has Component based Architecture . React Js follow  Declartive approach (line no.- 4) . React-js creates Virtual DOM . compare to Real DOM , Virtual DOM is very lightWeight and fast . it is like internal tree data structure . </p>
+    
     <div className="ist">Lovely</div>
     <img src="C:\Users\Monika Priya Singh\OneDrive\Pictures\Screenshots\github.jpg" alt="nothing Image found" />
 

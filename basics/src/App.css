@@ -37,9 +37,9 @@
   }
 }
 
-/* Giving some colors to h1 and p */
+/* Giving some colors to h1 , h2 and p */
 
-h1{
+h1 , h2{
   background-color: aquamarine;
   color: hotpink;
 }
@@ -48,8 +48,9 @@ p{
   background-color: black;
   color: gold;
   font-size: larger;
+  word-spacing: 6px;
+  line-height: 2.5rem;
 }
-
 
 
 
