@@ -1,13 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+let name = "kumar-1" ;          //Always declaring above 
+
 function App() {
   return (
 
 // using <> and </> , when we write something above on  div .
     <>
-    <h1> This is me , Prakash </h1>
+    <h1> This is me , Prakash {name} </h1>
     <div className="ist">Lovely</div>
+    <img src="C:\Users\Monika Priya Singh\OneDrive\Pictures\Screenshots\github.jpg" alt="nothing Image found" />
 
     <div className="App">
       <header className="App-header">
