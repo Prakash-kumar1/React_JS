@@ -6,6 +6,13 @@ h1{
   color: gold;
 }
 
+/* This head override h1 and head properties override by Class.css */
+.head{
+  background-color: cadetblue;
+  color: lawngreen;       /*This color over-ride by Class.css*/
+  text-align: center;
+}
+
 h2{
   background-color: hotpink;
   color: green;
