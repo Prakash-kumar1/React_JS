@@ -25,15 +25,15 @@ import {WelcomeFn} from "./components/WelcomeFn" ;
 export function App(){
   return (
     <section>
-      <h1>Using Function For exporting</h1>
+      <h1 className='head'>Using Function For exporting</h1>
       <p>This is a function and there is no need of export default app</p>
       <WelcomeFn/>
 
 {/* each one of will come 3 times because we copy App 3 times */}
-      <WelcomeClass name="Sameer" age= "20" />
-      <WelcomeClass name="Anjali" age= "23" />
-      <WelcomeClass name="Prakash" age= "22" />
-      <WelcomeClass name="Govind" age= "21" />
+      <WelcomeClass name="Sameer" age= "20" place="Madhya pradesh" food="Chicken" />
+      <WelcomeClass name="Anjali" age= "23" place="Noida" food="Dosa"/>
+      <WelcomeClass name="Prakash" age= "22" place=" " food="mutton" />
+      <WelcomeClass name="Govind" age= "21" place="Luckhnow" food=" "/>
       
     </section>
   ) ;
