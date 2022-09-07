@@ -9,7 +9,7 @@ import {Toggle} from './components/Toggle.js'
 function App() {
   return (
     <section>
-      <Toggle />
+      <Toggle name="Present in props , console" />
     
     </section>
   );
