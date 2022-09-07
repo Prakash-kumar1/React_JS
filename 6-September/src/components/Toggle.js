@@ -10,7 +10,9 @@ export class Toggle extends Component{
     this.state = {
         isToggleOn : false ,
     } ;
-       }
+
+    this.handleClick = this.handleClick.bind(this)
+}
 
        handleClick(){
         console.log(this);
@@ -18,11 +20,14 @@ export class Toggle extends Component{
        }
 
     render(){
-        return {
-         <button onclick = {this.handleClick}>
+        return( 
+            <button onClick={this.handleClick}>
             {this.state.isToggleOn ? "ON" : "OFF"}
             </button>
-        } ;
+        )
     }
 }
+   
+    
+
 
