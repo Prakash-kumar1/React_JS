@@ -13,7 +13,7 @@ root.render(        //render means , create element in the UI
     <App name="Harry potter Self closed tag"/>  
 
     <App name="Harry potter Normal tag"> 
-    <h2>if i write in this format then i can pass many tags but not in Self closing tag </h2>
+    <h2>if i write in this format then i can pass extra tags but not in Self closing tag </h2>
     </App>      
 
 
