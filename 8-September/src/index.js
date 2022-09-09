@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';     //ReactDOM is a class  present in  NPM  package.
 import './index.css';
-import App from './App';
+import {App} from './App';      //this method is using when export with class
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
