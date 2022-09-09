@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client';     //ReactDOM is a class  present in  NPM  package.
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+root.render(        //render means , create element in the UI
   <React.StrictMode>
     <App />
   </React.StrictMode>
