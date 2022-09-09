@@ -1,5 +1,8 @@
 // we are using class based components
 import React, {Component} from "react" ;
+import  {Button} from "./components/Button" ;
+import "./App.css" ;
+
 
 export class App extends Component{    //extends taking property of parents , read in Inheritance
   render(){
@@ -8,6 +11,8 @@ export class App extends Component{    //extends taking property of parents , re
      <div>
       <h1>Title : {this.props.name} and the blood of prince</h1>
       <p>Hello World , </p>
+      <Button text="Delete" class="delete" />
+        <Button text="Save" class="save" />
      </div>
     ); 
   }
