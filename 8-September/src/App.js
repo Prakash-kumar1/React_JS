@@ -1,10 +1,10 @@
-// import logo from './logo.svg';
-import './App.css';
+// we are using class based components
 
-function App() {
-  return (
- 
-  );
+import React, {Component} from "react" ;
+
+class App extends Component{    //extends taking property of parents , read in Inheritance
+  render(){
+    return
+
+  }
 }
-
-export default App;
