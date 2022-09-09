@@ -1,5 +1,4 @@
 // we are using class based components
-
 import React, {Component} from "react" ;
 
 export class App extends Component{    //extends taking property of parents , read in Inheritance
@@ -13,5 +12,4 @@ export class App extends Component{    //extends taking property of parents , re
     ); 
   }
 }
-
 // export default App  (using export above , so putting app in { } in index.js)
