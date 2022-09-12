@@ -10,10 +10,18 @@ export class Button extends Component {
 // State :=>  whatever the value you are providing is inside the Constructor
    constructor(props){    //By Default Props are passed in constructor only
     super(props) ;
+// Now you can change the properties
+   this.state = {
+
+   }
+  
    }
 
 
   render() {
-    return <button className={this.props.class}>{this.props.text}</button>;
+    return <button style={{color}} className={this.props.class}>{this.props.text}</button>;
   }
 }
+
+// Line no.- 22 , In style we use 2 curly braces , Ist curly braces define this is a Property of style  and 
+// IInd  curly braces define this is a Props
