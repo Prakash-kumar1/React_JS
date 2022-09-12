@@ -13,7 +13,8 @@ export class Button extends Component {
     super(props) ;
 // Now you can change the properties like text
    this.state = {
-
+// I am changing save and delete text
+   text : "Change into Submit" ,
    } ;
   
    }
@@ -22,7 +23,7 @@ export class Button extends Component {
   render() {
 
     return (
-    <button style={{backgroundColor: "red"}} className={this.props.class}>{this.props.text}</button>
+    <button style={{backgroundColor: "red"}} className={this.props.class}> {this.state.text} </button>
     );
 
   }
