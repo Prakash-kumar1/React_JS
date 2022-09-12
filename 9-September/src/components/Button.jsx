@@ -17,11 +17,11 @@ export class Button extends Component {
    text : "Change into Submit" ,
    } ;
 
-// Now , when we Click on
-  this.handleClick = this.handleClick.bind(this) ;
+// NowClick on Change into Submit it will become Double submit,but it is a lengthy process. so using Arrow Functions
+  // this.handleClick = this.handleClick.bind(this) ;
    }
 
-   handleClick(){
+   handleClick = () => {
     if(this.state.text === "submit"){
       this.setState({
         text : "Cancelled"
