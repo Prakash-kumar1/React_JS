@@ -4,6 +4,7 @@ import './index.css';
 import {App} from './App';      //this method is using when export with class
 import reportWebVitals from './reportWebVitals';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(        //render means , create element in the UI
   <React.StrictMode>
