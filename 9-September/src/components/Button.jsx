@@ -13,13 +13,13 @@ export class Button extends Component {
 // Now you can change the properties
    this.state = {
 
-   }
+   } 
   
    }
 
 
   render() {
-    return <button style={{color}} className={this.props.class}>{this.props.text}</button>;
+    return <button style={{backgroundColor: "red"}} className={this.props.class}>{this.props.text}</button>;
   }
 }
 
