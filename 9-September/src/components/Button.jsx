@@ -8,18 +8,23 @@ import React, { Component } from "react";
 export class Button extends Component {
 
 // State :=>  whatever the value you are providing is inside the Constructor
+
    constructor(props){    //By Default Props are passed in constructor only
     super(props) ;
-// Now you can change the properties
+// Now you can change the properties like text
    this.state = {
 
-   } 
+   } ;
   
    }
 
 
   render() {
-    return <button style={{backgroundColor: "red"}} className={this.props.class}>{this.props.text}</button>;
+
+    return (
+    <button style={{backgroundColor: "red"}} className={this.props.class}>{this.props.text}</button>
+    );
+
   }
 }
 
