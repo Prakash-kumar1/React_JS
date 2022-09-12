@@ -8,12 +8,14 @@ export class App extends Component{    //extends taking property of parents , re
   render(){
     console.log(this) ;
     return(
+
      <div>
       <h1>Title : {this.props.name} and the blood of prince</h1>
       <p>Hello World , </p>
       <Button text="Delete" btnClass="delete" />
         <Button text="Save" btnClass="save" />
      </div>
+     
     ); 
   }
 }

@@ -72,11 +72,13 @@ console.log("Else part" , this.state.text)
   render() {
 let {btnClass} = this.props ;
     return (
+
       <div>
     <h1> {this.state.count} </h1>
     <button onClick={this.handleClick} style={{backgroundColor: "red"}} className={btnClass}> {this.state.text} </button>
     <button onClick={this.Increment} > Increment</button>
     </div>
+    
     );
 
   }
