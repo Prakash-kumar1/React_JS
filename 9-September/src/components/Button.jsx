@@ -39,7 +39,7 @@ console.log("Else part" , this.state.text)
 
   Increment = () => {
     this.setState({
-      count : this.state.count += 1 ,
+      count : this.state.count + 1 ,
     });
 console.log(this.state.count)
   };
