@@ -38,11 +38,18 @@ console.log("Else part" , this.state.text)
   } ;
 
   Increment = () => {
-    this.setState({
+// setState is a asynchronus process
+  this.setState(
+    {
 // whenEver , my Props or  state changes , my component will be Re-rendered (change Particular or Components data).
       count : this.state.count + 1 ,
-    });
-console.log(this.state.count)
+    },
+    () => {
+      console.log(this.state.count)
+    }
+    
+    );
+
   };
 
   render() {
