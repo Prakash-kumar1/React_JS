@@ -49,7 +49,9 @@ console.log("Else part" , this.state.text)
 //     }
 //     );
 
-// // OR comment ( Line no.-41  to  Line no.-50) it above and use this way :-
+
+//// ######@@@@@@@ OR comment ( Line no.-41  to  Line no.-50) it above and use this way :-   ######@@@@@@@
+
 
 // it will increase 3 times( like 3 , 6, 9 , 12 , 15 etc ) because we written 3 times
   this.setState((prev) => ({
