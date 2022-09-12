@@ -17,7 +17,8 @@ export class Button extends Component {
    text : "Change into Submit" ,
    } ;
 
-// NowClick on Change into Submit it will become Double submit,but it is a lengthy process. so using Arrow Functions
+// NowClick on Change into Submit it will become Double submit,but it is a lengthy process. so using Arrow Function
+// beacuse for every function we can't write Bind
   // this.handleClick = this.handleClick.bind(this) ;
    }
 
