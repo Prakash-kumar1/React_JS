@@ -15,6 +15,7 @@ export class Button extends Component {
    this.state = {
 // I am changing save and delete text
    text : "Change into Submit" ,
+   count : 0 ,
    } ;
 
 // NowClick on Change into Submit it will become Double submit,but it is a lengthy process. so using Arrow Function
@@ -27,17 +28,30 @@ export class Button extends Component {
       this.setState({
         text : "Cancelled"
       });
+console.log(this.state.text)
     }else{
       this.setState({
         text : "Double submit"
       });
+console.log("Else part" , this.state.text)
     }
-  }
+  } ;
+
+  Increment = () => {
+    this.setState({
+      count : this.state.count += 1 ,
+    });
+console.log(this.state.count)
+  };
 
   render() {
 
     return (
-    <button onClick={this.handleClick} style={{backgroundColor: "red"}} className={this.props.class}> {this.state.text} </button>
+      <div>
+    <h1> {this.state.count} </h1>
+    {/* <button onClick={this.handleClick} style={{backgroundColor: "red"}} className={this.props.class}> {this.state.text} </button> */}
+    <button onClick={this.Increment} > Increment</button>
+    </div>
     );
 
   }
