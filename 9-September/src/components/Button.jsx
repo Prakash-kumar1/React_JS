@@ -47,9 +47,9 @@ console.log("Else part" , this.state.text)
     () => {
       console.log(this.state.count)
     }
-    
     );
 
+    
   };
 
   render() {
