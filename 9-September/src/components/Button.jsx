@@ -16,13 +16,27 @@ export class Button extends Component {
 // I am changing save and delete text
    text : "Change into Submit" ,
    } ;
-  
+
+// Now , when we Click on
+  this.handleClick = this.handleClick.bind(this) ;
    }
+
+   handleClick(){
+    if(this.state.text === "submit"){
+      this.setState({
+        text : "Cancelled"
+      });
+    }else{
+      this.setState({
+        text : "Double submit"
+      });
+    }
+  }
 
   render() {
 
     return (
-    <button style={{backgroundColor: "red"}} className={this.props.class}> {this.state.text} </button>
+    <button onClick={this.handleClick} style={{backgroundColor: "red"}} className={this.props.class}> {this.state.text} </button>
     );
 
   }
