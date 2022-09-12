@@ -11,8 +11,8 @@ export class App extends Component{    //extends taking property of parents , re
      <div>
       <h1>Title : {this.props.name} and the blood of prince</h1>
       <p>Hello World , </p>
-      <Button text="Delete" class="delete" />
-        <Button text="Save" class="save" />
+      <Button text="Delete" btnClass="delete" />
+        <Button text="Save" btnClass="save" />
      </div>
     ); 
   }
