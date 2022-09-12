@@ -71,16 +71,19 @@ console.log("Else part" , this.state.text)
 
   render() {
 
-let {text, btnClass} = this.props ;    //(line no- 74 and line no- 80, line no 8 to 13 and 23 in App.js are in one )
+let {text, btnClass} = this.props ;  
+
+//(line no- 74 and line no- 80, line no 8 to 13 and 23 in App.js are in one )
 
 // comment one of them then use
 
 // let { btnClass} = this.props ;  (line no- 75 and line no- 81 and line no- 25 in App.js are in one )
+
     return (
 
       <div>
     <h1> {this.state.count} </h1>
-    <button onClick={this.handleClick} style={{backgroundColor: "red"}} className={btnClass}> {text} </button>
+    <button onClick={this.props.handleBtnApp}  className={btnClass}> {text} </button>
     {/* <button onClick={this.handleClick} style={{backgroundColor: "red"}} className={btnClass}> {this.state.text} </button> */}
     <button onClick={this.Increment} > Increment</button>
     </div>
