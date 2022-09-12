@@ -39,6 +39,7 @@ console.log("Else part" , this.state.text)
 
   Increment = () => {
     this.setState({
+// whenEver , my Props or  state changes , my component will be Re-rendered (change Particular or Components data).
       count : this.state.count + 1 ,
     });
 console.log(this.state.count)
