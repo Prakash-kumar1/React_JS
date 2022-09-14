@@ -1,4 +1,4 @@
-// React-JS Is a Javascript library . it helps to build single page application . 
+// React-JS Is a Javascript library and also a Dependcies. it helps to build single page application . 
 
 // Components :=   Header , Footer , section , aside  etc  everything  is a component .
 
