@@ -2,7 +2,6 @@
 
 // Components :=   Header , Footer , section , aside  etc  everything  is a component .
 
-
 import logo from './logo.svg';
 import './App.css';
 
