@@ -52,3 +52,7 @@ export default App;
 //                     any kind of dependcies ( like Bootstrap) it will stored inside the node module . 
 
 // package.json =>>  whatever dependcies stored inside node module , it  Will Listed in package.json
+
+// package-lock.json =>> whole Dependcies tree (Whatever installed or unistalled) is present in package-lock.json .
+
+
