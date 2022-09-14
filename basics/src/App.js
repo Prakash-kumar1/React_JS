@@ -47,6 +47,7 @@ function App() {
 
 export default App;
 
+// state :=>  state is current Information or data of the component
 
 // Node-Modules =>>  Anything that we required for our project present inside the node module . When we installed
 //                     any kind of dependcies ( like Bootstrap) it will stored inside the node module . 
