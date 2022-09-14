@@ -1,5 +1,5 @@
-// Library is a collection of Pre-define functions 
-
+// Framework and Library is a collection of Pre-define functions but framework is strict so, we can't change much 
+// but in library  we can change 
 
 
 import React from 'react';
