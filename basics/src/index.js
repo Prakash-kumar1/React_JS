@@ -14,8 +14,12 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // React  Element
+
 root.render(
-  <React.StrictMode>
+
+// if there is any error React.StrictMode , throws an error and we have to fix it
+
+  <React.StrictMode>        
     <App />
   </React.StrictMode>
 );
