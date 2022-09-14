@@ -1,6 +1,6 @@
 // React-JS Is a Javascript library . it helps to build single page application . 
 
-
+// Components :=   Header , Footer , section , aside  etc  everything  is a component .
 
 
 import logo from './logo.svg';
