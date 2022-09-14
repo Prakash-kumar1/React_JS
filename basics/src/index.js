@@ -10,7 +10,10 @@ import reportWebVitals from './reportWebVitals';
 
 // Virtual DOM :=>  React  creates  a copy  of  Actual DOM .
 
+// "root"  DOM node
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// React  Element
 root.render(
   <React.StrictMode>
     <App />
