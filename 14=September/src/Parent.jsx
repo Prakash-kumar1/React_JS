@@ -12,9 +12,13 @@ export class Parent extends Component{
     this.state = {
         parentText : "Default Parent state" ,
     } ;
- 
-  
-    }
+ }
+
+   changeParentText = () => {
+    this.setState({
+        parentText : "CHANGED " ,
+    }) ;
+   } ;
 
     render(){
         return (
@@ -22,7 +26,7 @@ export class Parent extends Component{
 
             <>
         <h1>This is my Parent Component = {this.state.parentText} </h1>
-        <button>Parent</button>
+        <button onClick={this.changeParentText}>Parent</button>
         <Child />
         </>
         ) ;
