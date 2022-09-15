@@ -73,7 +73,7 @@ console.log("Else part" , this.state.text)
 
 let {text, btnClass} = this.props ;  
 // console.log(this.props) ;
-console.log('child') ;
+console.log("child") ;
 
 //(line no- 74 and line no- 80, line no 8 to 13 and 23 in App.js are in one )
 
@@ -86,8 +86,8 @@ console.log('child') ;
       <div>
     <h1> {this.state.count} </h1>
     <button onClick={this.props.handleBtnApp}  className={btnClass}> {text} </button>
-    {/* <button onClick={this.handleClick} style={{backgroundColor: "red"}} className={btnClass}> {this.state.text} </button> */}
-    <button onClick={this.Increment} > Increment</button>
+    <button onClick={this.Increment} > Increment</button>   
+    {/* Increment is child component and app is parent component */}
     </div>
     
     );
