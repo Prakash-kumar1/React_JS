@@ -21,6 +21,7 @@ export class Parent extends Component{
    } ;
 
     render(){
+        console.log("parent") ;
         return (
 // In the place od div , we can use this <> and </> (internally it calls React.fragment)
 
@@ -29,7 +30,7 @@ export class Parent extends Component{
         <button onClick={this.changeParentText}>Parent</button>
         <Child />
         </>
-        
+
         ) ;
     }
 }
