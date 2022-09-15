@@ -13,10 +13,11 @@ export class Main extends Component{
 
     render(){
         return (
-            <div>
+// In the place od div , we can use this <> and </>
+            <>
         <h1>This is my Parent Component . </h1>
         <Child />
-        </div>
+        </>
         ) ;
     }
 }
