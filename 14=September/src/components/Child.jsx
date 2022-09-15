@@ -7,7 +7,12 @@ export class Child extends Component{
     }
 
     render(){
-        return <h2>This is my Child Component .</h2>
+        return (
+            <>
+        <h2>This is my Child Component .</h2>
+        <p>Child para tag</p>
+        </>
+        )
 
     }
 

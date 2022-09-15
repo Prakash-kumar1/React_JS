@@ -3,9 +3,9 @@
 import React, {Component} from "react" ;
 import { Child } from "./components/Child"
 
-// if i extends this component then Main become a component . otherwise , Main is just a normal function .
+// if i extends this component then Parent become a component . otherwise , Main is just a normal function .
 
-export class Main extends Component{    
+export class Parent extends Component{    
     constructor(props){
       super(props) ;
  // Intialize  the  state  here   
