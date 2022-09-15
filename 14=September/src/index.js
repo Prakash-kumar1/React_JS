@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';     //ReactDOM is a class  present in  NPM  package.
 import './index.css';
-import {App} from './App';      //this method is using when export with class
+// import {App} from './App';      //this method is using when export with class
+import {Main} from './Main';      //this method is using when export with class
 import reportWebVitals from './reportWebVitals';
 
 
@@ -13,11 +14,11 @@ root.render(        //render means , create element in the UI
 
     {/* <App name="Harry potter Self closed tag"/>   */}
 
-    <App name="Harry potter Normal tag"> 
+    {/* <App name="Harry potter Normal tag">  */}
     {/* <h2>if i write in this format then i can pass extra tags but not in Self closing tag </h2> */}
-    </App>      
+    {/* </App>       */}
 
-
+    <Main />
   </React.StrictMode>
 );
 
