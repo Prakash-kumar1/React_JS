@@ -21,8 +21,9 @@ export class Parent extends Component{
    } ;
 
     render(){
-        console.log("parent") ;  //if i changed my parent component
+        console.log("parent") ;  //if i changed my parent component (clicking on parent button)
 // all my child will Re-rendered .(see in console)
+
         return (
 // In the place od div , we can use this <> and </> (internally it calls React.fragment)
 
