@@ -18,8 +18,6 @@ export class Button extends Component {
    count : 0 ,
    } ;
 
-// NowClick on Change into Submit it will become Double submit,but it is a lengthy process. so using Arrow Function
-// beacuse for every function we can't write Bind
   // this.handleClick = this.handleClick.bind(this) ;
    }
 
@@ -86,7 +84,7 @@ console.log("child") ;
       <div>
     <h1> {this.state.count} </h1>
     <button onClick={this.props.handleBtnApp}  className={btnClass}> {text} </button>
-    <button onClick={this.Increment} > Increment</button>   
+    <button onClick={this.Increment} > Child</button>   
     {/* Increment is child component and app is parent component */}
     </div>
     
