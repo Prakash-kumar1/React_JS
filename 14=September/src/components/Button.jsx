@@ -72,7 +72,8 @@ console.log("Else part" , this.state.text)
   render() {
 
 let {text, btnClass} = this.props ;  
-console.log(this.props) ;
+// console.log(this.props) ;
+console.log('child') ;
 
 //(line no- 74 and line no- 80, line no 8 to 13 and 23 in App.js are in one )
 

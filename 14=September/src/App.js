@@ -30,7 +30,7 @@ export class App extends Component{    //extends taking property of parents , re
 {/*Comment line no 8 to 13 and 23 then use line no. 25 , both are same . */}
 
       {/* <Button text="Delete" btnClass="delete" /> */}
-        {/* <Button text="Save" btnClass="save" /> */}
+        <Button text="Save" btnClass="save" />
      </div>
      
     ); 
