@@ -29,6 +29,7 @@ export class Parent extends Component{
         <button onClick={this.changeParentText}>Parent</button>
         <Child />
         </>
+        
         ) ;
     }
 }
