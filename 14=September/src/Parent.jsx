@@ -8,7 +8,12 @@ import { Child } from "./components/Child"
 export class Parent extends Component{    
     constructor(props){
       super(props) ;
- // Intialize  the  state  here   
+ // Intialize  the  state  here 
+    this.state = {
+        parentText : "Default Parent state" ,
+    } ;
+ 
+  
     }
 
     render(){
@@ -16,7 +21,8 @@ export class Parent extends Component{
 // In the place od div , we can use this <> and </> (internally it calls React.fragment)
 
             <>
-        <h1>This is my Parent Component . </h1>
+        <h1>This is my Parent Component = {this.state.parentText} </h1>
+        <button>Parent</button>
         <Child />
         </>
         ) ;
