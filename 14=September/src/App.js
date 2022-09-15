@@ -19,7 +19,7 @@ export class App extends Component{    //extends taking property of parents , re
   }
 
   render(){
-    // console.log(this) ;
+    console.log("parent") ;      //App.js is my parent
     return(
 
      <div>
