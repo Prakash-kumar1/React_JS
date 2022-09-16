@@ -24,6 +24,7 @@ export class App extends Component{    //extends taking property of parents , re
     return(
 
      <div>
+
       <h1>Title : {this.props.name} and the blood of prince</h1>
       <p>Hello World , </p>
 
@@ -31,6 +32,8 @@ export class App extends Component{    //extends taking property of parents , re
     <button onClick={this.Increment} > Parent</button>  
 
         <Button text="Save" btnClass="save" />
+
+        
      </div>
      
     ); 
