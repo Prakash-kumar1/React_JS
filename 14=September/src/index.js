@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';     //ReactDOM is a class  present in  
 import './index.css';
 // import {App} from './App';      //this method is using when export with class
 import {Parent} from './Parent';      //this method is using when export with class
+import  {Counter} from "./Counter";
 import reportWebVitals from './reportWebVitals';
 
 
@@ -10,15 +11,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(        //render means , create element in the UI
   <React.StrictMode>
 
-{/* Inside return in app.js will replace this App and show on the page */}
-
-    {/* <App name="Harry potter Self closed tag"/>   */}
-
-    {/* <App name="Harry potter Normal tag">  */}
-    {/* <h2>if i write in this format then i can pass extra tags but not in Self closing tag </h2> */}
-    {/* </App>       */}
-
     <Parent />
+
+    <Counter />
+    
   </React.StrictMode>
 );
 
