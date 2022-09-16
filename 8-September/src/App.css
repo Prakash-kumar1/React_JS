@@ -26,3 +26,11 @@
   color: hotpink;
 }
 
+h2{
+  background-color: cadetblue;
+  color: gold;
+  border: 2px dashed red;
+  border-radius: 13px;
+  text-align: center;
+}
+
