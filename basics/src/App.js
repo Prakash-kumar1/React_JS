@@ -46,6 +46,11 @@ function App() {
 
 export default App;
 
+// React Introduction ==>>   React (also known as React.js or ReactJS)  is a Javascript library for building User
+//                           Interfaces . It is maintained by  Facebook  and it play with  Virtual DOM . This is 
+//                           very fast due to  Virtual DOM . that's why react is more popular to other Framework 
+//                           and  Library .
+
 // state :=>  state is current Information or data of the component
 
 // Node-Modules =>>  Anything that we required for our project present inside the node module . When we installed
