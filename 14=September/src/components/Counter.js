@@ -22,7 +22,7 @@ import React, {Component}from "react";
  {
   return(
     <div>
-      <h1>{this.state.count}</h1>
+      <h1 className="count">{this.state.count}</h1>
       <button onClick={this.increment}>Add</button>
       <button onClick={this.decrement}>Substract </button>
     </div>
