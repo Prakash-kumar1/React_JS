@@ -49,14 +49,18 @@ export default App;
 // React Introduction ==>>   React (also known as React.js or ReactJS)  is a Javascript library for building User
 //                           Interfaces . It is maintained by  Facebook  and it play with  Virtual DOM . This is 
 //                           very fast due to  Virtual DOM . that's why react is more popular to other Framework 
-//                           and  Library .
+//                           and  Library . React has component based Architecture for application Development . 
 
-// state :=>  state is current Information or data of the component
+
+// state :=>  state is current Information or data of the component .
+
 
 // Node-Modules =>>  Anything that we required for our project present inside the node module . When we installed
 //                     any kind of dependcies ( like Bootstrap) it will stored inside the node module . 
 
+
 // package.json =>>  whatever dependcies stored inside node module , it  Will Listed in package.json
+
 
 // package-lock.json =>> whole Dependcies tree (Whatever installed or unistalled) is present in package-lock.json .
 
