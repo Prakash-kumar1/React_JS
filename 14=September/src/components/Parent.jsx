@@ -14,9 +14,18 @@ export class Parent extends Component{
     } ;
  }
 
-   changeParentText = () => {
+   changeParentText = () => {   //this is a  function which change parents property
     this.setState({
         parentText : "CHANGED " ,
+    }) ;
+   } ;
+
+//    we can change parent data from child But we can't change  child data from Parent that's why 
+//   React is called "  one way Binding ."
+
+   changeByChild = () => {   
+    this.setState({
+        parentText : "Changing parent data by child" ,
     }) ;
    } ;
 
@@ -31,6 +40,8 @@ export class Parent extends Component{
         <h1>This is my Parent Component = {this.state.parentText} </h1>
         <button onClick={this.changeParentText}>Parent</button>
         <Child />
+{/* passing function itself and got into console */}
+        <Child changeByChild={this.changeByChild}/>
         </>
 
         ) ;
