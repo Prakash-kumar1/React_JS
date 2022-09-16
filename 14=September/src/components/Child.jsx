@@ -28,8 +28,10 @@ export class Child extends Component{
 {/*Calling Parent function in child =>> we can change parent data from child But we can't change  child data
  from Parent that's why  React is called  " one way Binding ". */}
 
-        <button onClick={this.props.changeByChild}>change parent from child</button>
-        
+        <button onClick={this.props.changeByChild}>change parent from child .</button>
+
+{/* passing object is not working , see it later */}
+        {/* <p>Hi my name is {this.props.lightObj.name}  {this.props.lightObj.food}</p> */}
         </>
         )
 
