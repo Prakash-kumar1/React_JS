@@ -17,12 +17,19 @@ export class Child extends Component{
     };
 
     render(){
-        console.log("child") ;
+        console.log("child") ;  //if i change my Parent component , all my child also re-render
+        console.log("child props" , this.props) ;   //getting parent data through props
         return (
             <>
         <h2>This is my Child Component .= {this.state.childText}</h2>
         <button onClick={this.childTextChange}>Child</button>
         <p>There are 2 different states . one is Parent state and another is Child state .</p>
+
+{/*Calling Parent function in child =>> we can change parent data from child But we can't change  child data
+ from Parent that's why  React is called  " one way Binding ". */}
+
+        <button onClick={this.props.changeByChild}>change parent from child</button>
+        
         </>
         )
 
