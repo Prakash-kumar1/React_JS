@@ -1,7 +1,9 @@
 // Component is a  In-Built  class which have many methods
 
 import React, {Component} from "react" ;
-import { Child } from "./Child"
+import { Child } from "./Child" ;
+import {Odd} from "./Odd" ;
+import {Even} from "./Even" ;
 
 // if i extends this component then Parent become a component . otherwise , Main is just a normal function .
 
@@ -58,13 +60,18 @@ decreaseCount = () =>{
 // all my child will Re-rendered .(see in console)
 
         return (
-// In the place od div , we can use this <> and </> (internally it calls React.fragment)
+// In the place of div , we can use this <> and </> (internally it calls React.fragment)
 
             <>
         <h1>This is my Parent Component = {this.state.parentText} </h1>
         <button onClick={this.changeParentText}>Parent</button>
         <button onClick={this.changeCount} > Increment = {this.state.count1}   </button>
         <button onClick={this.decreaseCount} > Decrement = {this.state.count2} </button>
+
+        {this.state.count1 % 2 === 0 ? <Even /> : <Odd />}
+        {this.state.count1 > 0 && <p className="large">Count is greater than 0</p>}
+        {this.state.count2 < 0 && <p className="small">Count is Smaller than 0</p>}
+
         <Child />
 {/* passing function itself and got into console */}
         <Child  
