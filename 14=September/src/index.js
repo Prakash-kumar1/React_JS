@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';     //ReactDOM is a class  present in  NPM  package.
 import './index.css';
+import "./App.css" ;
 // import {App} from './App';      //this method is using when export with class
 import {Parent} from './components/Parent';      //this method is using when export with class
 import  {Counter} from "./components/Counter";
