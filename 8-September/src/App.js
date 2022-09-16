@@ -3,6 +3,7 @@
 import React, {Component} from "react" ;
 import  {Button} from "./components/Button" ;
 import "./App.css" ;
+import Profile from "./Profile";
 
 
 export class App extends Component{    //extends taking property of parents , read in Inheritance
@@ -14,7 +15,8 @@ export class App extends Component{    //extends taking property of parents , re
       <p>Hello World , </p>
       <Button text="Delete" class="delete" />
         <Button text="Save" class="save" />
-     </div>
+        <Profile />
+      </div>
     ); 
   }
 }
