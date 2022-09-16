@@ -4,6 +4,7 @@ import {Toggle} from './components/Toggle.js'
 // inside curly braces toggle represents class
 
 import Prop from './Prop';
+import State from './State';
 
 
 
@@ -12,6 +13,8 @@ function App() {
   return (
     <section>
       <Toggle name="Present in props , console" />
+
+
 <Prop 
 
 // Passing Props in Functional component
@@ -22,6 +25,8 @@ obj={{name:'Rinki' , food:'Dosa' , note: 'Passing Object in two curly Braces'}}
 text1="Passing data in class component always used with this keyword"
 obj1={{name:'Prakash' , food:'Chicken' , note: 'Passing Object in two curly Braces'}}
 />
+
+<State />
 
     </section>
   );
