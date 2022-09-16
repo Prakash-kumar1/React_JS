@@ -4,6 +4,7 @@ import React, {Component} from "react" ;
 import  {Button} from "./components/Button" ;
 import "./App.css" ;
 import Profile from "./Profile";
+import Func from "./Func";
 
 
 export class App extends Component{    //extends taking property of parents , read in Inheritance
@@ -16,6 +17,7 @@ export class App extends Component{    //extends taking property of parents , re
       <Button text="Delete" class="delete" />
         <Button text="Save" class="save" />
         <Profile />
+        <Func text = "Functional Component example"/>
       </div>
     ); 
   }
