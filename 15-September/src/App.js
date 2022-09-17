@@ -34,7 +34,7 @@ import Person2 from './Components/Person2';
  {
   return(
     <div>
-      <h1 className="count">{this.state.count}</h1>
+      <h1>{this.state.count}</h1>
       <button onClick={this.increment}>Add</button>
       <button onClick={this.decrement}>Substract </button>
 
@@ -42,12 +42,14 @@ import Person2 from './Components/Person2';
   this.state.count > 5 ? <Person count={this.state.count} name = "Prakash Kumar" /> : <Person2 count={this.state.count} name = "Govind Verma"/>
 }
 
-<h1 className="count1">{this.state.count1}</h1>
+
+{/* Passing  Function as Props */}
+<h1>{this.state.count1}</h1>
       {/* <button onClick={this.increase}>Plus</button> */}
       {/* <button onClick={this.decrease}>minus </button> */}
 
 {
-  this.state.count1 > 5 ? <Person  increase={this.increase} count1={this.state.count1} name = "Anjali Yadav" /> : <Person2 decrease={this.decrease} count1={this.state.count1} name = "Light Singh"/>
+  this.state.count1< 5 ? <Person  increase={this.increase} count1={this.state.count1} name = "Anjali Yadav" /> : <Person2 decrease={this.decrease} count1={this.state.count1} name = "Light Singh"/>
 }
 
     </div>
