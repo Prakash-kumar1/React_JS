@@ -8,7 +8,6 @@ export default class Person extends Component {
       <div>
         <button onClick={increase}>Plus</button>
         Hello Everyone Person , {name} = {count}
-    {/* {this.props.name} = {this.props.count} */}
     </div>
     )
   }
