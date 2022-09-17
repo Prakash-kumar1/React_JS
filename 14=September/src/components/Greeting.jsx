@@ -75,7 +75,7 @@ export class Greeting extends Component {
     // }
 
 
-    // //Here we are again writing the same Code  OR  We can also use  Ternariy  Operator
+// //Here we are again writing the same Code  OR  We can also use  Ternariy  Operator
 
 
     let welcomeMessage;
