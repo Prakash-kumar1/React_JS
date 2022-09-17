@@ -22,6 +22,7 @@ export class Parent extends Component{
         count2 : 0 ,
         name : 'Shahrukh Khan' ,
         names: ['Julia' , 'Deepika' , 'Alia' , 'Anushka' , 'Kirti'] ,
+        Foods: ['Dosa' , 'idli' , 'Chicken' , 'Mutton' , 'Ice-Cream' , 'Egg-Roll' ]
     } ;
  }
 
@@ -77,6 +78,7 @@ decreaseCount = () =>{
 
 <p>{this.state.name} is a Actor from bollywood</p>
 {this.state.names.map(name => <p>{name} is a heronie from boolywood</p>)}
+{this.state.Foods.map(food => <p>{food} is present in Restaurant menu .</p>)}
 
 
         <Child />
