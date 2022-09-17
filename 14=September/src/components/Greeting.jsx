@@ -5,12 +5,14 @@ export class Greeting extends Component {
         super(props) ;
         this.state = {
             isLoggedIn: false ,
+            message : true ,
         }
     }
 
 
   render() {
-    if( this.state.isLoggedIn)  //{
+
+    // if( this.state.isLoggedIn)  //{
     // return (
     //     <div>
     //     <h3>Welcome to Aircampus (16-September sessions)</h3>
@@ -28,13 +30,23 @@ export class Greeting extends Component {
     //     )
     // }
 
+
     // //Here we are again writing the same Code  OR  We can also use  Ternariy  Operator
 
-    
+
+    let welcomeMessage;
+    if(this.state.message){
+        welcomeMessage = <p>Swagat hai Tumhara</p> ;
+    }else{
+        welcomeMessage = <p>Bhag ja Yahan se</p> ;
+    }
+
     return (
     <>
     <h3>Welcome to Aircampus (16-September sessions)</h3>
     { this.state.isLoggedIn ?  <p>Welcome Govind</p> : <p>Please Log in</p> }
+    {/* OR */}
+    {welcomeMessage}
     <p>This is our First class.</p>
     </>
     ) ;
