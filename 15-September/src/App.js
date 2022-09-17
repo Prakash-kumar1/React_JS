@@ -2,6 +2,7 @@ import React from "react";
 import Person from './Components/Person';
 import Person2 from './Components/Person2';
 import Cards from "./Components/Cards";
+import Slider from "./Components/Slider";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -55,9 +56,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 }
 
 {/* Creating Card with the help of  React-bootstrap*/}
-<Cards />     
+<Cards />    
+<Slider />    
+
     </div>
-    
+
   )
  }
 
