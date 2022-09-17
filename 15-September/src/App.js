@@ -3,7 +3,6 @@ import Person from './Components/Person';
 import Person2 from './Components/Person2';
 import Cards from "./Components/Cards";
 import Slider from "./Components/Slider";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
  export  class App extends React.Component{
@@ -57,6 +56,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 {/* Creating Card with the help of  React-bootstrap*/}
 <Cards />    
+
+{/* Creating Slider with the help of  React-bootstrap*/}
 <Slider />    
 
     </div>
