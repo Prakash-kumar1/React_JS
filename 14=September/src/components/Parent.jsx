@@ -111,7 +111,7 @@ decreaseCount = () =>{
 {/* passing function itself and got into console */}
         <Child  
          changeByChild={this.changeByChild} 
-          lightObj = {this.state.parentObj}       //not working , don't know reason
+         lightObj={this.state.parentObj}        //not working , don't know reason . 
           />
         </>
 
