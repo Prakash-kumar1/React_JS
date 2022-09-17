@@ -34,9 +34,8 @@ export class Child extends Component{
         {/* <p>Hi my name is {this.props.lightObj.name}  {this.props.lightObj.food}</p> */}
         </>
         )
-
-    }
-
+    
+}
     
 }
 
