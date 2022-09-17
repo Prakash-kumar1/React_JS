@@ -30,7 +30,7 @@ import Person2 from './Components/Person2';
       <button onClick={this.decrement}>Substract </button>
 
 {
-  this.state.count > 5 ? <Person count={this.state.count} name = "Prakash Kumar" /> : <Person2/>
+  this.state.count > 5 ? <Person count={this.state.count} name = "Prakash Kumar" /> : <Person2 count={this.state.count} name = "Govind Verma"/>
 }
     </div>
   )
