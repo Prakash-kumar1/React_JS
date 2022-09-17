@@ -1,7 +1,7 @@
 import React from "react";
 import Person from './Components/Person';
 import Person2 from './Components/Person2';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
  export  class App extends React.Component{
   constructor(){
