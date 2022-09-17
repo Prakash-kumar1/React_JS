@@ -10,14 +10,33 @@ export class Greeting extends Component {
 
 
   render() {
-    if( this.state.isLoggedIn){
-        return  <p>Welcome Govind</p> 
-    }else{
-        return <p>Please Log in</p> 
-    }
+    if( this.state.isLoggedIn)  //{
+    // return (
+    //     <div>
+    //     <h3>Welcome to Aircampus (16-September sessions)</h3>
+    //     <p>Welcome Govind</p> 
+    //     <p>This is our First class.</p>
+    //     </div>
+    //   );
+    // }else{
+    //     return (
+    //     <div>
+    //     <h3>Welcome to Aircampus</h3>
+    //     <p>Please Log in</p> 
+    //     <p>This is our First class.</p>
+    //     </div>
+    //     )
+    // }
 
-    // OR We can also use  Ternariy  Operator
+    // //Here we are again writing the same Code  OR  We can also use  Ternariy  Operator
+
     
-    // return this.state.isLoggedIn ?  <p>Welcome Govind</p> : <p>Please Log in</p> ;
+    return (
+    <>
+    <h3>Welcome to Aircampus (16-September sessions)</h3>
+    { this.state.isLoggedIn ?  <p>Welcome Govind</p> : <p>Please Log in</p> }
+    <p>This is our First class.</p>
+    </>
+    ) ;
   }
 }
