@@ -23,7 +23,8 @@ export class Parent extends Component{
         name : 'Shahrukh Khan' ,
         names: ['Julia' , 'Deepika' , 'Alia' , 'Anushka' , 'Kirti'] ,
         Foods: ['Dosa' , 'idli' , 'Chicken' , 'Mutton' , 'Ice-Cream' , 'Egg-Roll', '' ],
-        dress: ['Jeans' , 'T-shirt' , ' ']
+        dress: ['Jeans' , 'T-shirt' , ' '] ,
+        actor: ['Johny Depp' , 'Henry cavil' , 'Akshay kumar' , 'Nagaarjun' ,'Kartik aryan'] , 
     } ;
  }
 
@@ -97,6 +98,14 @@ decreaseCount = () =>{
 )
 )}
 
+
+{/* Using condition for not printing a value */}
+{this.state.actor.map((name) =>
+       name !== "Henry cavil" &&(
+<p>{name} is a graet actor from somewhere . </p>
+       )
+
+)}
 
         <Child />
 {/* passing function itself and got into console */}
