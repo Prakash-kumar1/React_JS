@@ -81,14 +81,16 @@ decreaseCount = () =>{
 
 {this.state.names.map(name => <p>{name} is a heronie from boolywood</p>)}
 
+
 {this.state.Foods.map(food => 
-    <div>
+    <>
 <h1>This restaurant have great items</h1>
 <p>{food} is present in Restaurant menu .</p>
-</div>
+</>
 )}
 
-{/*  */}
+
+{/* Removing Empty String  through Condition */}
 {this.state.dress.map(cloth => 
     cloth.length > 1 && (
 <p>I am looking cool in {cloth}</p>
