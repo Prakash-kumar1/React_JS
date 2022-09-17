@@ -20,6 +20,8 @@ export class Parent extends Component{
         },
         count1 : 0 ,
         count2 : 0 ,
+        name : 'Shahrukh Khan' ,
+        names: ['Julia' , 'Deepika' , 'Alia' , 'Anushka' , 'Kirti'] ,
     } ;
  }
 
@@ -71,6 +73,11 @@ decreaseCount = () =>{
         {this.state.count1 % 2 === 0 ? <Even /> : <Odd />}
         {this.state.count1 > 0 && <p className="large">Count is greater than 0</p>}
         {this.state.count2 < 0 && <p className="small">Count is Smaller than 0</p>}
+
+
+<p>{this.state.name} is a Actor from bollywood</p>
+{this.state.names.map(name => <p>{name} is a heronie from boolywood</p>)}
+
 
         <Child />
 {/* passing function itself and got into console */}
