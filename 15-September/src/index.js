@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import {App} from './App';        //when you are not using default then written in Curly Braces . 
 import reportWebVitals from './reportWebVitals';
 
 // "root"  DOM node
