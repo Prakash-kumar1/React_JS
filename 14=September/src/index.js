@@ -5,6 +5,7 @@ import "./App.css" ;
 // import {App} from './App';      //this method is using when export with class
 import {Parent} from './components/Parent';      //this method is using when export with class
 import  {Counter} from "./components/Counter";
+import  {Greeting} from "./components/Greeting";
 import reportWebVitals from './reportWebVitals';
 
 
@@ -15,6 +16,8 @@ root.render(        //render means , create element in the UI
     <Parent />
 
     <Counter />
+
+    <Greeting />
     
   </React.StrictMode>
 );
