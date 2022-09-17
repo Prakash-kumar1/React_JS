@@ -14,19 +14,19 @@ export class Greeting extends Component {
 
     // if( this.state.isLoggedIn)  //{
     // return (
-    //     <div>
+    //     <>
     //     <h3>Welcome to Aircampus (16-September sessions)</h3>
     //     <p>Welcome Govind</p> 
     //     <p>This is our First class.</p>
-    //     </div>
+    //     </>
     //   );
     // }else{
     //     return (
-    //     <div>
+    //     <>
     //     <h3>Welcome to Aircampus</h3>
     //     <p>Please Log in</p> 
     //     <p>This is our First class.</p>
-    //     </div>
+    //     </>
     //     )
     // }
 
@@ -45,9 +45,11 @@ export class Greeting extends Component {
     <>
     <h3>Welcome to Aircampus (16-September sessions)</h3>
     { this.state.isLoggedIn ?  <p>Welcome Govind</p> : <p>Please Log in</p> }
-    {/* OR */}
-    {welcomeMessage}
     <p>This is our First class.</p>
+
+    {/* OR passing value through variable*/}
+
+    {welcomeMessage}
     </>
     ) ;
   }
