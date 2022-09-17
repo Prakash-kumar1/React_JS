@@ -5,7 +5,7 @@ export default class Slider extends Component {
   render() {
     return (
     <div>
-        <h1>Creating a Slider from react-bootstrap</h1>
+        <h1 style={{ marginTop: '3rem'}}>Creating a Slider from react-bootstrap</h1>
         <Carousel style={{ width: '28rem'}}>
       <Carousel.Item>
         <img 
