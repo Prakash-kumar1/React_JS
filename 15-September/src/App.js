@@ -3,7 +3,7 @@ import Person from './Components/Person';
 import Person2 from './Components/Person2';
 
 
- export class App extends React.Component{
+ export  class App extends React.Component{
   constructor(){
     super () 
     this.state ={
