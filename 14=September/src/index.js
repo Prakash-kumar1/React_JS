@@ -15,7 +15,6 @@ root.render(        //render means , create element in the UI
   <React.StrictMode>
 
     <Parent />
-
     <Counter />
 
     <Greeting />
