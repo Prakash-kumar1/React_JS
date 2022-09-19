@@ -15,16 +15,16 @@ root.render(        //render means , create element in the UI
   <React.StrictMode>
 
     <Parent />
+
     <Counter />
+
     <Greeting />
+
     <Names />
     
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
 // cycles : (1) => "Mounting"  OR  "rendering"  OR  " painting"  OR   "loading"
