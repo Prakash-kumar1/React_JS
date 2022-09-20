@@ -8,6 +8,7 @@ import  {Counter} from "./components/Counter";
 import  {Greeting} from "./components/Greeting";
 import  {Names} from "./components/Names";
 import  Names2 from "./components/Names2";
+import { LifeCycle } from './components/LifeCycle';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -28,6 +29,7 @@ root.render(        //render means , create element in the UI
       <p>This is a Children</p>
     </Names2 > 
     
+    <LifeCycle />
   </React.StrictMode>
 );
 
