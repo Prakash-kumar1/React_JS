@@ -34,13 +34,21 @@ export default class Names2 extends Component {
 
 
   render() {
+    console.log(this.props) ;
  return (
- this.state.names.map((nameObj) => (
+
+    <>
+
+    {this.props.children}
+
+    {this.state.names.map((nameObj) => (
     <p key={nameObj.id}>
-{nameObj.id} {nameObj.name}
+    {nameObj.id} {nameObj.name}
     </p>
- ))
-      
+    ))}
+
+ </>
+
     );
   }
 }
