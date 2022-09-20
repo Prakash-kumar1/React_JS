@@ -22,13 +22,13 @@ export class LifeCycle extends Component{
 
 //    Life cycles methods =>>
 
-componentDidMount(){
-    console.log("component Did Mount") ;
+componentWillMount(){
+    console.log("component Will Mount") ;
 }
 
 
-componentWillMount(){
-    console.log("component Will Mount") ;
+componentDidMount(){
+    console.log("component Did Mount") ;
 }
 
 
