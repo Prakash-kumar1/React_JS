@@ -7,6 +7,7 @@ import {Parent} from './components/Parent';      //this method is using when exp
 import  {Counter} from "./components/Counter";
 import  {Greeting} from "./components/Greeting";
 import  {Names} from "./components/Names";
+import  Names2 from "./components/Names2";
 import reportWebVitals from './reportWebVitals';
 
 
@@ -21,6 +22,11 @@ root.render(        //render means , create element in the UI
     <Greeting />
 
     <Names />
+
+    <Names2 name="Prakash">
+      <h1>Prakash Kumar</h1>
+      <p>This is a Children</p>
+    </Names2 > 
     
   </React.StrictMode>
 );
