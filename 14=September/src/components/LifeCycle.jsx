@@ -19,20 +19,44 @@ export class LifeCycle extends Component{
     })) ;
    }
 
+
 //    Life cycles methods =>>
+
 componentDidMount(){
     console.log("component Did Mount") ;
 }
 
+
 componentWillMount(){
     console.log("component Will Mount") ;
 }
+
 
 shouldComponentUpdate(){
     console.log("should component Update") ;
 // if return is false then value not increases , you can check
     return true ;
 }
+
+
+componentWillUpdate(){
+    console.log("component Will Update") ;
+}
+
+
+componentDidUpdate(){
+    console.log("component Did Update") ;
+}
+
+
+// Removing  element from The UI
+componentWillUnmount(){
+    console.log("component Will removed") ;
+// on Refreshing the page you can see
+    alert("in Un-Mounting phase")
+}
+
+
 
    render(){
     console.log("Rendering") ;
