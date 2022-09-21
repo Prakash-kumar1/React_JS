@@ -1,8 +1,11 @@
 import React from "react";
+import './App.css';
 import Person from './Components/Person';
 import Person2 from './Components/Person2';
 import Cards from "./Components/Cards";
 import Slider from "./Components/Slider";
+import { Parent } from "./Components/Parent";
+import {InstaMain} from "./Components/InstaMain"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
  export  class App extends React.Component{
@@ -54,11 +57,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   this.state.count1< 5 ? <Person  increase={this.increase} count1={this.state.count1} name = "Anjali Yadav" /> : <Person2 decrease={this.decrease} count1={this.state.count1} name = "Light Singh"/>
 }
 
+
+<InstaMain />
+
 {/* Creating Card with the help of  React-bootstrap*/}
-<Cards />    
+{/* <Cards />     */}
 
 {/* Creating Slider with the help of  React-bootstrap*/}
-<Slider />    
+{/* <Slider />     */}
+
+{/* Stateless functional component*/}
+{/* <Parent text="Passing data in functional component"  name={['hema','prakash','govind']}/>     */}
 
     </div>
 
