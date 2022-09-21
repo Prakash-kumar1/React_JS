@@ -8,6 +8,7 @@ import { Parent } from "./Components/Parent";
 import {InstaMain} from "./Components/InstaMain"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
  export  class App extends React.Component{
   constructor(){
     super () 
@@ -57,17 +58,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
   this.state.count1< 5 ? <Person  increase={this.increase} count1={this.state.count1} name = "Anjali Yadav" /> : <Person2 decrease={this.decrease} count1={this.state.count1} name = "Light Singh"/>
 }
 
-
+{/* Creating Instagram UI  */}
 <InstaMain />
 
 {/* Creating Card with the help of  React-bootstrap*/}
-{/* <Cards />     */}
+<Cards />    
 
 {/* Creating Slider with the help of  React-bootstrap*/}
-{/* <Slider />     */}
+<Slider />    
 
 {/* Stateless functional component*/}
-{/* <Parent text="Passing data in functional component"  name={['hema','prakash','govind']} />     */}
+<Parent text="Passing data in functional component"  name={['hema','prakash','govind']} />    
 
 
 {/* Pure Component && Regular Component Importing  Inside Parent Component , Use this parent */}
