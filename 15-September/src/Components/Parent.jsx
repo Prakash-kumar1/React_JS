@@ -19,14 +19,15 @@
 // In above , I am not writting any state . so, we can use function.
 // This is called Stateless Functional Component
 
-export function Parent() {
+export function Parent(props) {
 
       return (
         <>
-        <h1> Without state</h1>  
-        <p> I am using Function</p>
+        <h1> Without state {props.text}</h1>  
+        <p> I am using Function with the name is {props.name[1]}</p>
+        <p> My name is {props.name[2]}</p>
         <h2>Stateless Functional Component</h2>  
         </>
         
-      )
+      );
     }
