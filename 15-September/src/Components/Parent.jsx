@@ -1,4 +1,4 @@
-// @@@###$$$%%%***  Starting  20-September sessions  @@@###$$$%%%***
+// // @@@###$$$%%%***  Starting  20-September sessions  @@@###$$$%%%***
 
 
 // import React, { Component } from 'react'
@@ -6,8 +6,9 @@
 //   render() {
 //     return (
 //       <>
-//       <h1>Header = 1</h1>  
+//       <h1>Header = 1 with {this.props.text}</h1>  
 //       <p> Paragraph</p>
+//        <p> My name is {this.props.name[2]}</p>
 //       <h2>Header = 2</h2>  
 //       </>
       
