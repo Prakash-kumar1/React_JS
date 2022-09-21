@@ -67,7 +67,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 {/* <Slider />     */}
 
 {/* Stateless functional component*/}
-{/* <Parent text="Passing data in functional component"  name={['hema','prakash','govind']}/>     */}
+{/* <Parent text="Passing data in functional component"  name={['hema','prakash','govind']} />     */}
+
+
+{/* Pure Component && Regular Component Importing  Inside Parent Component , Use this parent */}
+<Parent />
 
     </div>
 
