@@ -6,6 +6,7 @@ import Cards from "./Components/Cards";
 import Slider from "./Components/Slider";
 import { Parent } from "./Components/Parent";
 import {InstaMain} from "./Components/InstaMain"
+import Form from "./Components/Form";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -73,6 +74,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 {/* Pure Component && Regular Component Importing  Inside Parent Component , Use this parent */}
 <Parent />
+
+{/* //@@@###$$$%%%   21-September Sessions (Watch again)  @@@###$$$%%% */}
+<Form />
 
     </div>
 
