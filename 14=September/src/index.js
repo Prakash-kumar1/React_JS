@@ -9,6 +9,7 @@ import  {Greeting} from "./components/Greeting";
 import  {Names} from "./components/Names";
 import  Names2 from "./components/Names2";
 import { LifeCycle } from './components/LifeCycle';
+
 import reportWebVitals from './reportWebVitals';
 
 
@@ -30,6 +31,7 @@ root.render(        //render means , create element in the UI
     </Names2 > 
     
     <LifeCycle />
+
   </React.StrictMode>
 );
 
