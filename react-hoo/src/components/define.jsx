@@ -7,14 +7,17 @@
 // when use Hooks ==>>  If you write a function component and realize you need to add some state to it . then use hooks .
 
 
-// Rules of  Hooks ==>> 
+// Rules of  Hooks ==>> There are foolwing rules to use Hooks 
+
 // (1) =>   Only call  Hooks  at the top level - We should not call hooks inside loops , Conditions or  Nested
 //           Functions . Instead always use hooks at the top level of your React Functions .
  
 // (2) =>   Only call Hooks  from React Functions - We should not call hooks from regular Javascript Functions . 
 // Instead call hooks from  React Function components  OR  call hooks from  Custom Hooks .
  
+// (3) =>  React  relies  on the order  in which  Hooks  are  called .
 
+// (4) =>  Hooks don't work inside the classes .
 
 
 
