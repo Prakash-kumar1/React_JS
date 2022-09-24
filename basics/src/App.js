@@ -4,12 +4,16 @@
 
 import logo from './logo.svg';
 import './App.css';
+import { WelcomeClass } from './components/WelcomeClass';
+
+// // importing welcome function from components
+import {WelcomeFn} from "./components/WelcomeFn" ;
 
 let name = "kumar-(Frontend Engineer)" ;          //Always declaring above 
 
 // concept of getting data without reloading (Refreashing) the page , is known as  AJAX .
 
-function App() {
+export function App() {
   return (
  
 
@@ -39,12 +43,29 @@ function App() {
       </header>
     </div>
     
+    <section>
+      <h1 className='head'>Using Function For exporting</h1>
+      <p>This is a function and there is no need of export default app</p>
+      <WelcomeFn/>
+
+{/* each one of will come 3 times because we copy App 3 times */}
+      <WelcomeClass name="Sameer" age= "20" place="Madhya pradesh" food="Chicken" />
+      <WelcomeClass name="Anjali" age= "23" place="Noida" food="Dosa"/>
+      <WelcomeClass name="Prakash" age= "22" place=" " food="mutton" />
+      <WelcomeClass name="Govind" age= "21" place="Luckhnow" food=" "/>
+      
+    </section>
     </>
    
   );
 }
 
-export default App;
+// export default App;
+
+// Never use Two function in a js File 
+export function App2(){
+  return <h2>app2 is a second function </h2>
+}
 
 // React Introduction ==>>   React (also known as React.js or ReactJS)  is a Javascript library for building User
 //                           Interfaces . It is maintained by  Facebook  and it play with  Virtual DOM . This is 
