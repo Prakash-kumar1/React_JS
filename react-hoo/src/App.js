@@ -20,7 +20,7 @@ export function App(){
   <TitleChangeClass />
   <TitleChangeHooks />
   </>
-  
+
   );
 
 }
