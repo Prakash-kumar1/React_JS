@@ -5,16 +5,18 @@ import { CounterHooks } from './components/CounterHooks';
 import { StateWithObj } from './components/StateWithObj';
 import { StateWithArr } from './components/StateWithArr';
 import { TitleChangeClass } from './components/TitleChangeClass';
+import { TitleChangeHooks } from './components/TitleChangeHooks';
 
 
 export function App(){
   return (
  <>
-  <Define />
+  {/* <Define />
   <CounterHooks />
   <StateWithObj />
   <StateWithArr />
-  <TitleChangeClass />
+  <TitleChangeClass /> */}
+  <TitleChangeHooks />
   </>
   );
 }
