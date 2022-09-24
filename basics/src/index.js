@@ -5,7 +5,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
+// For using both function from App.js
+import { App , App2 } from './App';
 import reportWebVitals from './reportWebVitals';
 
 // Virtual DOM :=>  React  creates  a copy  of  Actual DOM .
@@ -19,7 +21,13 @@ root.render(
 // if there is any error React.StrictMode , throws an error and we have to fix it
 
   <React.StrictMode>        
-    <App />
+    {/* /* you can give App or App2 which you want */ }
+    <App />          
+    <App2 />   
+
+ {/* Copying h1 and p just write <App />(you can use multiple times)  and similarly for h2  */}
+ <App />   
+ <App /> 
   </React.StrictMode>
 );
 
