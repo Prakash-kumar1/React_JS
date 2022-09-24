@@ -9,16 +9,20 @@ import { TitleChangeHooks } from './components/TitleChangeHooks';
 
 
 export function App(){
+
   return (
+
  <>
-  {/* <Define />
+  <Define />
   <CounterHooks />
   <StateWithObj />
   <StateWithArr />
-  <TitleChangeClass /> */}
+  <TitleChangeClass />
   <TitleChangeHooks />
   </>
+  
   );
+
 }
 
 
