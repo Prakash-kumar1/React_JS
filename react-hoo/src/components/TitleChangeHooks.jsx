@@ -15,7 +15,13 @@ export function TitleChangeHooks() {
     }) ;
 
     return(
+        <>
+
 <button onClick={ () => setCount(count + 1)}>click- {count} hooks</button>
+{/* Or you can also write this way */}
+<button onClick={ () => setCount((prev) => (prev + 1))}>click- {count} hooks</button>
+    
+</>
     );
 }
 
