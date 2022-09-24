@@ -1,4 +1,6 @@
-// Hooks Definition =>>  Hooks  are  functions that let you "Hook into"  React state  and life-cycle features from 
+// @@@####^^&&&****   21-September Sessions   // @@@####^^&&&****
+
+// Hooks Definition =>>  Hooks  are  functions that let you "Hook into" means Attached  React state  and life-cycle features from 
 //                        Function components.  hooks  allows  you to use  React  without classes . it means you
 //                     can  use state  and other  React features  without  writting  a class . React provides a 
 //                     few  built-in  Hooks like  useState ,  useEffect  etc . Hooks are new addition in React 16.8 . 
@@ -20,17 +22,49 @@
 // (4) =>  Hooks don't work inside the classes .
 
 
-// @@@###$$$%%%&&&***   Declaring  State  @@@###$$$%%%&&&*** 
+// @@@###$***  Creating an Increment value Using  Class Component and  Hooks    @@@###$*** 
+
+
+// import React, { Component } from "react";
+
+// export class Define extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       count: 0,
+//       name: "",
+//     };
+//   }
+
+//   handleIncrement = (stepValue) => {
+//     this.setState({ count: this.state.count + stepValue });
+//   };
+
+//   render() {
+//     return (
+//       <>
+//         <p>count - {this.state.count}</p>
+//         <button onClick={() => this.handleIncrement(3)}>increment</button>
+//       </>
+//     );
+//   }
+// }
 
 
 
+// In class component we use state  but in  Hooks we use "  useState  "
 
+import React, { useState } from "react";
 
-
-
-
-
-
-
+export function Define() {
+  const initialCount = 0;
+  const [count, setCount] = useState(0); //   [value, method which updates the value]
+  return (
+    <>
+      <p>count - {count}</p>
+      <button onClick={() => setCount(count + 5)}>increment</button>
+    </>
+  );
+}
 
 
