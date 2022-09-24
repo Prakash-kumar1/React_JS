@@ -50,6 +50,21 @@ h1 , h2{
   width: 450px;
 }
 
+
+h4{
+  background-color: hotpink;
+  color: green;
+  padding: 20px;
+  text-align: center;
+}
+
+h5{
+  background-color: beige;
+  color: deepskyblue;
+  font-size: larger;
+  font-weight: bolder;
+}
+
 p{
   background-color: black;
   border: 3px dashed red;
@@ -61,7 +76,16 @@ p{
   padding: 5px;
 }
 
+.child{
+  background-color: antiquewhite;
+  color: red;
+}
 
+.head{
+  background-color: cadetblue;
+  color: lawngreen;       /*This color over-ride by Class.css*/
+  text-align: center;
+}
 
 
 
