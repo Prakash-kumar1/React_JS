@@ -1,3 +1,5 @@
+// @@@####   Changes in the title by using Class Component in 22-September Sessions   ######
+
 import React, { Component } from "react";
 
 export class TitleChangeClass extends Component {
@@ -8,11 +10,15 @@ export class TitleChangeClass extends Component {
     };
   }
 
+
   componentDidMount() {
+    console.log("Did Mount") ;
     document.title = `${this.state.count} times clicked`;
   }
 
+
   componentDidUpdate() {
+    console.log("Did Update") ;
     document.title = `${this.state.count} times clicked`;
   }
 
@@ -26,3 +32,5 @@ export class TitleChangeClass extends Component {
     );
   }
 }
+
+
