@@ -41,8 +41,16 @@
 //                                     (3)  Intergrating with 3rd party DOM-libaries .
 
 
+// Creating  Refs ==>>  Refs are created using   React.createRef()  and  attached  to React elements  via the 
+//                       ref  attribute . Refs  are commonly assigned to an instance property when a component
+//                       is contructed . so, they can be referenced  throughout the component .
 
-Un-Controlled  components is not important but you can read from  => " Geeky Shows "
+
+// Accessing  Refs  ==>>  when a ref is passed to an element in render , a refernce to the node becomes accessible
+//                       at the current attribute to the ref . the value of ref differs  depending on the type 
+//                         of node .
+
+// Un-Controlled  components is not important but you can read from  => " Geeky Shows "
 
 
 
