@@ -7,7 +7,8 @@ import './App.css';
 // import { TitleChangeClass } from './components/TitleChangeClass';
 // import { TitleChangeHooks } from './components/TitleChangeHooks';
 import { ToDoApp } from './components/ToDoApp';
-import { UseState } from './components/UseState';
+// import { UseState } from './components/UseState';
+// import { UseEffect } from './components/UseEffect';
 
 
 export function App(){
@@ -22,7 +23,8 @@ export function App(){
   <TitleChangeClass />
   <TitleChangeHooks /> */}
   <ToDoApp />
-  <UseState />
+  {/* <UseState />
+  <UseEffect /> */}
   </>
 
   );
