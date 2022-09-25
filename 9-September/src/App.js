@@ -2,6 +2,7 @@
 import React, {Component} from "react" ;
 import  {Button} from "./components/Button" ;
 import "./App.css" ;
+import ControlComp from "./components/ControlComp";
 
 
 export class App extends Component{    //extends taking property of parents , read in Inheritance
@@ -31,6 +32,8 @@ export class App extends Component{    //extends taking property of parents , re
 
       {/* <Button text="Delete" btnClass="delete" /> */}
         <Button text="Save" btnClass="save" />
+
+        < ControlComp />
      </div>
      
     ); 
