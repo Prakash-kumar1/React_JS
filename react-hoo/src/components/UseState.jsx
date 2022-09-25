@@ -26,6 +26,29 @@
 // <<===>> Updating State ==>>   example : setName(" Geeky shows ")
 
 
+import React , { useState } from "react" ;
+
+export function UseState() {
+    const [name , setName] = useState("light") ;
+    const [roll , setRoll] = useState(123) ;
+    const [quote , setQuote] = useState("i am the best") ;
+
+    const handleClick = () => {
+        setName("Prakash Kumar") ;
+        setRoll("GDC00675") ;
+        setQuote("I am deserving a life full of Luxury.") ;
+    };
+
+
+    return(
+        <div>
+            <h2>Name : {name}</h2>
+            <h2>Roll No. : {roll}</h2>
+            <h2>Quote : {quote}</h2>
+            <button type="button" onClick={handleClick}>Change</button>
+        </div>
+    ) ;
+}
 
 
 
@@ -53,4 +76,3 @@
 
 
 
-import React , { useState } from react ;
