@@ -6,9 +6,24 @@
 // this state between re-Renders . you can call this function from an  event-Handler  or  somewhere else .
 
 // Example ==>>  import React , { useState } from react ;
- //              const nameStateVariable = useState("Rahul") ;              //Declaring stae variable
- //              const [name , setName] = useState("Rahul") ; 
 
+// when we declare a state variable with useState , it returns a pair - an array with two items . so, by writting
+// Square Bracket  we are doing  Array Destructuring .
+
+ //              const [name , setName] = useState("Rahul") ;      //Declaring state variable
+ //              const [roll , setRoll] = useState(189) ;      
+ //              const [subject , setSubject] = useState( { sub : "Math"} ) ;     
+
+// The First item name is the " Current value " .
+// The Second item  setName is a function that let us update it .
+
+
+// <<===>> NOTE <<===>>  You can call useState as many times as you want .
+
+// <<===>> Accessing State <<===>> In a Function , You can use  State Variable Directly . 
+// example :  <h1> Your name is {name} </h1>
+
+// <<===>> Updating State ==>>   example : setName(" Geeky shows ")
 
 
 
