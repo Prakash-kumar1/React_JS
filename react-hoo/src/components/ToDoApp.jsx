@@ -70,7 +70,7 @@ export const ToDoApp = () => {
 
   return (
     <div id="todo-list">
-      <h1>Todo List</h1>
+      <h1>Todo List Project</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
