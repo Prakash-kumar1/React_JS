@@ -4,7 +4,7 @@ export default class ControlComp extends Component {
     constructor(props){
         super(props) ;
         this.state = {
-            value : " " ,
+            value : "practice " ,
             value1 : " Hello there , this is some text in text area " ,
             name : "Username" ,
             pwd : " " ,
@@ -57,7 +57,7 @@ export default class ControlComp extends Component {
 
   render() {
     return (
-      <div>
+      <div className='contain'>
  <input type="text" value={this.state.value} onChange={this.handleChange} /> <br />
 
 {/* onSubmit  always use above with form */}
