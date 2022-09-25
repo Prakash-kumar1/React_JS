@@ -6,6 +6,7 @@ import { StateWithObj } from './components/StateWithObj';
 import { StateWithArr } from './components/StateWithArr';
 import { TitleChangeClass } from './components/TitleChangeClass';
 import { TitleChangeHooks } from './components/TitleChangeHooks';
+import { ToDoApp } from './components/ToDoApp';
 
 
 export function App(){
@@ -19,6 +20,7 @@ export function App(){
   <StateWithArr />
   <TitleChangeClass />
   <TitleChangeHooks />
+  <ToDoApp />
   </>
 
   );
