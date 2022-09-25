@@ -30,12 +30,19 @@
 
 // <<===>> When use Un-Controlled  components -- : you do not need  to write an event handler for every way your 
 //                                          data can change  and pipe all of the input state through  React Component .
+//            Converting a pre-existing  codebase  to react , or  integrating a React application with  a
+//             non - React  Library .
+
+
+// Definition of " refs " :- Refs provide a way to access DOM Nodes or React element in the Render method .
+
+// <<===>> <<===>>  when to use Refs :-  (1) Triggering  imperative  animations
+//                                     (2)  Managing Focus , text-Selection , or media playback .
+//                                     (3)  Intergrating with 3rd party DOM-libaries .
 
 
 
-
-
-
+Un-Controlled  components is not important but you can read from  => " Geeky Shows "
 
 
 
