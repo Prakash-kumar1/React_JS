@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+// import UseCustomHook from './components/UseCustomHook';
 // import { Define } from './components/Define';
 // import { CounterHooks } from './components/CounterHooks';
 // import { StateWithObj } from './components/StateWithObj';
@@ -12,6 +13,8 @@ import { ToDoApp } from './components/ToDoApp';
 
 
 export function App(){
+  // For our custom hooks
+  // const data =  UseCustomHook() ;
 
   return (
 
@@ -25,6 +28,11 @@ export function App(){
   <ToDoApp />
   {/* <UseState />
   <UseEffect /> */}
+
+{/* // For our custom hooks */}
+  {/* <h3>count Up : {data.count}</h3>
+  <button type="button" onClick={data.handleIncrement}>addBy5</button> */}
+
   </>
 
   );
