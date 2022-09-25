@@ -18,7 +18,7 @@
 //     console.log("Hello Use-Effect")
 // }) ;
 
-// // when passing  IInd  parameter
+// // when passing  IInd  parameter means it only call on that parameter 
 // useEffect(() => {
 //     console.log("Hello Use-Effect")
 // } , [count] ) ;
@@ -41,14 +41,49 @@
 // Answer =>>  Yes , by default , it runs both after  the first render  and after every  update . 
 
 
+import React , { useState , useEffect } from "react" ;
+
+export function UseEffect() {
+    const [count , setCount] = useState(0) ;
+    const [count1 , setCount1] = useState(100) ;
+    const [name , setName] = useState("light") ;
+    const [roll , setRoll] = useState( ) ;
 
 
 
+const handleIncrement = () =>{
+    setCount(count + 1) ;
+}
+
+const handleDecrement = () =>{
+    setCount1(count1 - 10) ;
+}
+
+const handleClick = () => {
+    setName("Prakash Kumar Singh ") ;
+    setRoll("AR45GHII098") ;
+};
 
 
+// Any changes in element  Use-Effect called  , you can see in console 
+useEffect(() => {
+        console.log(" Use-Effect called")
+    },[count1 , roll]) ;       //it only monitor changing in count1 see in console . 
 
 
+    return(
+        <>
+        <h2>Count Up : {count}</h2>
+        <h2>Count down : {count1}</h2>
+        <h2>Name : {name}</h2>
+        <h2>Roll No. : {roll}</h2>
+            <button type="button" onClick={handleDecrement}>Subtract</button>
+            <button type="button" onClick={handleIncrement}>Addition</button>
+            <button type="button" onClick={handleClick}>Change</button>
+        </>
+    ) ;
 
+}
 
 
 
