@@ -84,16 +84,7 @@ h1 {
   }
 
 
-  .todo-completed {
-    display: flex;
-    margin: 10px 0;
-  }
-
-
-  .todo-actions {
-    display: flex;
-    justify-content: space-between;
-  }
+  
 
 
 
