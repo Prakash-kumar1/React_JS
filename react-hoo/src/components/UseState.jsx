@@ -29,6 +29,7 @@
 import React , { useState } from "react" ;
 
 export function UseState() {
+    const [count , setCount] = useState(0)
     const [name , setName] = useState("light") ;
     const [roll , setRoll] = useState(123) ;
     const [quote , setQuote] = useState("i am the best") ;
@@ -40,12 +41,18 @@ export function UseState() {
     };
 
 
+    const handleIncrement = () =>{
+        setCount(count + 1) ;
+    }
+
     return(
         <div>
             <h2>Name : {name}</h2>
             <h2>Roll No. : {roll}</h2>
             <h2>Quote : {quote}</h2>
+            <h2>Count Up : {count}</h2>
             <button type="button" onClick={handleClick}>Change</button>
+            <button type="button" onClick={handleIncrement}>Add</button>
         </div>
     ) ;
 }
