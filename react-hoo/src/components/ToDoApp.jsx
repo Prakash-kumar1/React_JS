@@ -70,33 +70,31 @@ export const ToDoApp = () => {
 
   return (
     <div id="todo-list">
-      <h1>Todo List Project</h1>
+      <h1>Todo List (React - Test)</h1>
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          onChange={(e) => setTodo(e.target.value)}
-          value={todo}
-        />
+        <input type="text" onChange={(e) => setTodo(e.target.value)} value={todo}/>
+
         <button type="submit" className="btn">Add Todo</button>
       </form>
+
+
       {todos.map((todo) => (
         <div key={todo.id} className="todo">
           <div className="todo-text">
-            <input
-              type="checkbox"
-              id="completed"
-              checked={todo.completed}
+
+            <input type="checkbox"  id="completed" checked={todo.completed}
               onChange={() => toggleComplete(todo.id)}
             />
+
             {todo.id === todoEditing ? (
-              <input
-                type="text"
-                onChange={(e) => setEditingText(e.target.value)}
-              />
+              <input type="text"  onChange={(e) => setEditingText(e.target.value)} />
+
             ) : (
+
               <div>{todo.text}</div>
             )}
           </div>
+          
           <div className="todo-actions">
             {todo.id === todoEditing ? (
               <button onClick={() => submitEdits(todo.id)}>Submit Edits</button>
