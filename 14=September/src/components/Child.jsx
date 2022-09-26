@@ -31,7 +31,7 @@ export class Child extends Component{
         <button onClick={this.props.changeByChild}>change parent from child .</button>
 
 {/* passing object is not working , see it later */}
-        {/* <p>Hi my name is {this.props.lightObj.name}  {this.props.lightObj.food}</p> */}
+        <p>Hi my name is {this.props?.props?.lightObj?.name} and i love to eat {this.props?.props?.lightObj?.food}</p>
         </>
         )
     
