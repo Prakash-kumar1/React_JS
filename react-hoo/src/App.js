@@ -10,8 +10,8 @@ import './App.css';
 // import { StateWithArr } from './components/StateWithArr';
 // import { TitleChangeClass } from './components/TitleChangeClass';
 // import { TitleChangeHooks } from './components/TitleChangeHooks';
-import { ToDoApp } from './components/ToDoApp';
-// import { UseState } from './components/UseState';
+// import { ToDoApp } from './components/ToDoApp';
+import { UseState } from './components/UseState';
 // import { UseEffect } from './components/UseEffect';
 
 
@@ -31,10 +31,10 @@ export function App(){
   <StateWithArr />
   <TitleChangeClass />
   <TitleChangeHooks />
-  <UseState />
   <UseEffect />
+  <ToDoApp />
 <Check />    */}
-<ToDoApp />
+<UseState />
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
