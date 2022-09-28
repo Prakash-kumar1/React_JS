@@ -36,7 +36,14 @@ inputRef.current.focus() ;
     return (
     <div>
         <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
-        <input ref={inputRef}  type="text" value={name} onChange={(e) => setName(e.target.value)}/>
+
+        <input ref={inputRef}  type="text" value={name} 
+        // onFocus = {() =>{
+        //     inputRef.current.style.outline = 0 ;
+        //     inputRef.current.style.border = "3px dashed blue" ;
+        // }}
+        onChange={(e) => setName(e.target.value)}/>
+
         <p>this is {name}</p>
         <button onClick={() => (inputRef.current.value = "changing data using useRef")}>Click</button>
         {/* <p>rendered use-state method {count} times</p>    */}
