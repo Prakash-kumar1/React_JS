@@ -1,4 +1,5 @@
 // Definition of useRef ==>>  when to need to manipulate DOM tree . sometimes we can't work with state and props
+//                               " useRef " creates a mutable variable which will not re-Render the components .
 
 
 import React , {useRef} from "react";
