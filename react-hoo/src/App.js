@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import Check from './components/Check';
 // import UseCustomHook from './components/UseCustomHook';
 // import { Define } from './components/Define';
 // import { CounterHooks } from './components/CounterHooks';
@@ -7,7 +8,7 @@ import './App.css';
 // import { StateWithArr } from './components/StateWithArr';
 // import { TitleChangeClass } from './components/TitleChangeClass';
 // import { TitleChangeHooks } from './components/TitleChangeHooks';
-import { ToDoApp } from './components/ToDoApp';
+// import { ToDoApp } from './components/ToDoApp';
 // import { UseState } from './components/UseState';
 // import { UseEffect } from './components/UseEffect';
 
@@ -25,9 +26,10 @@ export function App(){
   <StateWithArr />
   <TitleChangeClass />
   <TitleChangeHooks /> */}
-  <ToDoApp />
+  {/* <ToDoApp /> */}
   {/* <UseState />
   <UseEffect /> */}
+  <Check />
 
 {/* // For our custom hooks */}
   {/* <h3>count Up : {data.count}</h3>
