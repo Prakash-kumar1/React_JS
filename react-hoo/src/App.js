@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import { RefExample } from './components/RefExample';
+// import { RefExample } from './components/RefExample';
 // import Check from './components/Check';
 // import { useState } from 'react';
 // import UseCustomHook from './components/UseCustomHook';
@@ -10,7 +10,7 @@ import { RefExample } from './components/RefExample';
 // import { StateWithArr } from './components/StateWithArr';
 // import { TitleChangeClass } from './components/TitleChangeClass';
 // import { TitleChangeHooks } from './components/TitleChangeHooks';
-// import { ToDoApp } from './components/ToDoApp';
+import { ToDoApp } from './components/ToDoApp';
 // import { UseState } from './components/UseState';
 // import { UseEffect } from './components/UseEffect';
 
@@ -31,10 +31,10 @@ export function App(){
   <StateWithArr />
   <TitleChangeClass />
   <TitleChangeHooks />
-  <ToDoApp />
   <UseState />
   <UseEffect />
-  <Check />    */}
+<Check />    */}
+<ToDoApp />
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
@@ -44,7 +44,7 @@ export function App(){
   {/* <h3>count Up : {data.count}</h3>
   <button type="button" onClick={data.handleIncrement}>addBy5</button> */}
 
-  < RefExample />
+  {/* < RefExample /> */}
 
   </>
 
