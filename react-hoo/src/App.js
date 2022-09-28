@@ -37,7 +37,7 @@ export function App(){
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
 
-  {valid < 10 && <Check />}
+  {(valid < 10 || valid > 15) && <Check />}
   <button onClick={() => setValid((prev) => prev+1)}>click = {valid}</button>
 
 {/* // For our custom hooks */}
