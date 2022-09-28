@@ -34,7 +34,8 @@ inputRef.current.focus() ;
 
 
     return (
-    <div>
+    <>
+
         <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
 
         <input ref={inputRef}  type="text" value={name} 
@@ -47,9 +48,10 @@ inputRef.current.focus() ;
         <p>this is {name}</p>
         <button onClick={() => (inputRef.current.value = "changing data using useRef")}>Click</button>
         {/* <p>rendered use-state method {count} times</p>    */}
-        <p>rendered use - ref method {countObj.current} times</p>   
-    </div>
-    )
+        <p>rendered use - ref method {countObj.current} times</p> 
+
+    </>
+    ) ; 
 }
 
 
