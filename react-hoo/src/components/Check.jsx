@@ -1,7 +1,12 @@
+// ###########    27 - September sessions  ########### 
+
+
 import React from "react" ;
 import { useEffect } from "react";
 import { useState } from "react";
 
+
+//  #####  Creating counter with a time interval #####
 function Check() {
     const [count , setCount] = useState(0) ;
 
