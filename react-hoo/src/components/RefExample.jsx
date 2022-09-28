@@ -8,6 +8,7 @@ export function RefExample() {
     const[name , setName]  =  useState("") ;
     // const[count , setCount]  =  useState(0) ;     //Or we can use
     const countObj = useRef(1) ;   //whatever i am passing as argument it becomes current data , see in console
+    const inputRef = useRef()  ;
 
 
     // useEffect(() => {
@@ -20,7 +21,11 @@ export function RefExample() {
     useEffect(() => {
         // console.log(countObj) ;
         countObj.current = countObj.current + 1 ;
-        console.log(countObj.current) ;
+        // console.log(countObj.current) ;
+        console.log(inputRef.current) ;
+// Changing Default value
+inputRef.current.value = "Prakash"  ;
+inputRef.current.focus() ;
     })
 
 
@@ -28,7 +33,7 @@ export function RefExample() {
 
     return (
     <div>
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
+        <input type="text" value={name} ref={inputRef} onChange={(e) => setName(e.target.value)}/>
         <p>this is {name}</p>
         {/* <p>rendered use-state method {count} times</p>    */}
         <p>rendered use - ref method {countObj.current} times</p>   
