@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import { UseRef } from './components/UseRef';
 // import { RefExample } from './components/RefExample';
 // import Check from './components/Check';
 // import { useState } from 'react';
@@ -11,7 +12,7 @@ import './App.css';
 // import { TitleChangeClass } from './components/TitleChangeClass';
 // import { TitleChangeHooks } from './components/TitleChangeHooks';
 // import { ToDoApp } from './components/ToDoApp';
-import { UseState } from './components/UseState';
+// import { UseState } from './components/UseState';
 // import { UseEffect } from './components/UseEffect';
 
 
@@ -33,8 +34,9 @@ export function App(){
   <TitleChangeHooks />
   <UseEffect />
   <ToDoApp />
-<Check />    */}
 <UseState />
+<Check />    */}
+<UseRef />
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
