@@ -31,8 +31,13 @@ import React , { useState } from "react" ;
 export function UseState() {
     const [count , setCount] = useState(0)
     const [name , setName] = useState("light") ;
+    const [name1 , setName1] = useState(" ") ;
     const [roll , setRoll] = useState(123) ;
     const [quote , setQuote] = useState("i am the best") ;
+    const [flag , setFlag] = useState(false) ;
+    const [names , setNames] = useState( [] ) ;
+
+
 
     const handleClick = () => {
         setName("Prakash Kumar") ;
@@ -45,14 +50,51 @@ export function UseState() {
         setCount(count + 1) ;
     }
 
+
+    function changeName() {
+        console.log("clicked !!")
+        return setName1("Ritesh Agarhari") ;
+    }
+
+
+    function changeFlag() {
+        console.log("Flag clicked !!")
+        return setFlag(!flag) ;
+    }
+
+
+    const addNames = (e) => {
+        e.preventDefault() ;
+        setNames([ ...names , { id : names.length , name} ])
+        setName(" ") ;
+    }
+
+
+
     return(
         <div>
             <h2>Name : {name}</h2>
+            <h2>Hello , {name1}</h2>
             <h2>Roll No. : {roll}</h2>
             <h2>Quote : {quote}</h2>
             <h2>Count Up : {count}</h2>
+            <h2>Boolean , {flag ? name1 : " "}</h2>
             <button type="button" onClick={handleClick}>Change</button>
             <button type="button" onClick={handleIncrement}>Add</button>
+            <button onClick={changeName}>my Friend</button>
+            <button onClick={changeFlag}>Flag</button>
+
+            <hr /> <hr />  <br /> <br /> 
+
+            <form onSubmit={addNames}>
+                <input type="text" value={name} placeholder="Add Names" onChange={(e) => setName(e.target.value)} />
+                <button>Submit</button>
+            </form>
+            <ul>
+                {names.map((item) => (
+                    <li key={item.id}>{item.name}</li>
+                ))}
+            </ul>
         </div>
     ) ;
 }
