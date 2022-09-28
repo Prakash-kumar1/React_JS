@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import Check from './components/Check';
+import { useState } from 'react';
 // import UseCustomHook from './components/UseCustomHook';
 // import { Define } from './components/Define';
 // import { CounterHooks } from './components/CounterHooks';
@@ -17,6 +18,9 @@ export function App(){
   // For our custom hooks
   // const data =  UseCustomHook() ;
 
+// For Check.jsx which keep increaseing on a certain  Time - Interval 
+         const [valid , setValid]  =  useState(0) ;
+
   return (
 
  <>
@@ -25,11 +29,16 @@ export function App(){
   <StateWithObj />
   <StateWithArr />
   <TitleChangeClass />
-  <TitleChangeHooks /> */}
-  {/* <ToDoApp /> */}
-  {/* <UseState />
-  <UseEffect /> */}
-  <Check />
+  <TitleChangeHooks />
+  <ToDoApp />
+  <UseState />
+  <UseEffect />
+  <Check />    */}
+
+  {/* Using  Check.jsx  with  UseState  in App.js */}
+
+  {valid < 10 && <Check />}
+  <button onClick={() => setValid((prev) => prev+1)}>click = {valid}</button>
 
 {/* // For our custom hooks */}
   {/* <h3>count Up : {data.count}</h3>
