@@ -19,7 +19,10 @@ function Check() {
         console.log("In Effect") ;
 let data = setInterval(change , 1000) ;
 
+
+// This Returning Part is known as " Component will unMount"  OR  " Clean Up"
     return () => {
+        console.log("Cleaning the Component...") ;
         clearInterval(data) ;
     } ;
     } , [count]) ;
