@@ -9,6 +9,21 @@ export function DataFetch() {
 // $$$ --->>>>  ====>>>  only for one data and changing in other data
 const [post , setPost]  =  useState([]) ;
 const [id , setId]  =  useState(1) ;
+const [btnId , setBtnId]  =  useState(1) ;
+
+
+    // useEffect(() => {
+    // axios
+    // .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+    // .then((response) => {
+    //     console.log(response.data) ;
+    //     setPost(response.data)
+    // })
+    // .catch((err) => console.log(err)) ;
+    // } , [id]) ;
+
+
+{/* OR  You can also use this */}
 
 
     useEffect(() => {
@@ -19,7 +34,7 @@ const [id , setId]  =  useState(1) ;
         setPost(response.data)
     })
     .catch((err) => console.log(err)) ;
-    } , [id]) ;
+    } , [btnId]) ;
 
 
 // $$$ --->>>>  ====>>>  for showing All the data 
@@ -46,7 +61,13 @@ const [id , setId]  =  useState(1) ;
        <h1> Data-Fetching for a single ID</h1>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
-<button onClick={() => setId((prev) => prev + 1)}>click - {id}</button>
+{/* <button onClick={() => setId((prev) => prev + 1)}>click - {id}</button> */}
+
+{/* OR  You can also use this */}
+
+<input type="text" value={id} onChange={(e) => setId(e.target.value)}/>
+<button onClick={() => setBtnId(id)}>Change</button>
+
 
 
 {/* // $$$ --->>>>  ====>>>  for showing all the data  */}
