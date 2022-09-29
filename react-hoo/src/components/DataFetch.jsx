@@ -6,7 +6,7 @@ import  axios   from  "axios"  ;
 export function DataFetch() {
     // const [posts , setPosts]  =  useState([]) ;
 
-// $$$ --->>>>  ====>>>  only for one data 
+// $$$ --->>>>  ====>>>  only for one data and changing in other data
 const [post , setPost]  =  useState([]) ;
 const [id , setId]  =  useState(1) ;
 
@@ -19,10 +19,10 @@ const [id , setId]  =  useState(1) ;
         setPost(response.data)
     })
     .catch((err) => console.log(err)) ;
-    } , []) ;
+    } , [id]) ;
 
 
-// $$$ --->>>>  ====>>>  for All the data 
+// $$$ --->>>>  ====>>>  for showing All the data 
 
     // useEffect(() => {
 
@@ -49,7 +49,7 @@ const [id , setId]  =  useState(1) ;
 <button onClick={() => setId((prev) => prev + 1)}>click - {id}</button>
 
 
-{/* // $$$ --->>>>  ====>>>  for all the data  */}
+{/* // $$$ --->>>>  ====>>>  for showing all the data  */}
       {/* <h1> Data-Fetching</h1>
        {posts.map((post) =>(
         <div key={post.id}>
