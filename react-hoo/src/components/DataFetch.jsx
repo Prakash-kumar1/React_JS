@@ -14,9 +14,12 @@ const [id , setId]  =  useState(1) ;
     useEffect(() => {
     axios
     .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-    .then((response) => setPost(response.data)) 
+    .then((response) => {
+        console.log(response.data) ;
+        setPost(response.data)
+    })
     .catch((err) => console.log(err)) ;
-    }) ;
+    } , []) ;
 
 
 // $$$ --->>>>  ====>>>  for All the data 
@@ -43,6 +46,7 @@ const [id , setId]  =  useState(1) ;
        <h1> Data-Fetching for a single ID</h1>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
+<button onClick={() => setId((prev) => prev + 1)}>click - {id}</button>
 
 
 {/* // $$$ --->>>>  ====>>>  for all the data  */}
