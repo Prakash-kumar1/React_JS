@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import { DataFetch } from './components/DataFetch';
+// import { DataFetch } from './components/DataFetch';
 // import { UseRef } from './components/UseRef';
 // import { RefExample } from './components/RefExample';
 // import Check from './components/Check';
@@ -47,10 +47,11 @@ export function App(){
   {/* <h3>count Up : {data.count}</h3>
   <button type="button" onClick={data.handleIncrement}>addBy5</button>
 
+  < DataFetch />
+
   < RefExample /> */}
 
-  < DataFetch />
-  
+
   </>
 
   );
