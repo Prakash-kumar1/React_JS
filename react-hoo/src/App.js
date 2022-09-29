@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import { DataFetch } from './components/DataFetch';
 // import { UseRef } from './components/UseRef';
 // import { RefExample } from './components/RefExample';
 // import Check from './components/Check';
@@ -48,6 +49,7 @@ export function App(){
 
   < RefExample /> */}
 
+  < DataFetch />
   </>
 
   );
