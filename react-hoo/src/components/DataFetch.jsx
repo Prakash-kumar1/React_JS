@@ -1,4 +1,14 @@
-// ######   Starting  28 - september sessions   ######
+// ######   Starting  28 - september sessions => " Fetching Data"   ######
+// ######  This sessions is important for Creating Projects  ######
+
+
+// ######  Using method =>> The method attribute specifies the method of submitting form data: GET or POST.
+
+// The GET method uses URL name/value pairs to send data. This is the default method. The default value. It sends data using URL name/value pairs which is visible. Therefore, GET should not be used when handling sensitive data (e.g. passwords, bank information).
+
+// The POST method use an HTTP post transaction with data in the body of the request.Sends data using an HTTP post transaction with data in the request body, which is invisible. The POST method is more secure.
+
+
 
 import React , { useState , useEffect }  from  "react" ;
 import  axios   from  "axios"  ;
@@ -23,7 +33,7 @@ const [btnId , setBtnId]  =  useState(1) ;
     // } , [id]) ;
 
 
-{/* OR  You can also use this */}
+{/* OR  You can also use this =>> this is for input data*/}
 
 
     useEffect(() => {
@@ -86,3 +96,7 @@ const [btnId , setBtnId]  =  useState(1) ;
     
 }
 
+
+
+// In this Important  28th September session "Vasant sir" teaches Filtering the item 
+// ater 01:30 hours  above . so, please go and watch once more ..
