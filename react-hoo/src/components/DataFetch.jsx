@@ -14,13 +14,41 @@ import React , { useState , useEffect }  from  "react" ;
 import  axios   from  "axios"  ;
 
 export function DataFetch() {
+// $$$ --->>>>  ====>>>  for showing All the data 
     // const [posts , setPosts]  =  useState([]) ;
 
 // $$$ --->>>>  ====>>>  only for one data and changing in other data
-const [post , setPost]  =  useState([]) ;
-const [id , setId]  =  useState(1) ;
-const [btnId , setBtnId]  =  useState(1) ;
+// const [post , setPost]  =  useState([]) ;
+// const [id , setId]  =  useState(1) ;
+// const [btnId , setBtnId]  =  useState(1) ;
 
+// $$$ --->>>>  ====>>>  for showing All Filtered data 
+    const [posts , setPosts]  =  useState([]) ;
+    const [filteredData , setFilteredData] = useState([]) ;
+    const [search , setSearch]  =  useState("") ;
+
+
+    useEffect(() => {
+    axios
+    .get("https://jsonplaceholder.typicode.com/posts")
+    .then((response) => {
+        console.log(response.data) ;
+        setPosts([posts , ...response.data]) ;
+        setFilteredData([posts , ...response.data]) ;
+    }) ;
+    } , []) ;
+
+
+    useEffect(() => {
+        const afterFilterData = posts.filter((post) =>{
+            if(post.title) {
+                return post.title.includes(search) ;
+            }
+        })
+        setFilteredData(afterFilterData) ;
+    }, [search])
+
+// $$$ --->>>>  ====>>>  for showing only one data 
 
     // useEffect(() => {
     // axios
@@ -33,18 +61,19 @@ const [btnId , setBtnId]  =  useState(1) ;
     // } , [id]) ;
 
 
+
 {/* OR  You can also use this =>> this is for input data*/}
 
+    // useEffect(() => {
+    // axios
+    // .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+    // .then((response) => {
+    //     console.log(response.data) ;
+    //     setPost(response.data)
+    // })
+    // .catch((err) => console.log(err)) ;
+    // } , [btnId]) ;
 
-    useEffect(() => {
-    axios
-    .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-    .then((response) => {
-        console.log(response.data) ;
-        setPost(response.data)
-    })
-    .catch((err) => console.log(err)) ;
-    } , [btnId]) ;
 
 
 // $$$ --->>>>  ====>>>  for showing All the data 
@@ -67,16 +96,28 @@ const [btnId , setBtnId]  =  useState(1) ;
     return (
         <div>
 
-{/* // $$$ --->>>>  ====>>>  only for one data  */}
-       <h1> Data-Fetching for a single ID</h1>
+{/* // $$$ --->>>>  ====>>>  for showing All Filtered data  */}
+<h1> Filtering the Data</h1>
+<input type="text" value={search} onChange={(e) => setSearch(e.target.value)}/>
+       {filteredData.map((post) =>(
+        <div key={post.id}>
             <h2>{post.title}</h2>
             <p>{post.body}</p>
+
+        </div>
+       ))}
+
+
+{/* // $$$ --->>>>  ====>>>  only for one data  */}
+       {/* <h1> Data-Fetching for a single ID</h1>
+            <h2>{post.title}</h2>
+            <p>{post.body}</p> */}
 {/* <button onClick={() => setId((prev) => prev + 1)}>click - {id}</button> */}
 
 {/* OR  You can also use this */}
 
-<input type="text" value={id} onChange={(e) => setId(e.target.value)}/>
-<button onClick={() => setBtnId(id)}>Change</button>
+{/* <input type="text" value={id} onChange={(e) => setId(e.target.value)}/>
+<button onClick={() => setBtnId(id)}>Change</button> */}
 
 
 
