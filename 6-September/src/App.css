@@ -1,4 +1,37 @@
+/* CSS properties in class  */
 
+.delete {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  font-size: 1rem;
+  margin: 4px;
+  border-radius: 3px;
+  outline: 0;
+}
+
+.save {
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 4px;
+  border-radius: 3px;
+  outline: 0;
+}
+
+.class{
+  background-color: aquamarine;
+  color: hotpink;
+}
+
+h2{
+  background-color: cadetblue;
+  color: gold;
+  border: 2px dashed red;
+  border-radius: 13px;
+  text-align: center;
+}
 
 .state{
   margin-top: 20px;
