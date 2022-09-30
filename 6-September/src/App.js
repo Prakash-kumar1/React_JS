@@ -1,18 +1,27 @@
 // import logo from './logo.svg';
+
 import './App.css';
 import {Toggle} from './components/Toggle.js'
 // inside curly braces toggle represents class
 
+import Button from './components/Button';
 import Prop from './Prop';
 import State from './State';
-
-
+import Profile from "./Profile";
+import Func from "./Func";
 
 
 function App() {
   return (
     <section>
+
       <Toggle name="Present in props , console" />
+
+      <Button text="Delete" class="delete" />
+      <Button text="Save" class="save" />
+
+      <Profile />
+      <Func text = "Functional Component example"/>
 
 
 <Prop 
