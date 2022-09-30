@@ -85,7 +85,7 @@ export function DataFetch() {
     // // .then((response) => console.log(response)) 
     // .then((response) => {
     //     console.log(response.data) ;
-    //     setPost([...response.data]) ;
+    //     setPosts([...response.data]) ;
 
     // }) ;
 
