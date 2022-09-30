@@ -1,9 +1,10 @@
 import './App.css';
 import React ,{ useState } from 'react';
 
-import { DataFetch } from './components/DataFetch';
+// import { DataFetch } from './components/DataFetch';
 // import { UseRef } from './components/UseRef';
 // import { RefExample } from './components/RefExample';
+// import { ReactTest } from './components/ReactTest';
 // import Check from './components/Check';
 // import UseCustomHook from './components/UseCustomHook';
 // import { Define } from './components/Define';
@@ -14,7 +15,7 @@ import { DataFetch } from './components/DataFetch';
 // import { TitleChangeHooks } from './components/TitleChangeHooks';
 // import { UseState } from './components/UseState';
 // import { UseEffect } from './components/UseEffect';
-// import { ToDoApp } from './components/ToDoApp';
+import { ToDoApp } from './components/ToDoApp';
 
 
 // import { ComponentA } from './components/ComponentA';
@@ -50,9 +51,10 @@ export function App(){
   <UseState />
   <UseRef />
   < RefExample /> 
-  <ToDoApp />
+  < DataFetch />
+  <ReactTest />
 <Check />    */}
-< DataFetch />
+<ToDoApp />
 
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
