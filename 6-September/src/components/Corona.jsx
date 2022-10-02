@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import './Covid.css';
 
-
 export function Corona() {
     const [data, setData] = useState([]);
     const [theme, setTheme] = useState('dark-mode');
@@ -69,3 +68,4 @@ export function Corona() {
         </>
     )
 }
+
