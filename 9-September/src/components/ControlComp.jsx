@@ -32,11 +32,11 @@ export default class ControlComp extends Component {
    }
 
    handleName = (e) => {
-    this.setState({name : e.target.value}) ;
+    this.setState({name : e.target.value.toUpperCase()}) ;
    }
 
    handlePassword = (e) => {
-    this.setState({pwd : e.target.value}) ;
+    this.setState({pwd : e.target.value.substr(0 , 4)}) ;
    }
 
    handleCity = (e) => {
