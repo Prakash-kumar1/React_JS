@@ -48,12 +48,26 @@ const intialState = {
 };
 
 const reducer = (state , action) => {
-    switch(action) {
+    // switch(action) {
+    //     case 'increment' :
+    //         return {...state , value : state.value + 1} ;
+
+    //     case 'decrement' :
+    //         return {...state , value : state.value - 1} ;
+
+    //     case 'reset' :
+    //         return intialState ;
+
+    //     default :
+    //         return state ;
+    // }
+    
+    switch(action.type) {
         case 'increment' :
-            return {...state , value : state.value + 1} ;
+            return {...state , value : state.value + action.value} ;
 
         case 'decrement' :
-            return state - 2 ;
+            return {...state , value : state.value - action.value} ;
 
         case 'reset' :
             return intialState ;
@@ -65,18 +79,25 @@ const reducer = (state , action) => {
 
 
 export function ReducerCounter(){
-    const [countObj , dispatch] = useReducer(reducer , intialState.value)
+    const [countObj , dispatch] = useReducer(reducer , intialState)
 
     return ( 
         <>
 
-        <h1>Count = {countObj}</h1>
+        <h1>Count = {countObj.value}</h1>
         <button onClick={() => dispatch("increment")}>Add</button>
         <button onClick={() => dispatch("decrement")}>Subtract</button>
         <button onClick={() => dispatch("reset")}>reset</button>
         
+        <button onClick={() => dispatch({ type : "increment" , value : 5})}>Increment By 5</button>
+        <button onClick={() => dispatch({ type : "increment" , value : 3})}>Increment By 3</button>
+        <button onClick={() => dispatch({ type : "decrement" , value : 5})}>decrement By 5</button>
+        <button onClick={() => dispatch({ type : "decrement" , value : 3})}>decrement By 3</button>
+        <button onClick={() => dispatch({ type : "reset"})}>Reset</button>
+        
+        
         </>
-    )
+    ) ;
 }
 
 
