@@ -15,7 +15,7 @@ import React ,{ useState } from 'react';
 // import { TitleChangeHooks } from './components/TitleChangeHooks';
 // import { UseState } from './components/UseState';
 // import { UseEffect } from './components/UseEffect';
-import { ToDoApp } from './components/ToDoApp';
+// import { ToDoApp } from './components/ToDoApp';
 
 
 // import { ComponentA } from './components/ComponentA';
@@ -53,8 +53,8 @@ export function App(){
   < RefExample /> 
   < DataFetch />
   <ReactTest />
-<Check />    */}
 <ToDoApp />
+<Check />    */}
 
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
