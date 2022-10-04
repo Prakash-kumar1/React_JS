@@ -1,7 +1,10 @@
 import React, {useReducer} from "react";
 // // useReducer is also used to store and handle state data
 // // useState  is built  on  useReducer .
+//  Whenever you are dealing with Number , Boolean , String always use ==>> " useState "
+//  In case of  Array  and  Objects  use  ==>>  " useReducer "
  
+
 
 // const intialState = 0 ;
 // const reducer = (state , action) => {
@@ -39,7 +42,7 @@ import React, {useReducer} from "react";
 
 
 
-// ##########===>>  In Case of  Objects  <<==##########
+// ##########===>>  In Case of  Objects and Arrays <<==##########
 
 
 
