@@ -61,6 +61,7 @@ const reducer = (state , action) => {
     //     default :
     //         return state ;
     // }
+
     
     switch(action.type) {
         case 'increment' :
