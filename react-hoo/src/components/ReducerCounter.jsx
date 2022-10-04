@@ -45,6 +45,7 @@ import React, {useReducer} from "react";
 
 const intialState = {
     value : 0 ,
+    name : "Ankit" ,
 };
 
 const reducer = (state , action) => {
@@ -62,16 +63,19 @@ const reducer = (state , action) => {
     //         return state ;
     // }
 
-    
+
     switch(action.type) {
-        case 'increment' :
+        case 'INCREMENT' :
             return {...state , value : state.value + action.value} ;
 
-        case 'decrement' :
+        case 'DECREMENT' :
             return {...state , value : state.value - action.value} ;
 
-        case 'reset' :
+        case 'RESET' :
             return intialState ;
+
+        case 'UPDATE' :
+            return {...state , name : action.value} ;
 
         default :
             return state ;
@@ -86,15 +90,16 @@ export function ReducerCounter(){
         <>
 
         <h1>Count = {countObj.value}</h1>
+        <h1>Name = {countObj.name}</h1>
         <button onClick={() => dispatch("increment")}>Add</button>
         <button onClick={() => dispatch("decrement")}>Subtract</button>
         <button onClick={() => dispatch("reset")}>reset</button>
         
-        <button onClick={() => dispatch({ type : "increment" , value : 5})}>Increment By 5</button>
-        <button onClick={() => dispatch({ type : "increment" , value : 3})}>Increment By 3</button>
-        <button onClick={() => dispatch({ type : "decrement" , value : 5})}>decrement By 5</button>
-        <button onClick={() => dispatch({ type : "decrement" , value : 3})}>decrement By 3</button>
-        <button onClick={() => dispatch({ type : "reset"})}>Reset</button>
+        <button onClick={() => dispatch({ type : "INCREMENT" , value : 5})}>Increment By 5</button>
+        <button onClick={() => dispatch({ type : "INCREMENT" , value : 3})}>Increment By 3</button>
+        <button onClick={() => dispatch({ type : "DECREMENT" , value : 5})}>decrement By 5</button>
+        <button onClick={() => dispatch({ type : "DECREMENT" , value : 3})}>decrement By 3</button>
+        <button onClick={() => dispatch({ type : "RESET"})}>Reset</button>
         
         
         </>
