@@ -100,6 +100,7 @@ export function ReducerCounter(){
         <button onClick={() => dispatch({ type : "DECREMENT" , value : 5})}>decrement By 5</button>
         <button onClick={() => dispatch({ type : "DECREMENT" , value : 3})}>decrement By 3</button>
         <button onClick={() => dispatch({ type : "RESET"})}>Reset</button>
+        <button onClick={() => dispatch({ type : "UPDATE" , value : "Prakash Kumar"})}>Change Name</button>
         
         
         </>
