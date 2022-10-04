@@ -1,7 +1,7 @@
 import './App.css';
 import React ,{ useState } from 'react';
-import { ReducerCounter } from './components/ReducerCounter';
 
+import { ReducerCounter } from './components/ReducerCounter';
 // import { DataFetch } from './components/DataFetch';
 // import { UseRef } from './components/UseRef';
 // import { RefExample } from './components/RefExample';
