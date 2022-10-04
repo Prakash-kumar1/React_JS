@@ -27,7 +27,7 @@ export function ReducerCounter(){
     return ( 
         <>
 
-        <h1>Count - {count}</h1>
+        <h1>Count = {count}</h1>
         <button onClick={() => dispatch("increment")}>Add</button>
         <button onClick={() => dispatch("decrement")}>Subtract</button>
         <button onClick={() => dispatch("reset")}>reset</button>
