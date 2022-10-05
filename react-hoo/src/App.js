@@ -1,7 +1,7 @@
 import './App.css';
 import React ,{ useState } from 'react';
-import { DocTitleOne } from './components/DocTitleOne';
-
+import { CounterOne } from './components/CounterOne';
+// import { DocTitleOne } from './components/DocTitleOne';
 // import { MemoCounter } from './components/MemoCounter';
 // import { ReducerCounter } from './components/ReducerCounter';
 // import { DataFetch } from './components/DataFetch';
@@ -59,8 +59,12 @@ export function App(){
 <ToDoApp />
 < ReducerCounter />
 <MemoCounter />
-<Check />    */}
 <DocTitleOne />
+<Check />    */}
+<CounterOne />
+
+
+
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
