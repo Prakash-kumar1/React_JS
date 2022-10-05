@@ -1,7 +1,9 @@
 // ######### =>  04-October Session   ######### =>
 
 import React, {useState} from "react";
-import { useUpdateTitle } from "./hooks/useUpdateTitle";
+import { useUpdateTitle } from "../components/hooks/useUpdateTitle";
+//  OR  You can also write this way
+// import { useUpdateTitle } from "./hooks/useUpdateTitle";
 
 
 export function DocTitleOne() {
