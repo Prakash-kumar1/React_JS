@@ -1,7 +1,7 @@
 import './App.css';
 import React ,{ useState } from 'react';
 
-import { MemoCounter } from './components/MemoCounter';
+// import { MemoCounter } from './components/MemoCounter';
 // import { ReducerCounter } from './components/ReducerCounter';
 // import { DataFetch } from './components/DataFetch';
 // import { UseRef } from './components/UseRef';
