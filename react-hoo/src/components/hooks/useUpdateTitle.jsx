@@ -7,3 +7,4 @@ export function useUpdateTitle(count) {
         document.title = `Count - ${count}`
     }, [count]) ;
 }
+
