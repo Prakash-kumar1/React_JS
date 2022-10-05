@@ -1,5 +1,6 @@
 import './App.css';
 import React ,{ useState } from 'react';
+import { DocTitleOne } from './components/DocTitleOne';
 
 // import { MemoCounter } from './components/MemoCounter';
 // import { ReducerCounter } from './components/ReducerCounter';
@@ -8,7 +9,7 @@ import React ,{ useState } from 'react';
 // import { RefExample } from './components/RefExample';
 // import { ReactTest } from './components/ReactTest';
 // import Check from './components/Check';
-import UseCustomHook from './components/UseCustomHook';
+// import UseCustomHook from './components/UseCustomHook';
 // import { Define } from './components/Define';
 // import { CounterHooks } from './components/CounterHooks';
 // import { StateWithObj } from './components/StateWithObj';
@@ -28,7 +29,7 @@ import UseCustomHook from './components/UseCustomHook';
 
 export function App(){
 //   // For our custom hooks
-  const data =  UseCustomHook() ;
+  // const data =  UseCustomHook() ;
 
 // // For Check.jsx which keep increaseing on a certain  Time - Interval 
 //          const [valid , setValid]  =  useState(0) ;
@@ -59,15 +60,16 @@ export function App(){
 < ReducerCounter />
 <MemoCounter />
 <Check />    */}
+<DocTitleOne />
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
   <button onClick={() => setValid((prev) => prev+1)}>click = {valid}</button> */}
 
 
-{/* // For our custom hooks */}
-  <h3>count Up : {data.count}</h3>
-  <button type="button" onClick={data.handleIncrement}>addBy5</button>
+{/* //###$$$%%%^^^&&&**** =>>   For our custom hooks   ###$$$%%%^^^&&&**** =>>*/}
+  {/* <h3>count Up : {data.count}</h3>
+  <button type="button" onClick={data.handleIncrement}>addBy5</button> */}
 
 {/* ####-=-=-=->>>>  Use- Context Method   ####-=-=-=->>>>*/}
 {/* < ComponentA name={name}/> */}
