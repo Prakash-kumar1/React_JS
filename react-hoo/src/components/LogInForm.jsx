@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function LogInForm() {
+export function LogInForm() {
     const [user , setUser] = useState("") ;
     const [userErr , setUserErr] = useState(false) ;
     const [password , setPassword] = useState("") ;
