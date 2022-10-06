@@ -31,6 +31,11 @@ export function LogInForm() {
 
 
     function loginHandler(e) {
+        if(user.length < 7 || password.length < 4){
+            alert("Invalid Data")
+        }else{
+            alert("All Good")
+        }
         e.preventDefault()
     }
     
