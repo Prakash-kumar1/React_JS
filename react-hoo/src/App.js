@@ -2,7 +2,7 @@ import './App.css';
 import React ,{ useState } from 'react';
 
 
-import { CounterOne } from './components/CounterOne';
+// import { CounterOne } from './components/CounterOne';
 // import { DocTitleOne } from './components/DocTitleOne';
 // import { MemoCounter } from './components/MemoCounter';
 // import { ReducerCounter } from './components/ReducerCounter';
@@ -21,6 +21,7 @@ import { CounterOne } from './components/CounterOne';
 // import { UseState } from './components/UseState';
 // import { UseEffect } from './components/UseEffect';
 // import { ToDoApp } from './components/ToDoApp';
+import { LogInForm } from './components/LogInForm';
 
 
 // import { ComponentA } from './components/ComponentA';
@@ -62,9 +63,9 @@ export function App(){
 < ReducerCounter />
 <MemoCounter />
 <DocTitleOne />
-<Check />    */}
 <CounterOne />
-
+<Check />    */}
+<LogInForm />
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
