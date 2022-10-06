@@ -21,7 +21,7 @@ import React ,{ useState } from 'react';
 // import { UseState } from './components/UseState';
 // import { UseEffect } from './components/UseEffect';
 // import { ToDoApp } from './components/ToDoApp';
-import { LogInForm } from './components/LogInForm';
+// import { LogInForm } from './components/LogInForm';
 
 
 // import { ComponentA } from './components/ComponentA';
@@ -46,26 +46,26 @@ export function App(){
 
   return (
 
- <>
-  {/* <Define />
-  <CounterHooks />
-  <StateWithObj />
-  <StateWithArr />
-  <TitleChangeClass />
-  <TitleChangeHooks />
-  <UseEffect />
-  <UseState />
+    <>
+    {/* <Define />
   <UseRef />
   < RefExample /> 
   < DataFetch />
   <ReactTest />
-<ToDoApp />
-< ReducerCounter />
-<MemoCounter />
-<DocTitleOne />
-<CounterOne />
+  <ToDoApp />
+  < ReducerCounter />
+  <MemoCounter />
+  <DocTitleOne />
+  <UseState />
+  <CounterOne />
+  <LogInForm />
+  <UseEffect />
+  <CounterHooks />
+  <StateWithArr />
+<StateWithObj />
+<TitleChangeClass />
+  <TitleChangeHooks />
 <Check />    */}
-<LogInForm />
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
