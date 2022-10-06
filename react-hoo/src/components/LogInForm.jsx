@@ -9,11 +9,24 @@ export function LogInForm() {
     function userHandler(e) {
         let item = e.target.value ;
 
-        if(item.length < 4){
+        if(item.length < 7){
             setUserErr(true)
         } else {
             setUserErr(false)
         }
+        setUser(item)
+    }
+
+
+    function passwordHandler(e) {
+        let item = e.target.value ;
+
+        if(item.length < 4){
+            setPasswordErr(true)
+        } else {
+            setPasswordErr(false)
+        }
+        setPassword(item)
     }
 
 
@@ -25,8 +38,10 @@ export function LogInForm() {
         <div>
             <h1>Log In Form</h1>
             <form onSubmit={loginHandler}>
-                <input type="text" placeholder="Username" onChange={userHandler}/> 
-                <input type="password" placeholder="Enter User Password"/> 
+                <input type="text" placeholder="Username" onChange={userHandler}/>
+               { userErr ? <span>Invalid Data</span> : null} <br /><br />
+                <input type="password" placeholder="Enter User Password"  onChange={passwordHandler}/> <br /><br /> 
+                { passwordErr ? <span>Invalid Password</span> : null} <br /><br />
                 <button type="submit">Log In</button>
             </form>
         </div>
