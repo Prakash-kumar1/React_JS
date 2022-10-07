@@ -66,7 +66,7 @@ export function UseState() {
     const addNames = (e) => {
         e.preventDefault() ;
         setNames([ ...names , { id : names.length , name} ])
-        setName(" ") ;
+        setName(" ") ;       //It will make input box empty again for new values
     }
 
 
