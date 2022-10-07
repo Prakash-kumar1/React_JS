@@ -7,7 +7,7 @@ import React ,{ useState } from 'react';
 // import { MemoCounter } from './components/MemoCounter';
 // import { ReducerCounter } from './components/ReducerCounter';
 // import { DataFetch } from './components/DataFetch';
-// import { UseRef } from './components/UseRef';
+import { UseRef } from './components/UseRef';
 // import { RefExample } from './components/RefExample';
 // import { ReactTest } from './components/ReactTest';
 // import Check from './components/Check';
@@ -48,7 +48,6 @@ export function App(){
 
     <>
     {/* <Define />
-  <UseRef />
   < RefExample /> 
   < DataFetch />
   <ReactTest />
@@ -62,10 +61,11 @@ export function App(){
   <UseEffect />
   <CounterHooks />
   <StateWithArr />
-<StateWithObj />
-<TitleChangeClass />
+  <StateWithObj />
+  <TitleChangeClass />
   <TitleChangeHooks />
 <Check />    */}
+<UseRef />
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
