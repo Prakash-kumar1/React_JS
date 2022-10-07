@@ -4,8 +4,8 @@ import React ,{ useState } from 'react';
 
 // import { CounterOne } from './components/CounterOne';
 // import { DocTitleOne } from './components/DocTitleOne';
-import { MemoCounter } from './components/MemoCounter';
-// import { ReducerCounter } from './components/ReducerCounter';
+// import { MemoCounter } from './components/MemoCounter';
+import { ReducerCounter } from './components/ReducerCounter';
 // import { DataFetch } from './components/DataFetch';
 // import { UseRef } from './components/UseRef';
 // import { RefExample } from './components/RefExample';
@@ -24,10 +24,10 @@ import { MemoCounter } from './components/MemoCounter';
 // import { LogInForm } from './components/LogInForm';
 
 
-// import { ComponentA } from './components/ComponentA';
-// export const AgeContext = React.createContext() ;
-// export const PlaceContext = React.createContext() ;
-// export const FoodContext = React.createContext() ;
+import { ComponentA } from './components/ComponentA';
+export const AgeContext = React.createContext() ;
+export const PlaceContext = React.createContext() ;
+export const FoodContext = React.createContext() ;
 
 
 export function App(){
@@ -37,11 +37,11 @@ export function App(){
 // // For Check.jsx which keep increaseing on a certain  Time - Interval 
       //  const [valid , setValid]  =  useState(0) ;
 
-// // Passing Props in component C 
-// const [name , setName]  =  useState("Prakash ") ;
-// const [age , setAge]  =  useState("23 ") ;
-// const [place , setPlace]  =  useState("Uttar Pradesh ") ;
-// const [food , setFood]  =  useState("Dosa , Chicken Biryani ") ;
+// Passing Props in component C 
+const [name , setName]  =  useState("Prakash ") ;
+const [age , setAge]  =  useState("23 ") ;
+const [place , setPlace]  =  useState("Uttar Pradesh ") ;
+const [food , setFood]  =  useState("Dosa , Chicken Biryani ") ;
 
 
   return (
@@ -52,7 +52,6 @@ export function App(){
   < DataFetch />
   <ReactTest />
   <ToDoApp />
-  < ReducerCounter />
   <DocTitleOne />
   <UseState />
   <CounterOne />
@@ -63,9 +62,10 @@ export function App(){
   <StateWithObj />
   <TitleChangeClass />
   <TitleChangeHooks />
-<UseRef />
-<Check />    */}
+  <UseRef />
   <MemoCounter />
+<Check />    */}
+< ReducerCounter />
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
@@ -76,18 +76,21 @@ export function App(){
   {/* <h3>count Up : {data.count}</h3>
   <button type="button" onClick={data.handleIncrement}>addBy5</button> */}
 
+
 {/* ####-=-=-=->>>>  Use- Context Method   ####-=-=-=->>>>*/}
-{/* < ComponentA name={name}/> */}
+
+< ComponentA name={name}/>
+
 {/* if i want to pass in Component-C , first pass in Component-A , then in Component-B and at last In Component-C
 This is a Lengthy Process also not good practice  */}
 
-{/* <AgeContext.Provider value={age}>
+<AgeContext.Provider value={age}>
 <PlaceContext.Provider value={place}>
 <FoodContext.Provider value={food}>
 < ComponentA />
 </FoodContext.Provider>
 </PlaceContext.Provider>
-</AgeContext.Provider> */}
+</AgeContext.Provider>
 
   </>
 
