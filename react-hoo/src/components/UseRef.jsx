@@ -38,20 +38,22 @@ useEffect(() => {
 
 
     return (
-        <div>
+        <>
             <h1> use-Ref in React-JS  </h1>
             <input type="text"  ref={inputRef} />
             <button onClick={handleInput}>UseRef Click</button>
            
            <div>
+
             <h1>Random Counter : {counter}</h1>
             {typeof previousCounterRef.current !== "undefined" && (
-            <h2>Previous Counter</h2>)}
+            <h2>Previous Counter : {previousCounterRef.current}</h2>)}
 
-
+            <button onClick={(e) => setCounter(Math.ceil(Math.random() * 100))} >Generate Number</button>
 
            </div>
-        </div>
+
+        </>
     ) ;
 }
 
