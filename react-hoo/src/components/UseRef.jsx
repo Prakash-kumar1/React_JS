@@ -43,6 +43,14 @@ useEffect(() => {
             <input type="text"  ref={inputRef} />
             <button onClick={handleInput}>UseRef Click</button>
            
+           <div>
+            <h1>Random Counter : {counter}</h1>
+            {typeof previousCounterRef.current !== "undefined" && (
+            <h2>Previous Counter</h2>)}
+
+
+
+           </div>
         </div>
     ) ;
 }
