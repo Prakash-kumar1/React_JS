@@ -1,8 +1,14 @@
 // ########  03- October sessions ########
+// Definition ==>>  useMemo hook memoize the function , which  do heavy  Operations . it optimize  Expensive  Operations .
+//                    if there is two Functions , in one function if we do heavy operations (like line no - 26)  then  IInd functions 
+//                   also face some problem in rendering . For removing problem for IInd Function we use ==> " useMemo "
+
 
 import React, {useState , useMemo} from 'react'
 
 export  function MemoCounter() {
+
+// ##@@ Example - 1   Craeting  Two  Counter  
     const [counterOne , setCounterOne] = useState(0)
     const [counterTwo , setCounterTwo] = useState(0)
 
