@@ -18,6 +18,10 @@ export function UseRef() {
         // inputRef.current.style.display = "none" ;
     }
 
+    
+//########%%%%&&&&&&&&===>>>   Creating  a  Random  Counter    ########%%%%&&&&&&&&===>>>
+
+
 const [name , setName] = useState("") ;
 const [counter , setCounter] = useState(0) ;
 const inputEl =  useRef("") ;
@@ -49,7 +53,7 @@ useEffect(() => {
             {typeof previousCounterRef.current !== "undefined" && (
             <h2>Previous Counter : {previousCounterRef.current}</h2>)}
 
-            <button onClick={(e) => setCounter(Math.ceil(Math.random() * 100))} >Generate Number</button>
+            <button onClick={() => setCounter(Math.ceil(Math.random() * 100))} >Generate Number</button>
 
            </div>
 
