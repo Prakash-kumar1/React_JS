@@ -2,12 +2,11 @@
 //                               " useRef " creates a mutable variable which will not re-Render the components .
 
 
-import React , {useRef} from "react";
+import React , {useState, useRef, useEffect} from "react";
 
 export function UseRef() {
 
     let inputRef = useRef(null)
-
 
     function handleInput() {
         console.log("function called") ;
@@ -15,12 +14,27 @@ export function UseRef() {
 
         // inputRef.current.value = "1000" ;
         // inputRef.current.focus()  ;
-        // inputRef.current.style.color = "red" ;
-        inputRef.current.style.display = "none" ;
-
-
+        inputRef.current.style.color = "red" ;
+        // inputRef.current.style.display = "none" ;
     }
 
+const [name , setName] = useState("") ;
+const [counter , setCounter] = useState(0) ;
+const inputEl =  useRef("") ;
+const previousCounterRef =  useRef("") ;
+console.log(inputEl) ;
+
+
+const resetInput = () => {
+    setName("") ;
+    inputEl.current.focus()  ;
+    console.log(inputEl.current.value)
+    inputEl.current.value = "Govind" ;
+} ;
+
+useEffect(() => {
+    previousCounterRef.current = counter ;
+}, [counter]) ;
 
 
     return (
