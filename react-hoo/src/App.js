@@ -4,10 +4,10 @@ import React ,{ useState } from 'react';
 
 // import { CounterOne } from './components/CounterOne';
 // import { DocTitleOne } from './components/DocTitleOne';
-// import { MemoCounter } from './components/MemoCounter';
+import { MemoCounter } from './components/MemoCounter';
 // import { ReducerCounter } from './components/ReducerCounter';
 // import { DataFetch } from './components/DataFetch';
-import { UseRef } from './components/UseRef';
+// import { UseRef } from './components/UseRef';
 // import { RefExample } from './components/RefExample';
 // import { ReactTest } from './components/ReactTest';
 // import Check from './components/Check';
@@ -53,7 +53,6 @@ export function App(){
   <ReactTest />
   <ToDoApp />
   < ReducerCounter />
-  <MemoCounter />
   <DocTitleOne />
   <UseState />
   <CounterOne />
@@ -64,8 +63,9 @@ export function App(){
   <StateWithObj />
   <TitleChangeClass />
   <TitleChangeHooks />
-<Check />    */}
 <UseRef />
+<Check />    */}
+  <MemoCounter />
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
