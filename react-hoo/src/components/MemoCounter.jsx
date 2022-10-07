@@ -16,7 +16,7 @@ export  function MemoCounter() {
 const [counter , setCounter] = useState(1) ;
 const result = useMemo(() => {
     return factorial(counter) ;
-})
+}, [counter])
 const [name , setName] = useState(" ") ;
 
 
@@ -39,20 +39,6 @@ const isEven = useMemo(() => {
 
 
 
-function factorial(n) {
-    let i = 0 ;
-    while(i < 1000000000) i++ ;
-    if(n<0) {
-        return -1 ;
-    }
-    if(n == 0) {
-        return 1 ;
-    }
-
-    return  n *  factorial(n - 1) ;
-}
-
-
   return (
     <>
     <div>
@@ -64,6 +50,7 @@ function factorial(n) {
     <button onClick={incrementTwo} >counterTwo = {counterTwo}</button> 
     </div>
 
+  <br /><br /> <hr /> <hr /> <hr /> <hr />
 
     {/* // ##@@ Example - 2   Craeting  one Factorial and  Input  Functions  */}
 
@@ -82,5 +69,18 @@ function factorial(n) {
 
     </>
   ) ;
+}
+
+function factorial(n) {
+    let i = 0 ;
+    while(i < 1000000000) i++ ;
+    if(n<0) {
+        return -1 ;
+    }
+    if(n == 0) {
+        return 1 ;
+    }
+
+    return  n *  factorial(n - 1) ;
 }
 
