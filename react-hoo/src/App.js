@@ -64,8 +64,8 @@ const [food , setFood]  =  useState("Dosa , Chicken Biryani ") ;
   <TitleChangeHooks />
   <UseRef />
   <MemoCounter />
-<Check />    */}
 < ReducerCounter />
+<Check />    */}
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
