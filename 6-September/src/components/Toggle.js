@@ -30,7 +30,7 @@ export class Toggle extends Component {
       //     }
       //   >
       <button onClick={this.handleClick}>
-        {this.state.isToggleOn ? "ON" : "OFF"}
+       {this.state.isToggleOn ? "ON" : "OFF"}
       </button>
     );
   }
