@@ -7,7 +7,7 @@ import './App.css';
 import { WelcomeClass } from './components/WelcomeClass';
 
 // // importing welcome function from components
-import {WelcomeFn} from "./components/WelcomeFn" ;
+import { WelcomeFn } from "./components/WelcomeFn" ;
 
 let name = "kumar-(Frontend Engineer)" ;          //Always declaring above 
 
@@ -49,10 +49,10 @@ export function App() {
       <WelcomeFn/>
 
 {/* each one of will come 3 times because we copy App 3 times */}
-      <WelcomeClass name="Sameer" age= "20" place="Madhya pradesh" food="Chicken" />
+      <WelcomeClass name="Sameer" age= "20" place="Madhya pradesh" food=" " />
       <WelcomeClass name="Anjali" age= "23" place="Noida" food="Dosa"/>
       <WelcomeClass name="Prakash" age= "22" place=" " food="mutton" />
-      <WelcomeClass name="Govind" age= "21" place="Luckhnow" food=" "/>
+      <WelcomeClass name="Govind" age= "21" place="Luckhnow" food="Chicken"/>
       
     </section>
     </>
