@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "../App.css"
 
 export default class ControlComp extends Component {
     constructor(props){
@@ -18,9 +19,9 @@ export default class ControlComp extends Component {
         console.log(e.target.value) ;
         this.setState({value : e.target.value}) ;
 // if we want data in capital letter , no matter user write in small letter but we want data in capital letter
-        this.setState({value : e.target.value.toUpperCase()}) ;
+        // this.setState({value : e.target.value.toUpperCase()}) ;
 // if we want to fixed number of characters  
-        this.setState({value : e.target.value.toUpperCase().substr(0 , 7)}) ;   //Now , only 6 character prints
+        // this.setState({value : e.target.value.toUpperCase().substr(0 , 7)}) ;   //Now , only 6 character prints
     } ;
 
 
@@ -35,8 +36,8 @@ export default class ControlComp extends Component {
     this.setState({name : e.target.value.toUpperCase()}) ;
    }
 
-   handlePassword = (e) => {
-    this.setState({pwd : e.target.value.substr(0 , 4)}) ;
+   govindPassword = (e) => {
+    this.setState({pwd : e.target.value.substr(0 , 5)}) ;
    }
 
    handleCity = (e) => {
@@ -58,7 +59,7 @@ export default class ControlComp extends Component {
   render() {
     return (
       <div className='contain'>
- <input type="text" value={this.state.value} onChange={this.handleChange} /> <br />
+ <input type="text" id='input' value={this.state.value} onChange={this.handleChange} /> <br />
 
 {/* onSubmit  always use above with form */}
 
@@ -70,7 +71,7 @@ export default class ControlComp extends Component {
             <input type="text" value={this.state.name} onChange={this.handleName}/> <br /> <br />
 
             <label>Password :</label> <br />
-            <input type="text"  value={this.state.pwd} onChange={this.handlePassword}/> <br /><br />
+            <input type="text"  value={this.state.pwd} onChange={this.govindPassword}/> <br /><br />
 
             <label> Choose your City:</label><br />
             <input type="text"  value={this.state.city} onChange={this.handleCity}/> <br /><br />
