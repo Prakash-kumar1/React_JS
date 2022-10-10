@@ -79,7 +79,7 @@ const [food , setFood]  =  useState("Dosa , Chicken Biryani ") ;
 
 {/* ####-=-=-=->>>>  Use- Context Method   ####-=-=-=->>>>*/}
 
-{/* < ComponentA name={name}/> */}
+< ComponentA name={name}/>
 
 {/* if i want to pass in Component-C , first pass in Component-A , then in Component-B and at last In Component-C
 This is a Lengthy Process also not good practice  */}
