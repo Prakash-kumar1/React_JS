@@ -28,17 +28,22 @@ const Navbar = () => {
             
             <li><NavLink to="/Blog"  style={({isActive}) => {
                 return {
-                    backgroundColor : isActive ? 'red' : 'magenta'
+                    // backgroundColor : isActive ? 'red' : 'magenta'
+                    backgroundColor : isActive ? 'red' : ' '
                 }
             }}>Blog-3 </NavLink></li>
+
             <li><NavLink to="/Connect" style={({isActive}) => {
                 return {
-                    backgroundColor : isActive ? 'green' : 'blue'
+                    // backgroundColor : isActive ? 'green' : 'blue'
+                    backgroundColor : isActive ? 'red' : ' '
                 }
             }}>Connect-3 </NavLink></li>
+
             <li><NavLink to="/Service"  style={({isActive}) => {
                 return {
-                    backgroundColor : isActive ? 'black' : 'gold'
+                    // backgroundColor : isActive ? 'black' : 'gold'
+                    backgroundColor : isActive ? 'red' : ' '
                 }
             }}>Service-3 </NavLink></li>
 
