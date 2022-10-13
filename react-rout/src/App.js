@@ -21,6 +21,9 @@ export function App(){
       <Route  path = '/Service'  element  =  {<Service />} />
       <Route  path = '/Connect'  element  =  {<Connect />} />
 
+{/* For showing Error Page */}
+<Route  path = '*'  element  =  {<h1> Error 404 Page not Found !!</h1>}/>
+
     </Routes>
 
 </>
