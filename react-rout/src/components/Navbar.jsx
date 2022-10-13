@@ -4,18 +4,23 @@ const Navbar = () => {
     return(
         <>
         <ul>
-            {/* <li> <a href="/"></a>Home </li>
-            <li> <a href="/about"></a> about</li>
-            <li> <a href="/contact"></a> contact</li> */}
-            {/* <li><a href="/Blog"></a>Blog</li>
-            <li><a href="/Connect"></a>Connect</li>
-            <li><a href="/Service"></a>Service</li> */}
-            <li><Link to="/"></Link>Blog</li>
-            <li><Link to="/Connect"></Link>Connect</li>
-            <li><Link to="/Service"></Link>Service</li>
+            <li> <a href="/">Home</a> </li>
+            <li> <a href="/about"> about</a></li>
+            <li> <a href="/contact">contact</a> </li>
+            <li><a href="/Blog">Blog</a></li>
+            <li><a href="/Connect">Connect</a></li>
+            <li><a href="/Service">Service</a></li>
+        </ul>
+        <ul className='list'>
+            
+            <li><Link to="/Blog">Blog</Link></li>
+            <li><Link to="/Connect">Connect</Link></li>
+            <li><Link to="/Service">Service</Link></li>
+
         </ul>
         </>
     )
+
 } ;
 
 export default Navbar ;

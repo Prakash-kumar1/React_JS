@@ -8,6 +8,9 @@ import Navbar from './components/Navbar';
 export function App(){
 
   return (
+    <>
+    <Navbar />
+
     <Routes>
 
       <Route  path = '/'  element  =  {<div> I am Home Page , slash means by default </div>}/>
@@ -20,6 +23,7 @@ export function App(){
 
     </Routes>
 
+</>
   );
 
 }
