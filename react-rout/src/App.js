@@ -3,6 +3,7 @@ import './App.css';
 import Blog from './components/pages/Blog';
 import Service from './components/pages/Service';
 import Connect from './components/pages/Connect';
+import Navbar from './components/Navbar';
 
 export function App(){
 
