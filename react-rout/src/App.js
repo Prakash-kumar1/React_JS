@@ -21,7 +21,10 @@ export function App(){
       <Route  path = '/Blog'  element  =  {<Blog />} />
       <Route  path = '/Service'  element  =  {<Service />} />
       <Route  path = '/Connect'  element  =  {<Connect />} />
-      <Route  path = '/Post'  element  =  {<Post />} />
+
+      {/* <Route  path = '/Post'  element  =  {<Post />} /> */}
+{/* if we write anything after URL in post then it show Error , For removing this error we use */}
+      <Route  path = '/Post/:category'  element  =  {<Post />} />
 
 {/* For showing Error Page */}
 <Route  path = '*'  element  =  {<h1> <strong>Error 404 Page not Found !!</strong></h1>}/>
