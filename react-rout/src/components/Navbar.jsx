@@ -64,6 +64,8 @@ const Navbar = () => {
             }}>Post-with-ID </NavLink></li>
 
 
+{/* example of conditional Rendering */}
+
 <li><NavLink to="/Dashboard" style={({isActive}) => {
                 return {
                     backgroundColor : isActive ? 'green' : 'hotpink'
@@ -77,3 +79,4 @@ const Navbar = () => {
 } ;
 
 export default Navbar ;
+

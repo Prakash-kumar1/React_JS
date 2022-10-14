@@ -10,6 +10,9 @@ import Navbar from './components/Navbar';
 
 export function App(){
   let isLogged = false ;
+  let data = {
+    'st' : "This is like passing props , you can pass anything you want ."
+  }
 
   return (
     <>
@@ -28,7 +31,7 @@ export function App(){
 
 {/* Conditional Rendering Examples */}
     <Route  path = '/Login'  element  =  {<Login />} />
-    <Route  path = '/Dashboard'  element  =  {isLogged ? <Dashboard /> : <Navigate to="/Login" replace />} />
+    <Route  path = '/Dashboard'  element  =  {isLogged ? <Dashboard /> : <Navigate to="/Login" replace state={data}/>} />
 
 
 
