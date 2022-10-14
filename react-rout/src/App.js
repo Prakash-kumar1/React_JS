@@ -22,7 +22,7 @@ export function App(){
       <Route  path = '/Connect'  element  =  {<Connect />} />
 
 {/* For showing Error Page */}
-<Route  path = '*'  element  =  {<h1> Error 404 Page not Found !!</h1>}/>
+<Route  path = '*'  element  =  {<h1> <strong>Error 404 Page not Found !!</strong></h1>}/>
 
     </Routes>
 
