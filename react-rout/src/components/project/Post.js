@@ -2,7 +2,7 @@
 export const Post = () =>{
     return(
         <>
-        <h2>Post Page </h2>
+        <h2>Normal Post Page </h2>
         </>
     )
 } ;
