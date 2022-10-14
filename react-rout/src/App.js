@@ -62,6 +62,7 @@ export function App(){
 <Layout />
    <Routes>
 
+   <Route  path = '/'  element  =  {<Layout />} />
    </Routes>
 </>
 
