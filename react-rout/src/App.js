@@ -11,9 +11,9 @@ import './App.css';
 // import Navbar from './components/Navbar';
 
 
-import Post from './components/project/Post';
+import {Post} from './components/project/Post';
 import About from './components/project/About';
-import Contact from './components/project/Contact';
+import {Contact} from './components/project/Contact';
 import Home from './components/project/Home';
 import Layout from './components/Layout';
 
@@ -59,10 +59,16 @@ export function App(){
     </Routes>  */}
 
 
-<Layout />
+
    <Routes>
 
-   <Route  path = '/'  element  =  {<Layout />} />
+{/* For creating Nested Routes , don't use Self closed tag */}
+   <Route  path = '/'  element  =  {<Layout />} >
+
+   <Route  path = 'about'  element  =  {<About />} /> 
+   <Route  path = 'contact'  element  =  {<Contact />} /> 
+   
+   </Route>
    </Routes>
 </>
 

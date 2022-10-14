@@ -1,4 +1,4 @@
-import {NavLink} from 'react-router-dom';
+import {NavLink,Outlet} from 'react-router-dom';
 
 const Layout = () => {
     return(
@@ -35,7 +35,7 @@ const Layout = () => {
                 }
             }}>Posts </NavLink></li>
 
-
+<Outlet/>
 
 
         </ul>
