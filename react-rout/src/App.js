@@ -16,6 +16,7 @@ import About from './components/project/About';
 import {Contact} from './components/project/Contact';
 import Home from './components/project/Home';
 import Layout from './components/Layout';
+import PostLayout from './components/PostLayout';
 
 
 
