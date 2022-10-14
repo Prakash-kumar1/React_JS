@@ -1,8 +1,17 @@
 // For getting user's data
 import { useParams } from "react-router-dom";
 
+// Query Parameter :- When in URL we write "?" Question mark and after that we write something that is Query Parameter
+// For getting Query Parameter we use  
+
+import { useSearchParams } from "react-router-dom";
+
 const Post = () => {
     let {category,id} = useParams() 
+    let[searchParams , setSearchParams] = useSearchParams() 
+    console.log(searchParams)
+    console.log(searchParams.get('price')) ;
+    
     return(
         <>
         <h1>This is an example for error pages.</h1>
