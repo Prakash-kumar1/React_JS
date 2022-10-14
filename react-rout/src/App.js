@@ -10,7 +10,7 @@ import Post from './components/pages/Post';
 import Navbar from './components/Navbar';
 
 export function App(){
-  let isLogged = false ;
+  let isLogged = true ;
   let data = {
     'st' : "This is like passing props , you can pass anything you want ."
   }
