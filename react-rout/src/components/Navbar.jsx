@@ -5,14 +5,14 @@ const Navbar = () => {
         <>
 
 {/* In this case , Page Reloads  or  Refresh */}
-        {/* <ul>
+        <ul>
             <li> <a href="/">Home </a> </li>
             <li> <a href="/about"> about </a> </li>
             <li> <a href="/contact">contact </a> </li>
             <li> <a href="/Blog">Blog </a></li> 
             <li> <a href="/Connect">Connect </a> </li>
             <li> <a href="/Service">Service </a> </li>
-        </ul> */}
+        </ul>
 
 
 {/* For special styling , we use  NavLink tag */}
