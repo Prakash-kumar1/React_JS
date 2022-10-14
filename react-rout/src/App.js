@@ -1,12 +1,15 @@
-import { Routes , Route} from 'react-router-dom';
+import { Routes , Route, Navigate} from 'react-router-dom';
 import './App.css';
 import Blog from './components/pages/Blog';
 import Service from './components/pages/Service';
 import Connect from './components/pages/Connect';
+import Dashboard from './components/pages/Dashboard';
+import Login from './components/pages/Login';
 import Post from './components/pages/Post';
 import Navbar from './components/Navbar';
 
 export function App(){
+  let isLogged = false ;
 
   return (
     <>
@@ -22,6 +25,13 @@ export function App(){
       <Route  path = '/Service'  element  =  {<Service />} />
       <Route  path = '/Connect'  element  =  {<Connect />} />
 
+
+{/* Conditional Rendering Examples */}
+    <Route  path = '/Login'  element  =  {<Login />} />
+    <Route  path = '/Dashboard'  element  =  {isLogged ? <Dashboard /> : <Navigate to="/Login" replace />} />
+
+
+
       <Route  path = '/Post'  element  =  {<Post />} />
 {/* if we write anything after URL in post then it show Error , For removing this error we use */}
       <Route  path = '/Post/:category'  element  =  {<Post />} />
@@ -31,6 +41,7 @@ export function App(){
 <Route  path = '*'  element  =  {<h1> <strong>Error 404 Page not Found !!</strong></h1>}/>
 
     </Routes>
+
 
 </>
   );

@@ -63,6 +63,13 @@ const Navbar = () => {
                 }
             }}>Post-with-ID </NavLink></li>
 
+
+<li><NavLink to="/Dashboard" style={({isActive}) => {
+                return {
+                    backgroundColor : isActive ? 'green' : 'hotpink'
+                }
+            }}>Dashboard </NavLink></li>
+
         </ul>
         </>
     )
