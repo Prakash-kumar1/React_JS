@@ -1,7 +1,7 @@
 const Logout = () => {
     return(
         <>
-        <h1>You can connect with me on LinkedIn , Email , Twitter  and Instagram .</h1>
+        <h3>This is logout page . we are using useNavigate hook to come on this Page</h3>
         </>
     )
 } ;

@@ -5,6 +5,7 @@ import Service from './components/pages/Service';
 import Connect from './components/pages/Connect';
 import Dashboard from './components/pages/Dashboard';
 import Login from './components/pages/Login';
+import Logout from './components/pages/Logout';
 import Post from './components/pages/Post';
 import Navbar from './components/Navbar';
 
@@ -31,6 +32,7 @@ export function App(){
 
 {/* Conditional Rendering Examples */}
     <Route  path = '/Login'  element  =  {<Login />} />
+    <Route  path = '/Logout'  element  =  {<Logout />} />
     <Route  path = '/Dashboard'  element  =  {isLogged ? <Dashboard /> : <Navigate to="/Login" replace state={data}/>} />
 
 
