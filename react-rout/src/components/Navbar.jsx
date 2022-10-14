@@ -53,7 +53,15 @@ const Navbar = () => {
                     // backgroundColor : isActive ? 'green' : 'blue'
                     backgroundColor : isActive ? 'red' : ' '
                 }
-            }}>Post-3 </NavLink></li>
+            }}>Post-category </NavLink></li>
+
+
+<li><NavLink to="/Post" style={({isActive}) => {
+                return {
+                    // backgroundColor : isActive ? 'green' : 'blue'
+                    backgroundColor : isActive ? 'yellow' : ' '
+                }
+            }}>Post-with-ID </NavLink></li>
 
         </ul>
         </>
