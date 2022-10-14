@@ -3,6 +3,7 @@ import './App.css';
 import Blog from './components/pages/Blog';
 import Service from './components/pages/Service';
 import Connect from './components/pages/Connect';
+import Post from './components/pages/Post';
 import Navbar from './components/Navbar';
 
 export function App(){
@@ -20,6 +21,7 @@ export function App(){
       <Route  path = '/Blog'  element  =  {<Blog />} />
       <Route  path = '/Service'  element  =  {<Service />} />
       <Route  path = '/Connect'  element  =  {<Connect />} />
+      <Route  path = '/Post'  element  =  {<Post />} />
 
 {/* For showing Error Page */}
 <Route  path = '*'  element  =  {<h1> <strong>Error 404 Page not Found !!</strong></h1>}/>

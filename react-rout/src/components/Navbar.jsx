@@ -48,6 +48,13 @@ const Navbar = () => {
             }}>Service-3 </NavLink></li>
 
 
+<li><NavLink to="/Post" style={({isActive}) => {
+                return {
+                    // backgroundColor : isActive ? 'green' : 'blue'
+                    backgroundColor : isActive ? 'red' : ' '
+                }
+            }}>Post-3 </NavLink></li>
+
         </ul>
         </>
     )
