@@ -1,3 +1,5 @@
+// After feed , writting Category on URL 
+
 import { useParams } from "react-router-dom";
 
 const PostDetail = () =>{
