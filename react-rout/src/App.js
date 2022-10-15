@@ -11,17 +11,17 @@ import Post from './components/pages/Post';
 import Navbar from './components/Navbar';
 
 
-// import {Post} from './components/project/Post';
-// import About from './components/project/About';
-// import {Contact} from './components/project/Contact';
-// import Home from './components/project/Home';
-// import Layout from './components/Layout';
-// import PostLayout from './components/PostLayout';
-// import PostDetail from './components/project/PostDetail';
+import {Feed} from './components/project/Feed';
+import About from './components/project/About';
+import {Contact} from './components/project/Contact';
+import Home from './components/project/Home';
+import Layout from './components/Layout';
+import PostLayout from './components/PostLayout';
+import PostDetail from './components/project/PostDetail';
 
 
 export function App(){
-  
+
   let isLogged = true ;
   let data = {
     'st' : "This is like passing props , you can pass anything you want ."
@@ -64,28 +64,29 @@ export function App(){
 {/* @@@###$$$%%%^^^&&&&==>>  Creating  a  Basic  Layout  Project  using  React - Router V6  <<==@@@###$$$%%%^^^&&&&*/}
 
 
-   {/* <Routes> */}
+   <Routes>
 
-{/* For creating Nested Routes , don't use Self closed tag */}
-   {/* <Route  path = '/'  element  =  {<Layout />} >
+{/* For creating Nested Routes , don't use Self closed tag . line no- 70 is parent , every one is child*/}
+   <Route  path = '/'  element  =  {<Layout />} >
 
    <Route  path = 'about'  element  =  {<About />} /> 
    <Route  path = 'contact'  element  =  {<Contact />} /> 
 
 
-   <Route  path = 'post'  element  =  {<PostLayout />} >
+   <Route  path = 'Feed'  element  =  {<PostLayout />} >
    <Route path = ':category'  element  =  {<PostDetail />}/>
-   <Route index element  =  {<Post />} /> 
-    </Route>  */}
+   <Route index element  =  {<Feed />} /> 
+
+    </Route> 
 
 
-{/* index shares  with " / " */}
-   {/* <Route index element  =  {<Home />} /> 
+{/* index shares  with " / "  parent means In layout page we can see Home page */}
+   <Route index element  =  {<Home />} /> 
    
    </Route>
 
    <Route  path = '*'  element  =  {<h1>Error 404 Page not Found !!</h1>} />
-   </Routes> */}
+   </Routes>
 </>
 
   );
