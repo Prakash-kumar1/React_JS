@@ -3,7 +3,7 @@ import {NavLink,Outlet} from 'react-router-dom';
 const Layout = () => {
     return(
         <>
-        <h1>React Router V6</h1>
+        <h1>React Router V6 Basic Layout Project</h1>
         <ul className='list'>
             
             <li><NavLink to="/Home" style={({isActive}) => {
@@ -28,12 +28,14 @@ const Layout = () => {
 
 
 
-<li><NavLink to="/Post" style={({isActive}) => {
+<li><NavLink to="/Feed" style={({isActive}) => {
                 return {
                     // backgroundColor : isActive ? 'green' : 'blue'
                     backgroundColor : isActive ? 'red' : ' '
                 }
-            }}>Posts </NavLink></li>
+            }}>Feeds </NavLink></li>
+
+{/* line no- 70 is parent , every one is child . for showing child we import and use Outlet */}
 
 <Outlet/>
 
