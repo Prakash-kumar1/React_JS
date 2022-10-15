@@ -1,4 +1,4 @@
-// For Receiving the data , we use ( useLocation )
+// For Receiving the data from  Dashboard.js  we use ( useLocation )
 import { useLocation } from "react-router-dom";
 
 const Logout = () => {
