@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { MovieCard } from "./MovieCard";
 import "./Api.css";
 // import  "searchcon"  from './search.svg'
 
@@ -49,7 +50,7 @@ const Api = () =>{
         </div>
 
         <div className="container">
-            <div className="movie">
+        {/* <div className="movie">
                 <div>
                     <p>{movie1.Year}</p>
                 </div>
@@ -60,7 +61,9 @@ const Api = () =>{
                 <span>{movie1.Type}</span>
                 <h3>{movie1.Title}</h3>
                 </div>
-            </div>
+            </div> */}
+
+            <MovieCard />
 
         </div>
         </div>
