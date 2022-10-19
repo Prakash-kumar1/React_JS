@@ -29,7 +29,10 @@ const Api = () =>{
         <h1> MovieLand </h1> 
         
         <div className="search">
-            <input type="text" placeholder="Search for Movies"/>
+            <input type="text" placeholder="Search for Movies"
+            value= "spiderman"
+            
+            />
 
         </div>
         </div>
