@@ -1,8 +1,8 @@
 import './App.css';
 import Api from './components/Movie-app/Api';
 
+// getting api key from 
 // Here is your key: 43b61648
-
 
 export function App(){
 
