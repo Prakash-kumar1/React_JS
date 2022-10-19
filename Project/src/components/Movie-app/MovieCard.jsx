@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const  MovieCard = () => {
+export const  MovieCard = ({movie1}) => {
     return (
 
     <div className="movie">
