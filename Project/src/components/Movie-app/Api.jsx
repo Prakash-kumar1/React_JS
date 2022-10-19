@@ -1,9 +1,20 @@
 import { useEffect } from "react";
 import "./Api.css";
-// import  "SearchIcon"  from './search.svg'
+// import  "searchcon"  from './search.svg'
 
 
 const API_URL = 'https://www.omdbapi.com?apikey=43b61648' ;
+
+const movie1 = {
+
+            "Title": "Italian Spiderman",
+            "Year": "2007",
+            "imdbID": "tt2705436",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYjFhN2RjZTctMzA2Ni00NzE2LWJmYjMtNDAyYTllOTkyMmY3XkEyXkFqcGdeQXVyNTA0OTU0OTQ@._V1_SX300.jpg"
+        
+}
+
 
 const Api = () =>{
 
@@ -30,9 +41,14 @@ const Api = () =>{
         
         <div className="search">
             <input type="text" placeholder="Search for Movies"
-            value= "spiderman"
+            value= "spiderman"  onChange={() => {}} />
             
-            />
+    <img  src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcflbVkrqVp1dQ_wU5PzXou3Hx2EG7zu014g&usqp=CAU'} 
+    alt="search" onClick={() => {}} />
+
+        </div>
+
+        <div className="container">
 
         </div>
         </div>
