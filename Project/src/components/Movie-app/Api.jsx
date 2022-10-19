@@ -24,7 +24,18 @@ const Api = () =>{
 
     return(
         <>
-        <h1>Creating a Movie App . </h1>
+
+        <div className="app"> 
+        <h1> MovieLand </h1> 
+        
+        <div className="search">
+            <input type="text" placeholder="Search for Movies"/>
+
+        </div>
+        </div>
+
+
+
         </>
     )
 
