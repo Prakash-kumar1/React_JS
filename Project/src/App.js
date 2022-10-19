@@ -8,8 +8,8 @@ export function App(){
 
   return (
 <>
-<h1>Hello React !!</h1>
-<p>{3+6}</p>
+{/* <h1>Hello React !!</h1>
+<p>{3+6}</p> */}
 <Api/>
 </>
 
