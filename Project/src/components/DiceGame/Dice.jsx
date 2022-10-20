@@ -1,4 +1,4 @@
-import {Flex , Stack} from "@chakra-ui/layout"
+import {Flex , Stack , Heading} from "@chakra-ui/layout"
 import {Image} from "@chakra-ui/image"
 
 export const Dice = () => {
@@ -7,7 +7,7 @@ export const Dice = () => {
 
 {/* Stack is like Flex , in Flex direction is Row-Wise  and In stack  direction is Column-Wise*/}
 <Stack>
-    
+    <Heading as="h1">The Dice Game</Heading>
 </Stack>
 
 
