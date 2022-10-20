@@ -9,7 +9,8 @@ export const Dice = () => {
 
 {/* Stack is like Flex , in Flex direction is Row-Wise  and In stack  direction is Column-Wise*/}
 <Stack>
-    <Heading as="h1">The Dice Game</Heading>
+    <Heading fontSize="7x1" as="h1"> {" "} The Dice Game</Heading>
+    
     <Button>Start Game</Button>
 </Stack>
 
