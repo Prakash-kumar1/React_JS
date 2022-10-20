@@ -4,12 +4,14 @@ import {Button} from "@chakra-ui/button"  ;
 import { useState } from "react";
 
 export const Dice = () => {
-    const [gameStarted, setGameStarted]  =  useState(false) ;
+    const [gameStarted, setGameStarted]  =  useState(true) ;
 
 
     return (
         <>
-        {gameStarted && (
+        {gameStarted ? (
+            <Heading>Hi Everyone</Heading>
+        ):(
                 <Flex justify="center"  align="center">
 
                 <Image  width="50%"  src= "/dices.png" />
