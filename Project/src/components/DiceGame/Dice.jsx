@@ -3,7 +3,8 @@ import {Image} from "@chakra-ui/image"  ;
 import {Button} from "@chakra-ui/button"  ;
 
 export const Dice = () => {
-    return <Flex>
+    return (
+    <Flex justify="center"  align="center">
 <Image src= "/dices.png" />
 
 {/* Stack is like Flex , in Flex direction is Row-Wise  and In stack  direction is Column-Wise*/}
@@ -14,4 +15,5 @@ export const Dice = () => {
 
 
 </Flex>
+    )
 }
