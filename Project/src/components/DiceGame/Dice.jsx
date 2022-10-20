@@ -1,5 +1,6 @@
 import {Flex , Stack , Heading} from "@chakra-ui/layout" ;
 import {Image} from "@chakra-ui/image"  ;
+import {Button} from "@chakra-ui/button"  ;
 
 export const Dice = () => {
     return <Flex>
@@ -8,7 +9,7 @@ export const Dice = () => {
 {/* Stack is like Flex , in Flex direction is Row-Wise  and In stack  direction is Column-Wise*/}
 <Stack>
     <Heading as="h1">The Dice Game</Heading>
-    <button>Start Game</button>
+    <Button>Start Game</Button>
 </Stack>
 
 
