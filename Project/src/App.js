@@ -1,11 +1,14 @@
-import React from 'react';
 import './App.css';
-import Main from './components/NewsApp/Main';
-import Contact from './components/NewsApp/Contact';
-import {Route, Routes} from 'react-router-dom'
-import Headlines from './components/NewsApp/Headlines'
-import Buissness from './components/NewsApp/Buissness'
-import About from './components/NewsApp/About'
+import Layout from './components/NewsApp/Layout';
+import Headlines from './components/NewsApp/Headlines';
+import About from './components/NewsApp/About';
+import ContactUs from './components/NewsApp/ContactUs';
+import Team from './components/NewsApp/Team';
+import { Routes, Route } from "react-router-dom"
+import {useState} from 'react'
+import 'animate.css'
+
+
 // import { Dice } from './components/DiceGame/Dice';
 // import Api from './components/Movie-app/Api';
 
@@ -14,6 +17,23 @@ import About from './components/NewsApp/About'
 
 export function App(){
 
+  const [Dark, setDark] = useState(false
+    // {
+    // "Color": "black",
+// }
+)
+
+const handleBgColor=()=>{
+    if(Dark){
+        setDark(false) 
+    }
+    else{
+        setDark(true)
+    }
+  
+}
+
+
   return (
 <>
 {/* <h1>Hello React !!</h1>
@@ -21,13 +41,22 @@ export function App(){
 {/* <Api/> */}
 {/* <Dice /> */}
 
-<Routes>
-        <Route path="" element={ <Main/> } />
-        <Route path='/contact' element={  <Contact />}/>
-        <Route path='/about' element={  <About />}/>
-        <Route path='/headlines' element={  <Headlines />}/>
-        <Route path='/buissness' element={  <Buissness/>}/>
-  </Routes>
+<div id='Appdiv' style={ Dark ? {backgroundColor:"black",color:'white'} : {backgroundColor:""}}  >
+ 
+   
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Headlines />} />
+          <Route path='About' element={<About />} />
+          <Route path='ContactUs' element={<ContactUs />} />
+          <Route path='Team' element={<Team />} />
+        </Route>
+      </Routes>
+    
+    <i className={ Dark ? "fa fa-sun-o" : "fa fa-moon-o"} style={Dark ? {color:"white"}:{color:"black"}} onClick={handleBgColor} id="changeicon"></i>
+
+    {/* <h1>ram</h1> */}
+    </div>
 </>
 
   );
