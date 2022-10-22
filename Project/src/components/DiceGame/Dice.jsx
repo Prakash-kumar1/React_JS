@@ -1,4 +1,4 @@
-import {Flex , Stack , Heading, Box, Text} from "@chakra-ui/layout" ;
+import {Flex , Stack , Heading, Box} from "@chakra-ui/layout" ;
 import {Image} from "@chakra-ui/image"  ;
 // import {Text} from "@chakra-ui/text"  ;
 import {Button} from "@chakra-ui/button"  ;
@@ -17,7 +17,8 @@ const startGameHandler = () =>{
     return (
         <>
         {gameStarted ? (
-            <><Stack>
+            <>
+            <Stack>
             <Heading>Select Number</Heading>
             <Flex>
             {numbers.map((value) => (
@@ -38,10 +39,14 @@ const startGameHandler = () =>{
             </Flex>
     
             <Box> <Image src="/dice/dice1.png" /> </Box>
-            <Text as="p">Click on Dice to Roll</Text>
-            <Text>0</Text>
-            <Text>Total Score</Text>
+            <Heading as="h2">Click on Dice to Roll</Heading>
+            <Heading as="h3">0</Heading>
+            <Heading as="h4">Total Score</Heading>
             <Button>Reset Score</Button>
+        </Stack>
+
+        <Stack>
+            <Heading as="h2">Game Rules :-</Heading>
         </Stack>
     </>
 
