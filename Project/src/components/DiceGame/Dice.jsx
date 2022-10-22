@@ -6,6 +6,7 @@ import { useState } from "react";
 export const Dice = () => {
     const [gameStarted, setGameStarted]  =  useState(false) ;
 
+    const numbers = [1,2,3,4,5,6] ;
 
 const startGameHandler = () =>{
     setGameStarted(true) ;
