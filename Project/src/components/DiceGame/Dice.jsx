@@ -19,7 +19,7 @@ const startGameHandler = () =>{
 
     <Stack>
         <Heading>Select Number</Heading>
-        <Flex justify="center" align="center" h="50px" w="50px" bg="black" color="white" fontSize="2xl">1</Flex>
+        
     </Stack>
 
     ):(
