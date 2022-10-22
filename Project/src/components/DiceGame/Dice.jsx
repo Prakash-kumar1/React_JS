@@ -25,7 +25,10 @@ const startGameHandler = () =>{
             align="center" 
             h="50px" 
             w="50px" 
-            bg="black" color="white" fontSize="2xl" key={i}>1</Flex>
+            bg="black" 
+            color="white" 
+            fontSize="2xl" 
+            key={i}>1</Flex>
         ))}
     </Stack>
 
