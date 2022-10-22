@@ -1,12 +1,12 @@
-import './App.css';
-import Layout from './components/NewsApp/Layout';
-import Headlines from './components/NewsApp/Headlines';
-import About from './components/NewsApp/About';
-import ContactUs from './components/NewsApp/ContactUs';
-import Team from './components/NewsApp/Team';
-import { Routes, Route } from "react-router-dom"
-import {useState} from 'react'
-import 'animate.css'
+// import './App.css';
+// import Layout from './components/NewsApp/Layout';
+// import Headlines from './components/NewsApp/Headlines';
+// import About from './components/NewsApp/About';
+// import ContactUs from './components/NewsApp/ContactUs';
+// import Team from './components/NewsApp/Team';
+// import { Routes, Route } from "react-router-dom"
+// import {useState} from 'react'
+// import 'animate.css'
 
 
 // import { Dice } from './components/DiceGame/Dice';
@@ -17,11 +17,11 @@ import 'animate.css'
 
 export function App(){
 
-  const [Dark, setDark] = useState(false
+  // const [Dark, setDark] = useState(false
     // {
     // "Color": "black",
 // }
-)
+// )
 
 const handleBgColor=()=>{
     if(Dark){
