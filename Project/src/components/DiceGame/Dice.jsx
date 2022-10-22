@@ -14,7 +14,7 @@ const startGameHandler = () =>{
     setGameStarted(true) ;
 } ;
 
-console.log(selectedNumber);
+// console.log(selectedNumber);
 const onNumberClicked = (value) => {
     setSelectedNumber(value) ;
 } ;
@@ -33,7 +33,8 @@ const onNumberClicked = (value) => {
                 align="center" 
                 h="50px" 
                 w="50px" 
-                bg="black" 
+                // bg="black" 
+                bg={selectedNumber === value ? "green" : "black"}
                 color="white" 
                 fontSize="2xl" 
                 key={value}
