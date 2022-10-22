@@ -1,4 +1,4 @@
-import {Flex , Stack , Heading} from "@chakra-ui/layout" ;
+import {Flex , Stack , Heading, Box} from "@chakra-ui/layout" ;
 import {Image} from "@chakra-ui/image"  ;
 import {Button} from "@chakra-ui/button"  ;
 import { useState } from "react";
@@ -36,6 +36,8 @@ const startGameHandler = () =>{
             </Flex>
         ))}
         </Flex>
+
+        <Box> <Image src="/dice/dice1.png" /> </Box>
     </Stack>
 
     ):(
