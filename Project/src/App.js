@@ -9,7 +9,7 @@
 // import 'animate.css'
 
 
-// import { Dice } from './components/DiceGame/Dice';
+import { Dice } from './components/DiceGame/Dice';
 // import Api from './components/Movie-app/Api';
 
 // getting api key from 
@@ -39,7 +39,7 @@ export function App(){
 {/* <h1>Hello React !!</h1>
 <p>{3+6}</p> */}
 {/* <Api/> */}
-{/* <Dice /> */}
+<Dice />
 
 {/* <div id='Appdiv' style={ Dark ? {backgroundColor:"black",color:'white'} : {backgroundColor:""}}  >
  
