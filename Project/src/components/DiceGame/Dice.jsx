@@ -1,4 +1,4 @@
-import {Flex , Stack , Heading, Box} from "@chakra-ui/layout" ;
+import {Flex , Stack , Heading, Box, List,ListItem} from "@chakra-ui/layout" ;
 import {Image} from "@chakra-ui/image"  ;
 // import {Text} from "@chakra-ui/text"  ;
 import {Button} from "@chakra-ui/button"  ;
@@ -47,6 +47,9 @@ const startGameHandler = () =>{
 
         <Stack>
             <Heading as="h2">Game Rules :-</Heading>
+            <List>
+                <ListItem>Select Number any Number</ListItem>
+            </List>
         </Stack>
     </>
 
