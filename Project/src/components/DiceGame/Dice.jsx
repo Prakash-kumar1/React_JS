@@ -6,11 +6,17 @@ import { useState } from "react";
 
 export const Dice = () => {
     const [gameStarted, setGameStarted]  =  useState(false) ;
+    const [selectedNumber, setSelectedNumber]  =  useState( ) ;
 
     const numbers = [1,2,3,4,5,6] ;
 
 const startGameHandler = () =>{
     setGameStarted(true) ;
+} ;
+
+console.log(selectedNumber);
+const onNumberClicked = (value) => {
+    setSelectedNumber(value) ;
 } ;
 
 
@@ -32,7 +38,9 @@ const startGameHandler = () =>{
                 fontSize="2xl" 
                 key={value}
                 margin={4}
-                borderRadius="md">
+                borderRadius="md"
+                onClick={() => onNumberClicked(value)}
+                >
                     {value}
                 </Flex>
             ))}
