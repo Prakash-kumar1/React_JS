@@ -18,9 +18,9 @@ const startGameHandler = () =>{
         <>
         {gameStarted ? (
             <>
-            <Stack justify="center" align="center"  maxW="1300px" mx="auto">
-            <Heading>Select Number</Heading>
-            <Flex>
+            <Stack justify="center" align="center"  maxW="1300px" mx="auto" h="100vh">
+            <Heading as="h1" fontSize="6xl" mb="8">Select Number</Heading>
+            <Flex pb="10">
             {numbers.map((value) => (
                 <Flex 
                 justify="center" 
@@ -39,13 +39,13 @@ const startGameHandler = () =>{
             </Flex>
     
             <Box> <Image src="/dice/dice1.png" /> </Box>
-            <Heading as="h2">Click on Dice to Roll</Heading>
-            <Heading as="h3">0</Heading>
-            <Heading as="h4">Total Score</Heading>
+            <Heading as="h5">Click on Dice to Roll</Heading>
+            <Heading as="h2">0</Heading>
+            <Heading as="h5">Total Score</Heading>
             <Button>Reset Score</Button>
         </Stack>
 
-        <Stack maxW="1300px" mx="auto">
+        <Stack maxW="900px" mx="auto">
             <Heading as="h2">Game Rules :-</Heading>
             <List>
                 <ListItem>Select Number any Number</ListItem>
