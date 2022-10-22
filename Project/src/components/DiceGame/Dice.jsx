@@ -18,7 +18,7 @@ const startGameHandler = () =>{
         <>
         {gameStarted ? (
             <>
-            <Stack>
+            <Stack justify="center" align="center"  maxW="1300px" mx="auto">
             <Heading>Select Number</Heading>
             <Flex>
             {numbers.map((value) => (
@@ -45,7 +45,7 @@ const startGameHandler = () =>{
             <Button>Reset Score</Button>
         </Stack>
 
-        <Stack>
+        <Stack maxW="1300px" mx="auto">
             <Heading as="h2">Game Rules :-</Heading>
             <List>
                 <ListItem>Select Number any Number</ListItem>
