@@ -29,7 +29,9 @@ const startGameHandler = () =>{
             bg="black" 
             color="white" 
             fontSize="2xl" 
-            key={value}>
+            key={value}
+            margin={4}
+            borderRadius="md">
                 {value}
             </Flex>
         ))}
