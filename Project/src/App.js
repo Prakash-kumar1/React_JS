@@ -23,15 +23,15 @@ export function App(){
 // }
 // )
 
-const handleBgColor=()=>{
-    if(Dark){
-        setDark(false) 
-    }
-    else{
-        setDark(true)
-    }
+// const handleBgColor=()=>{
+//     if(Dark){
+//         setDark(false) 
+//     }
+//     else{
+//         setDark(true)
+//     }
   
-}
+// }
 
 
   return (
