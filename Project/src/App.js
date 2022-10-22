@@ -41,7 +41,7 @@ export function App(){
 {/* <Api/> */}
 {/* <Dice /> */}
 
-<div id='Appdiv' style={ Dark ? {backgroundColor:"black",color:'white'} : {backgroundColor:""}}  >
+{/* <div id='Appdiv' style={ Dark ? {backgroundColor:"black",color:'white'} : {backgroundColor:""}}  >
  
    
       <Routes>
@@ -53,10 +53,10 @@ export function App(){
         </Route>
       </Routes>
     
-    <i className={ Dark ? "fa fa-sun-o" : "fa fa-moon-o"} style={Dark ? {color:"white"}:{color:"black"}} onClick={handleBgColor} id="changeicon"></i>
+    <i className={ Dark ? "fa fa-sun-o" : "fa fa-moon-o"} style={Dark ? {color:"white"}:{color:"black"}} onClick={handleBgColor} id="changeicon"></i> */}
 
     {/* <h1>ram</h1> */}
-    </div>
+    {/* </div> */}
 </>
 
   );
