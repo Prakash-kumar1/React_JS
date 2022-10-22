@@ -49,6 +49,9 @@ const startGameHandler = () =>{
             <Heading as="h2">Game Rules :-</Heading>
             <List>
                 <ListItem>Select Number any Number</ListItem>
+                <ListItem>Click On Dice Image to roll it</ListItem>
+                <ListItem>Select number is equal to obtained dice result then you will get same point of Dice.</ListItem>
+                <ListItem>Select number is equal to obtained dice result then you will get same point of Dice.</ListItem>
             </List>
         </Stack>
     </>
