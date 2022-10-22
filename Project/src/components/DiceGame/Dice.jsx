@@ -19,7 +19,7 @@ const startGameHandler = () =>{
 
     <Stack>
         <Heading>Select Number</Heading>
-        {numbers.map((value, i) => (
+        {numbers.map((value) => (
             <Flex 
             justify="center" 
             align="center" 
@@ -28,7 +28,9 @@ const startGameHandler = () =>{
             bg="black" 
             color="white" 
             fontSize="2xl" 
-            key={i}>1</Flex>
+            key={value}>
+                {value}
+            </Flex>
         ))}
     </Stack>
 
