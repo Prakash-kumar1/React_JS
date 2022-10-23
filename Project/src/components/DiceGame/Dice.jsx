@@ -8,6 +8,7 @@ export const Dice = () => {
     const [gameStarted, setGameStarted]  =  useState(false) ;
     const [selectedNumber, setSelectedNumber]  =  useState( ) ;
     const [dice, setDice]  =  useState(1) ;
+    const [error, setError]  =  useState(null) ;
 
     const numbers = [1,2,3,4,5,6] ;
 
@@ -18,13 +19,18 @@ const startGameHandler = () =>{
 // console.log(selectedNumber);
 const onNumberClicked = (value) => {
     setSelectedNumber(value) ;
+    setError(null)
 } ;
 
 const genRandomNo = () => {
+    if(selectedNumber){
     const generatedNo = Math.ceil(Math.random() * 6) ;
     setDice(generatedNo) ;
-    console.log(generatedNo);
-}
+    // console.log(generatedNo);
+    }else{
+        setError("Please Select a Number")
+    }
+} ;
 
 
 
@@ -33,7 +39,11 @@ const genRandomNo = () => {
         {gameStarted ? (
             <>
             <Stack justify="center" align="center"  maxW="1300px" mx="auto" h="100vh">
-            <Heading as="h1" fontSize="6xl" mb="8">Select Number</Heading>
+
+            <Heading as="h1" fontSize="6xl" mb="8"  color={ error ?  "red" : "green" }> 
+            { error ?  error : "Select Number" } 
+            </Heading>
+
             <Flex pb="10">
             {numbers.map((value) => (
                 <Flex 
@@ -42,7 +52,7 @@ const genRandomNo = () => {
                 h="50px" 
                 w="50px" 
                 // bg="black" 
-                bg={selectedNumber === value ? "red" : "black"}
+                bg={selectedNumber === value ? "hotpink" : "black"}
                 color="white" 
                 fontSize="2xl" 
                 key={value}
