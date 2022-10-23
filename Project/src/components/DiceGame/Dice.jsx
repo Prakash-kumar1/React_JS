@@ -70,8 +70,8 @@ const genRandomNo = () => {
                 <Image src= { `/dice/dice${dice}.png` }/> 
             </Box>
 
-            <Heading as="h5">Click on Dice to Roll</Heading>
-            <Heading as="h2">0</Heading>
+            <Heading as="h6">Click on Dice to Roll</Heading>
+            <Heading as="h2" fontSize="8xl">0</Heading>
             <Heading as="h5">Total Score</Heading>
             <Button>Reset Score</Button>
 
