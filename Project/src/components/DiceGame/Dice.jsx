@@ -20,7 +20,7 @@ const onNumberClicked = (value) => {
 } ;
 
 const genRandomNo = () => {
-    const generatedNo = Math.random() ;
+    const generatedNo = Math.ceil(Math.random() * 6) ;
     console.log(generatedNo);
 }
 
