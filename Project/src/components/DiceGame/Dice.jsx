@@ -13,7 +13,7 @@ export const Dice = () => {
 
     const numbers = [1,2,3,4,5,6] ;
 
-    
+
 const startGameHandler = () =>{
     setGameStarted(true) ;
 } ;
@@ -82,9 +82,9 @@ const genRandomNo = () => {
             </Box>
 
             <Heading as="h6">Click on Dice to Roll</Heading>
-            <Heading as="h2" fontSize="8xl" fontWeight="bold">{score}</Heading>
+            <Heading as="h2" color={score > 0 ? "green" : "red"} fontSize="8xl" fontWeight="bold">{score}</Heading>
             <Heading as="h5">Total Score</Heading>
-            <Button fontWeight="bold">Reset Score</Button>
+            <Button fontWeight="bold" onClick={() => setScore(0)}>Reset Score</Button>
 
         </Stack>
 
