@@ -22,6 +22,7 @@ const onNumberClicked = (value) => {
 
 const genRandomNo = () => {
     const generatedNo = Math.ceil(Math.random() * 6) ;
+    setDice(generatedNo) ;
     console.log(generatedNo);
 }
 
