@@ -9,12 +9,15 @@ export const Dice = () => {
     const [selectedNumber, setSelectedNumber]  =  useState( ) ;
     const [dice, setDice]  =  useState(1) ;
     const [error, setError]  =  useState(null) ;
+    const [score, setScore]  =  useState(0) ;
 
     const numbers = [1,2,3,4,5,6] ;
 
+    
 const startGameHandler = () =>{
     setGameStarted(true) ;
 } ;
+
 
 // console.log(selectedNumber);
 const onNumberClicked = (value) => {
@@ -22,16 +25,24 @@ const onNumberClicked = (value) => {
     setError(null)
 } ;
 
+
 const genRandomNo = () => {
     if(selectedNumber){
     const generatedNo = Math.ceil(Math.random() * 6) ;
     setDice(generatedNo) ;
     // console.log(generatedNo);
+
+    if(selectedNumber === generatedNo){
+        setScore(prev => prev + generatedNo)
+    }else{
+        setScore(prev => prev - 2)
+    }
+
     }else{
         setError("Please Select a Number")
     }
-} ;
 
+} ;
 
 
     return (
@@ -71,9 +82,9 @@ const genRandomNo = () => {
             </Box>
 
             <Heading as="h6">Click on Dice to Roll</Heading>
-            <Heading as="h2" fontSize="8xl">0</Heading>
+            <Heading as="h2" fontSize="8xl" fontWeight="bold">{score}</Heading>
             <Heading as="h5">Total Score</Heading>
-            <Button>Reset Score</Button>
+            <Button fontWeight="bold">Reset Score</Button>
 
         </Stack>
 
