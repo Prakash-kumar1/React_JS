@@ -53,7 +53,7 @@ const genRandomNo = () => {
             ))}
             </Flex>
     
-            <Box> 
+            <Box h="150px" width="150px" onClick={genRandomNo}> 
                 <Image src="/dice/dice1.png" /> 
             </Box>
 
@@ -61,7 +61,7 @@ const genRandomNo = () => {
             <Heading as="h2">0</Heading>
             <Heading as="h5">Total Score</Heading>
             <Button>Reset Score</Button>
-            
+
         </Stack>
 
         <Stack maxW="900px" mx="auto">
