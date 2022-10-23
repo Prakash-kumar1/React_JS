@@ -34,7 +34,7 @@ const onNumberClicked = (value) => {
                 h="50px" 
                 w="50px" 
                 // bg="black" 
-                bg={selectedNumber === value ? "green" : "black"}
+                bg={selectedNumber === value ? "red" : "black"}
                 color="white" 
                 fontSize="2xl" 
                 key={value}
