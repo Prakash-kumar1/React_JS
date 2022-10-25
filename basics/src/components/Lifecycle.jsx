@@ -1,5 +1,6 @@
 // Each component has several "Life Cycle Methods" that you can override to run code at particular times in Process. 
 // There are  4 phases in  Life Cycle Methods  =>>
+
 // (1) =>  Intialization 
 // (2) =>  Mounting 
 // (3) =>  Updating 
@@ -13,9 +14,7 @@
 // getInitialState() => It is used to specify the default value of this.state. It is invoked before the creation of the component.
 
 
-
 // ######@@@@@@$$$$%%%%******-----------------------// ######@@@@@@$$$$%%%%******
-
 
 
 // (2) =>  Mounting  =>  In this phase, the instance of a component is created and inserted into the DOM. It consists of the following methods.
