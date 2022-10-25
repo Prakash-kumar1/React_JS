@@ -4,7 +4,6 @@
 // (2) =>  Mounting 
 // (3) =>  Updating 
 // (4) =>  Un-Mounting 
-// ( ) =>  Error handling  (not count in Life Cycle phase)
 
 
 // (1) =>  Intialization =>  It is the birth phase of the lifecycle of a ReactJS component. Here, the component starts its journey on a way to the DOM. In this phase, a component contains the default Props and initial State. These default properties are done in the constructor of a component. The initial phase only occurs once and consists of the following methods.
@@ -16,6 +15,7 @@
 
 
 // ######@@@@@@$$$$%%%%******-----------------------// ######@@@@@@$$$$%%%%******
+
 
 
 // (2) =>  Mounting  =>  In this phase, the instance of a component is created and inserted into the DOM. It consists of the following methods.
