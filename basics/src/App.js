@@ -77,7 +77,8 @@ export function App2(){
 
 
 // Node-Modules =>>  Anything that we required for our project present inside the node module . When we installed
-//                     any kind of dependcies ( like Bootstrap) it will stored inside the node module . 
+//                     any kind of dependcies ( like Bootstrap , React-Router , Axios , Chakra-UI etc) .
+//                     it will stored inside the node module .  
 
 
 // package.json =>>  whatever dependcies stored inside node module , it  Will Listed in package.json
