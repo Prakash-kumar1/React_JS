@@ -3,7 +3,7 @@ import React ,{ useState } from 'react';
 
 // import { CounterOne } from './components/CounterOne';
 // import { DocTitleOne } from './components/DocTitleOne';
-import { MemoCounter } from './components/MemoCounter';
+// import { MemoCounter } from './components/MemoCounter';
 // import { ReducerCounter } from './components/ReducerCounter';
 // import { DataFetch } from './components/DataFetch';
 // import { UseRef } from './components/UseRef';
@@ -17,7 +17,7 @@ import { MemoCounter } from './components/MemoCounter';
 // import { StateWithArr } from './components/StateWithArr';
 // import { TitleChangeClass } from './components/TitleChangeClass';
 // import { TitleChangeHooks } from './components/TitleChangeHooks';
-// import { UseState } from './components/UseState';
+import { UseState } from './components/UseState';
 // import { UseEffect } from './components/UseEffect';
 // import { ToDoApp } from './components/ToDoApp';
 // import { LogInForm } from './components/LogInForm';
@@ -52,7 +52,6 @@ const [food , setFood]  =  useState("Dosa , Chicken Biryani ") ;
   <ReactTest />
   <ToDoApp />
   <DocTitleOne />
-  <UseState />
   <CounterOne />
   <LogInForm />
   <UseEffect />
@@ -63,8 +62,9 @@ const [food , setFood]  =  useState("Dosa , Chicken Biryani ") ;
   <TitleChangeHooks />
   <UseRef />
   < ReducerCounter />
-<Check />    */}
 <MemoCounter />
+<Check />    */}
+<UseState />
 
   {/* Using  Check.jsx  with  UseState  in App.js */}
   {/* {(valid < 10 || valid > 15) && <Check />}
