@@ -16,6 +16,3 @@ export function Interview(){
 }
 
 
-function sum(num1,num2){
-    return Math.random( num1+num2)
-}
