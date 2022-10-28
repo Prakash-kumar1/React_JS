@@ -7,10 +7,4 @@ export function Interview(){
         setCount(count+1)
     }
 
-    return(
-        <>
-        <h1>Count - {count}</h1>
-        <button onClick={Increment}>Add</button>
-        </>
-    )
-}
+    
