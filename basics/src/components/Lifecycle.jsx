@@ -18,7 +18,6 @@
 // ######@@@@@@$$$$%%%%******-----------------------// ######@@@@@@$$$$%%%%******
 
 
-
 // (2) =>  Mounting  =>  In this phase, the instance of a component is created and inserted into the DOM. It consists of the following methods.
 
 // componentWillMount() => This is invoked immediately before a component gets rendered into the DOM. In the case, when you call setState() inside this method, the component will not re-render.
