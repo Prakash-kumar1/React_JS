@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+// Render  method is for rendering the component 
 import App from './App';
 
 test('renders learn react link', () => {
@@ -14,4 +15,9 @@ test('renders learn react link', () => {
 
 
 // For testing we use a test library  " Jest "
+
+// For creating testing files we use 3 types of Extensions :
+// (1) .test.js  =>  Most times we used only this
+// (2)  .spec.js             (3) __Testing_module__
+
 
