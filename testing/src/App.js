@@ -1,7 +1,7 @@
 import { Counter } from "./components/counter/Counter";
 import { Greet } from "./components/greet/Greet";
 
-function App() {
+export function App() {
   return (
     <div className="App">
       <Counter />
@@ -10,7 +10,7 @@ function App() {
   );
 }
 
-export default App;
+
 
 
 
