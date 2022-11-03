@@ -1,0 +1,11 @@
+/* // Staring  of  1 November  class Tuesday */
+
+.title {
+    color: blue;
+  }
+
+/* This will over-ride  Or  override by  other . so, we write this way */
+
+.counter_title {
+    color: blue;
+  }
