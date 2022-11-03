@@ -1,23 +1,6 @@
 import { Routes , Route, Navigate} from 'react-router-dom';
 import './App.css';
 
-import Blog from './components/pages/Blog';
-import Service from './components/pages/Service';
-import Connect from './components/pages/Connect';
-import Dashboard from './components/pages/Dashboard';
-import Login from './components/pages/Login';
-import Logout from './components/pages/Logout';
-import Post from './components/pages/Post';
-import Navbar from './components/Navbar';
-
-
-import {Feed} from './components/project/Feed';
-import About from './components/project/About';
-import {Contact} from './components/project/Contact';
-import Home from './components/project/Home';
-import Layout from './components/Layout';
-import PostLayout from './components/PostLayout';
-import PostDetail from './components/project/PostDetail';
 
 
 export function App(){
