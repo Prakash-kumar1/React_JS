@@ -1,18 +1,16 @@
-import './App.css';
+import { Counter } from "./components/counter/Counter";
+import { Greet } from "./components/greet/Greet";
 
-
-
-export function App(){
-
-
+function App() {
   return (
-    <>
-    
-    </>
-
+    <div className="App">
+      <Counter />
+      <Greet />
+    </div>
   );
-
 }
+
+export default App;
 
 
 
