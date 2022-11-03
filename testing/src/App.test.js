@@ -10,3 +10,4 @@ test('renders learn react link', () => {
 // There are 3 types of testing :-
 // (1) Unit testing => Each Component / function working properly or not .
 // (2) Integration testing => 
+// (3) End to end (e2e) testing => 
