@@ -1,15 +1,16 @@
-// import './App.css';
-// import Layout from './components/NewsApp/Layout';
-// import Headlines from './components/NewsApp/Headlines';
-// import About from './components/NewsApp/About';
-// import ContactUs from './components/NewsApp/ContactUs';
-// import Team from './components/NewsApp/Team';
-// import { Routes, Route } from "react-router-dom"
-// import {useState} from 'react'
-// import 'animate.css'
+import './components/NewsApp/News.css';
+
+import Layout from './components/NewsApp/Layout';
+import Headlines from './components/NewsApp/Headlines';
+import About from './components/NewsApp/About';
+import ContactUs from './components/NewsApp/ContactUs';
+import Team from './components/NewsApp/Team';
+import { Routes, Route } from "react-router-dom"
+import {useState} from 'react'
+import 'animate.css'
 
 
-import { Dice } from './components/DiceGame/Dice';
+// import { Dice } from './components/DiceGame/Dice';
 // import Api from './components/Movie-app/Api';
 
 // getting api key from 
@@ -17,21 +18,21 @@ import { Dice } from './components/DiceGame/Dice';
 
 export function App(){
 
-  // const [Dark, setDark] = useState(false
-    // {
-    // "Color": "black",
+  const [Dark, setDark] = useState(false)
+// {
+//   "Color": "black",
 // }
-// )
 
-// const handleBgColor=()=>{
-//     if(Dark){
-//         setDark(false) 
-//     }
-//     else{
-//         setDark(true)
-//     }
+
+const handleBgColor=()=>{
+    if(Dark){
+        setDark(false) 
+    }
+    else{
+        setDark(true)
+    }
   
-// }
+}
 
 
   return (
@@ -39,9 +40,9 @@ export function App(){
 {/* <h1>Hello React !!</h1>
 <p>{3+6}</p> */}
 {/* <Api/> */}
-<Dice />
+{/* <Dice /> */}
 
-{/* <div id='Appdiv' style={ Dark ? {backgroundColor:"black",color:'white'} : {backgroundColor:""}}  >
+<div id='Appdiv' style={ Dark ? {backgroundColor:"black",color:'white'} : {backgroundColor:""}}  >
  
    
       <Routes>
@@ -53,10 +54,10 @@ export function App(){
         </Route>
       </Routes>
     
-    <i className={ Dark ? "fa fa-sun-o" : "fa fa-moon-o"} style={Dark ? {color:"white"}:{color:"black"}} onClick={handleBgColor} id="changeicon"></i> */}
+    <i className={ Dark ? "fa fa-sun-o" : "fa fa-moon-o"} style={Dark ? {color:"white"}:{color:"black"}} onClick={handleBgColor} id="changeicon"></i>
 
     {/* <h1>ram</h1> */}
-    {/* </div> */}
+    </div>
 </>
 
   );
