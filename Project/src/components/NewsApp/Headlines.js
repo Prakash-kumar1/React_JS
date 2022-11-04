@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-// import '../App.css'
+import './News.css'
 import Comment from "./coment";
 import Footer from "./Footer";
 import Like from "./Like";
