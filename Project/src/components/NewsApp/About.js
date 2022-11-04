@@ -1,5 +1,5 @@
 import React from "react";
-// import '../App.css'
+import './News.css'
 import Footer from "./Footer";
 import 'animate.css'
 
