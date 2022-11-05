@@ -13,6 +13,7 @@ import { Corona } from './components/Corona';
 
 function App() {
   return (
+    
     <section>
 
       < Corona />
@@ -37,8 +38,6 @@ function App() {
  obj1={{name:'Prakash' , food:'Chicken' , note: 'Passing Object in two curly Braces'}}/>  */}
 
   {/* <State />  */}
-
-      
 
     </section>
   );
