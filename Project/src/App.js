@@ -1,5 +1,4 @@
 // import './components/NewsApp/News.css';
-import Button from '@mui/material/Button';
 
 // import Layout from './components/NewsApp/Layout';
 // import Headlines from './components/NewsApp/Headlines';
@@ -45,8 +44,7 @@ export function App(){
 {/* <Api/> */}
 {/* <Dice /> */}
 {/* <Timer /> */}
-<h1>Prakash</h1>
-<button variant="contained">Contained</button>
+
 
 {/* <div id='Appdiv' style={ Dark ? {backgroundColor:"black",color:'white'} : {backgroundColor:""}}  >
  
