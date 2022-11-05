@@ -11,7 +11,7 @@
 
 
 // import { Dice } from './components/DiceGame/Dice';
-import { Timer } from './components/Timer/Timer';
+// import { Timer } from './components/Timer/Timer';
 // import Api from './components/Movie-app/Api';
 
 // getting api key from 
@@ -42,7 +42,8 @@ export function App(){
 <p>{3+6}</p> */}
 {/* <Api/> */}
 {/* <Dice /> */}
-<Timer />
+{/* <Timer /> */}
+
 
 {/* <div id='Appdiv' style={ Dark ? {backgroundColor:"black",color:'white'} : {backgroundColor:""}}  >
  
