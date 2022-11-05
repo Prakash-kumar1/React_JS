@@ -6,11 +6,11 @@ function Mui() {
   return (
 <>
     <h1>Material UI designs</h1>
-    <ButtonGroup variant="contained" aria-label="outlined primary button group">
+    {/* <ButtonGroup variant="contained" aria-label="outlined primary button group">
       <Button>One</Button>
       <Button>Two</Button>
       <Button>Three</Button>
-    </ButtonGroup>
+    </ButtonGroup> */}
 </>
   )
 }
