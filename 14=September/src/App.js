@@ -31,9 +31,8 @@ export class App extends Component{    //extends taking property of parents , re
       <p>Parent count =  {this.state.count} </p>
     <button onClick={this.Increment} > Parent</button>  
 
-        <Button text="Save" btnClass="save" />
+      <Button text="Save" btnClass="save" />
 
-        
      </div>
      
     ); 
