@@ -1,5 +1,7 @@
 // import './components/NewsApp/News.css';
 
+import Mui from "./components/MaterialUI/Mui";
+
 // import Layout from './components/NewsApp/Layout';
 // import Headlines from './components/NewsApp/Headlines';
 // import About from './components/NewsApp/About';
@@ -13,7 +15,7 @@
 // import { Dice } from './components/DiceGame/Dice';
 // import { Timer } from './components/Timer/Timer';
 // import Api from './components/Movie-app/Api';
-import Button from '@mui/material/Button';
+
 
 // getting api key from 
 // Here is your key: 43b61648
@@ -44,7 +46,7 @@ export function App(){
 {/* <Api/> */}
 {/* <Dice /> */}
 {/* <Timer /> */}
-<Button variant="contained">Contained</Button>
+<Mui />
 
 {/* <div id='Appdiv' style={ Dark ? {backgroundColor:"black",color:'white'} : {backgroundColor:""}}  >
  
