@@ -1,5 +1,7 @@
 // import './components/NewsApp/News.css';
 
+import Mui from "./components/MaterialUI/Mui";
+
 // import Layout from './components/NewsApp/Layout';
 // import Headlines from './components/NewsApp/Headlines';
 // import About from './components/NewsApp/About';
@@ -44,7 +46,7 @@ export function App(){
 {/* <Api/> */}
 {/* <Dice /> */}
 {/* <Timer /> */}
-
+<Mui />
 
 {/* <div id='Appdiv' style={ Dark ? {backgroundColor:"black",color:'white'} : {backgroundColor:""}}  >
  
