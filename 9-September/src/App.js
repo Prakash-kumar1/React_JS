@@ -43,3 +43,4 @@ export class App extends Component{    //extends taking property of parents , re
   }
 }
 // export default App  (using export above , so putting app in { } in index.js)
+
