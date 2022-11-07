@@ -12,7 +12,7 @@
 
 
 // import { Dice } from './components/DiceGame/Dice';
-// import { Timer } from './components/Timer/Timer';
+import { Timer } from './components/Timer/Timer';
 // import Api from './components/Movie-app/Api';
 
 
@@ -46,7 +46,7 @@ export function App(){
 <p>{3+6}</p> */}
 {/* <Api/> */}
 {/* <Dice /> */}
-{/* <Timer /> */}
+<Timer />
 
 
 
