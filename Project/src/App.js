@@ -1,6 +1,5 @@
 // import './components/NewsApp/News.css';
 
-import Mui from "./components/MaterialUI/Mui";
 
 // import Layout from './components/NewsApp/Layout';
 // import Headlines from './components/NewsApp/Headlines';
@@ -41,7 +40,7 @@ export function App(){
 
   return (
 <>
-<Mui />
+
 
 {/* <h1>Hello React !!</h1>
 <p>{3+6}</p> */}
