@@ -31,7 +31,6 @@
 // ######@@@@@@$$$$%%%%******-----------------------// ######@@@@@@$$$$%%%%******
 
 
-
 // (3) =>  Updating Phase => It is the next phase of the lifecycle of a react component. Here, we get new Props and change State. This phase also allows to handle user interaction and provide communication with the components hierarchy. The main aim of this phase is to ensure that the component is displaying the latest version of itself. Unlike the Birth or Death phase, this phase repeats again and again. This phase consists of the following methods.
 
 
