@@ -72,3 +72,4 @@ describe("Counter Component", () => {
     expect(customElement).toBeInTheDocument();
   });
 });
+
