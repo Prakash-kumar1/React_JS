@@ -18,6 +18,16 @@ describe("Skills component", () => {
         const listElements = screen.getAllByRole("listitem");
         expect(listElements).toHaveLength(skills.length);
     });
+
+    test("renders Log In button", () => {
+        render(<Skills skills={skills}/>)
+        const loginButton = screen.getByRole("button" , {
+            name : "Log in" ,
+        }) ;
+        expect(loginButton).toBeInTheDocument() ;
+    }) ;
+
+    
 })
 
 
