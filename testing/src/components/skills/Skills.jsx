@@ -5,7 +5,13 @@ function Skills({skills}) {
   return (
     <div>
         <ul>
-            {skills ? skills.map((skill) => <li key={skill}>{skill}</li>) : null}
+
+            {/* {skills ? skills.map((skill) => <li key={skill}>{skill}</li>) : null} */}
+
+{/* We can also use =>  "Optional Chaining" */}
+
+{skills ?.map((skill) => <li key={skill}>{skill}</li>)}
+
         </ul>
     </div>
   )

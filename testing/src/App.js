@@ -3,7 +3,7 @@
 import Skills from "./components/skills/Skills";
 
 export function App() {
-const  skills = ["HTML","CSS","JavaScript","Bootstrap","React-JS"]
+const  skills = ["HTML","CSS","JavaScript"," ","Bootstrap","React-JS"]
   return (
     <div className="App">
       {/* <Counter />
