@@ -1,8 +1,16 @@
 import React from 'react' ;
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export function Skills({skills}) {
     const [isLoggedIn , setIsLoggedIn] = useState(false) ;
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoggedIn(true) ;
+        },1001) ;
+
+    }) ; 
+
 
   return (
     <div>
@@ -16,7 +24,7 @@ export function Skills({skills}) {
 
         </ul>
 
-{isLoggedIn ? <button>Start Learning</button> : <button onClick={() => setIsLoggedIn(true)} >Sign In</button>}
+{isLoggedIn ? (<button> Start Learning </button>) : (<button onClick={() => setIsLoggedIn(true)} >Sign In</button>)}
     </div>
   )
 }
