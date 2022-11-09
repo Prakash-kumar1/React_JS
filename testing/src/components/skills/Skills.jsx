@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Skills() {
+function Skills({skills}) {
 // let  skills = ["HTML","CSS","JavaScript","Bootstrap","React-JS"]
   return (
     <div>
