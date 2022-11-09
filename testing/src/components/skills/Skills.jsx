@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react' ;
+import { useState } from 'react';
 
-function Skills({skills}) {
-// let  skills = ["HTML","CSS","JavaScript","Bootstrap","React-JS"]
+export function Skills({skills}) {
+    const [isLoggedIn , setIsLoggedIn] = useState(false) ;
+
   return (
     <div>
         <ul>
@@ -10,11 +12,10 @@ function Skills({skills}) {
 
 {/* We can also use =>  "Optional Chaining" */}
 
-{skills ?.map((skill) => <li key={skill}> I Known {skill} </li>)}
+{skills ?.map((skill) => <li key={skill}> I know {skill} </li>)}
 
         </ul>
     </div>
   )
 }
 
-export default Skills
