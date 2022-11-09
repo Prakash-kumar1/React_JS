@@ -15,6 +15,8 @@ export function Skills({skills}) {
 {skills ?.map((skill) => <li key={skill}> I know {skill} </li>)}
 
         </ul>
+
+{isLoggedIn ? <button>Start Learning</button> : <button>Sign In</button>}
     </div>
   )
 }
