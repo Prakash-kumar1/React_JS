@@ -16,7 +16,7 @@ export function Skills({skills}) {
 
         </ul>
 
-{isLoggedIn ? <button>Start Learning</button> : <button>Sign In</button>}
+{isLoggedIn ? <button>Start Learning</button> : <button onClick={() => setIsLoggedIn(true)} >Sign In</button>}
     </div>
   )
 }
