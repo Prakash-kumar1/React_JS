@@ -3,7 +3,7 @@
 // import { Counter } from "./components/counter/Counter";
 // import { Greet } from "./components/greet/Greet";
 // import {Skills} from "./components/skills/Skills";
-import Counter2 from "./components/counter2/Counter2";
+import {Counter2} from "./components/counter2/Counter2";
 
 export function App() {
 // const  skills = ["HTML","CSS","JavaScript"] ;
