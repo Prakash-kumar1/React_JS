@@ -16,7 +16,7 @@ export function Counter2() {
         <input type="number" name="inputVal" value={inputVal}
         onChange={(e)=> setInputVal(parseInt(e.target.value))}/>
     
-    <button onClick={ ()=> setCount{inputVal} }> setCount </button>
+    <button onClick= {()=> setCount(inputVal)}> setCount </button>
     </div>
   )
 }

@@ -42,6 +42,14 @@ describe("Counter2 Element" , ()=> {
 
     }) ;
 
+    test("render 1000 after clicking the setCount btn", () => {
+        render (<Counter2/>) ;
+// For selecting Input type is textBox , but when input type is Number , we use Spin Button
+        const inputElement = screen.getByRole("spinbutton") ;
+        user.type(inputElement , "10") ;
+        expect(inputElement).toHaveValue(10) ;
+    }) ;
+
 }) ;
 
 
