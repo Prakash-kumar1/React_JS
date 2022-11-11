@@ -8,6 +8,14 @@ import { IconButton } from '@mui/material';
 import StarsIcon from '@mui/icons-material/Stars';
 import PushPinIcon from '@mui/icons-material/PushPin';
 
+import ButtonGroup from '@mui/material/ButtonGroup';
+
+import Fab from '@mui/material/Fab';
+import AddIcon from '@mui/icons-material/Add';
+import EditIcon from '@mui/icons-material/Edit';
+// import FavoriteIcon from '@mui/icons-material/Favorite';
+import NavigationIcon from '@mui/icons-material/Navigation';
+
 
 import Checkbox from '@mui/material/Checkbox';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -36,7 +44,7 @@ export default function Material() {
 <Button color="secondary">Secondary</Button>
 <Button variant="contained" color="success">Success</Button>
 <Button variant="outlined" color="error">Error</Button>
-
+ <hr />
 
 <h1>Button size</h1>
 <Button color='success' variant="contained" href='https://www.youtube.com/' target="_blank" size='small'> Small </Button>
@@ -64,13 +72,30 @@ export default function Material() {
 
 
 <h1>Button With Click event</h1>
+<Button variant="contained" onClick={() => console.log('Button Clicked')}>Click</Button>
+
+<h1>By Default Horizontal Button Groups</h1>
+<ButtonGroup variant="contained" color='secondary'>
+    <Button>One</Button>
+    <Button style={{backgroundColor: 'aquamarine' , color: 'blue'}}>Two</Button>
+    <Button>Three</Button>
+</ButtonGroup>
 
 
+<h1> Vertical Button Groups</h1>
+<ButtonGroup variant="contained" orientation='vertical'>
+    <Button>One</Button>
+    <Button sx={{marginLeft : '12rem'}}>Two</Button>
+    <Button>Three</Button>
+</ButtonGroup>
 
 
-
-
-
+<h1>A Floating Action Button (FAB) performs the primary, or most common, action on a screen.</h1>
+<Fab color='success' href='https://www.javascripttutorial.net/'> Ankit </Fab>
+<Fab color="primary"> <AddIcon /> </Fab>
+<Fab color="secondary" > <EditIcon onClick={()=>alert("Do you want to Edit ??")}/> </Fab>
+<Fab variant="extended"> <NavigationIcon sx={{ mt: '22px' }} /> Navigate </Fab>
+<Fab disabled aria-label="like"> <FavoriteIcon sx={{ color: 'red' }}/> </Fab>
 
 
 
