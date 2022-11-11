@@ -2,17 +2,16 @@ import React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
-
-// import Box from '@mui/material/Box';
-import Fab from '@mui/material/Fab';
-import AddIcon from '@mui/icons-material/Add';
-import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import NavigationIcon from '@mui/icons-material/Navigation';
+import { IconButton } from '@mui/material';
+import StarsIcon from '@mui/icons-material/Stars';
+import PushPinIcon from '@mui/icons-material/PushPin';
 
 
 import Checkbox from '@mui/material/Checkbox';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
 
 
 export default function Material() {
@@ -22,6 +21,9 @@ export default function Material() {
                 <button variant="text">Text</button>
                 <Button variant="contained">Contained</Button>
                 <Button variant="outlined">Outlined</Button>
+{/* Creating  our own Button using  Button API Data*/}
+                <Button color='warning' size='large' variant="outlined">Prakash</Button>
+                <Button color='success' variant="contained" href='https://www.youtube.com/' target="_blank"> kumar </Button>
             </Stack>
 
     <div>
@@ -35,37 +37,52 @@ export default function Material() {
 <Button variant="contained" color="success">Success</Button>
 <Button variant="outlined" color="error">Error</Button>
 
-{/* <Box sx={{ '& > :not(style)': { m: 1 } }}> */}
-      <Fab color="primary" aria-label="add">
-        <AddIcon />
-      </Fab>
-      <Fab color="secondary" aria-label="edit">
-        <EditIcon />
-      </Fab>
-      <Fab variant="extended">
-        <NavigationIcon sx={{ mr: 1 }} />
-        Navigate
-      </Fab>
-      <Fab disabled aria-label="like">
-        <FavoriteIcon />
-      </Fab>
-{/* </Box> */}
+
+<h1>Button size</h1>
+<Button color='success' variant="contained" href='https://www.youtube.com/' target="_blank" size='small'> Small </Button>
+<Button color='primary' variant="contained"  size='medium'> Medium </Button>
+<Button color='success' variant="contained" disabled size='large'> large </Button>
+
+<h1>Button with Icons</h1>
+<Button color='secondary' variant="contained" startIcon={<DeleteIcon/>}> Delete </Button>
+<Button color='warning' variant="contained" endIcon={<FavoriteIcon/>}> Favourite </Button>
+
+<h1>Icon Button</h1>
+<IconButton>
+        <DeleteIcon color='warning'/>
+        <FavoriteIcon color='secondary'/>
+        <PushPinIcon />
+        <StarsIcon color='success'/>
+        </IconButton>
         </>
     )
 }
 
-// import  React from 'react';
-// import Checkbox from '@mui/material/Checkbox';
 
-// const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
-// export default function Material() {
-//   return (
-//     <div>
-//       <Checkbox {...label} defaultChecked />
-//       <Checkbox {...label} />
-//       <Checkbox {...label} disabled />
-//       <Checkbox {...label} disabled checked />
-//     </div>
-//   );
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
