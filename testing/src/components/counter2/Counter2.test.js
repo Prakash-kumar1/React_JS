@@ -48,6 +48,15 @@ describe("Counter2 Element" , ()=> {
         const inputElement = screen.getByRole("spinbutton") ;
         user.type(inputElement , "10") ;
         expect(inputElement).toHaveValue(10) ;
+
+        const setCountBtn = screen.getByRole("button" , {
+            name: "setCount" ,
+        }) ;
+        user.click(setCountBtn) ;
+        const countElement = screen.getByRole("heading", {
+            level: 1 ,
+        }) ;
+        expect(countElement).toHaveTextContent("10") ;
     }) ;
 
 }) ;

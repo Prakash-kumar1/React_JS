@@ -11,8 +11,10 @@ export function Counter2() {
     <div>
         <h1>{count}</h1>
         {/* <button onClick={() => setCount(count+1)}>Add</button> */}
+        {/* <button onClick={() => setCount(count-1)}>Subtract</button> */}
         <button onClick={() => setCount(prev => (prev+1))}>Add</button>
-        <button onClick={() => setCount(count-1)}>Subtract</button>
+        <button onClick={() => setCount(prev => (prev-1))}>Subtract</button>
+
         <input type="number" name="inputVal" value={inputVal}
         onChange={(e)=> setInputVal(parseInt(e.target.value))}/>
     
