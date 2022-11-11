@@ -6,7 +6,8 @@ function Counter2() {
   return (
     <div>
         <h1>{count}</h1>
-        <button onClick={() => }>Add</button>
+        <button onClick={() => setCount(count+1)}>Add</button>
+        <button onClick={() => setCount(count-1)}>Subtract</button>
     </div>
   )
 }
