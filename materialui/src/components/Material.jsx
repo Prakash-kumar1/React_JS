@@ -7,6 +7,9 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import { IconButton } from '@mui/material';
 import StarsIcon from '@mui/icons-material/Stars';
 import PushPinIcon from '@mui/icons-material/PushPin';
+import AddReactionIcon from '@mui/icons-material/AddReaction';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+
 
 import ButtonGroup from '@mui/material/ButtonGroup';
 
@@ -18,7 +21,7 @@ import NavigationIcon from '@mui/icons-material/Navigation';
 
 
 import Checkbox from '@mui/material/Checkbox';
-const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
 
 
 
@@ -34,12 +37,6 @@ export default function Material() {
                 <Button color='success' variant="contained" href='https://www.youtube.com/' target="_blank"> kumar </Button>
             </Stack>
 
-    <div>
-      <Checkbox {...label} defaultChecked />
-      <Checkbox {...label} />
-      <Checkbox {...label} disabled />
-      <Checkbox {...label} disabled checked />
-    </div>
 
 <Button color="secondary">Secondary</Button>
 <Button variant="contained" color="success">Success</Button>
@@ -98,7 +95,14 @@ export default function Material() {
 <Fab disabled aria-label="like"> <FavoriteIcon sx={{ color: 'red' }}/> </Fab>
 
 
-
+<h1>CheckBox</h1>
+<Checkbox />       
+<Checkbox checked/>
+<Checkbox defaultChecked/>
+<Checkbox defaultChecked indeterminate/>
+<Checkbox checked={true} color='success' />
+<Checkbox icon={<AddReactionIcon sx={{color:'lightskyblue'}} />}  checkedIcon={<EmojiEmotionsIcon sx={{color:'hotpink'}}/>} />
+<Checkbox onChange={() => alert('checked Done') }/>
 
 
 
