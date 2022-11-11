@@ -53,27 +53,39 @@ export default function Material() {
         <FavoriteIcon color='secondary'/>
         <PushPinIcon />
         <StarsIcon color='success'/>
-        </IconButton>
+</IconButton>
+
+<h1>Applying Color</h1>
+<Button variant="contained" style={{backgroundColor: 'greenyellow' , color: 'black'}}>Click me</Button>
+<Button variant="outlined" style={{backgroundColor: 'magenta' , borderRadius : '2rem'}}> Don't Click me</Button>
+{/* in the place of style , we can also use "sx" */}
+<Button variant="contained" style={{backgroundColor: 'aquamarine' , color: 'blue'}}>Log in</Button>
+<Button variant="outlined" style={{color: 'black' , letterSpacing : '2rem'}}> Log Out</Button>
+
+
+<h1>Button With Click event</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </>
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
