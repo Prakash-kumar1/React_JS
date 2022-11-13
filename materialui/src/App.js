@@ -1,10 +1,12 @@
-import  Material  from "./components/Material";
+import Donutchart from "./components/Donutchart";
+// import  Material  from "./components/Material";
 
 
 function App() {
   return (
     <div>
-      <Material />
+      {/* <Material /> */}
+      <Donutchart />
     </div>
   );
 }
