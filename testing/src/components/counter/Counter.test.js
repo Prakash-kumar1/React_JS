@@ -22,6 +22,7 @@ describe("Counter Component", () => {
     });
     expect(nameElement).toBeInTheDocument();
 
+    
     const ageElement = screen.getByRole("textbox", {
       name: "age",
     });
