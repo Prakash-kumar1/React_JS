@@ -28,7 +28,7 @@ describe("Counter2 Element" , ()=> {
     expect(countElement).toHaveTextContent("0") ;
     }) ;
 
-    
+
     test("render 1 after clicking 1 time", () => {
         render (<Counter2/>) ;
         const incrementBtn = screen.getByRole("button" , {
