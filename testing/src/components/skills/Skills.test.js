@@ -21,6 +21,7 @@ describe("Skills component", () => {
         expect(listElements).toHaveLength(skills.length);
     });
 
+    
     test("renders Log In button", () => {
         render(<Skills skills={skills}/>)
         const loginButton = screen.getByRole("button" , {
