@@ -2,6 +2,7 @@ import { Counter3 } from "./Counter3";
 import { render, screen} from "@testing-library/react" ;
 import user from "@testing-library/user-event" ;
 
+
 describe('Counter 3', () => {
     test('renders properly' , () =>{
         render(<Counter3 count={10} />) ;
