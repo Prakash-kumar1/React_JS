@@ -2,23 +2,21 @@ import React, { useState } from "react";
 
 
 export function Counter3() {
-    const[count , setCount] = useState(0) ;
-    const[inputVal, setInputVal] = useState(0) ;
-
-
-
+   
   return (
     <div>
-        <h1>{count}</h1>
-        {/* <button onClick={() => setCount(count+1)}>Add</button> */}
-        {/* <button onClick={() => setCount(count-1)}>Subtract</button> */}
-        <button onClick={() => setCount(prev => (prev+1))}>Add</button>
-        <button onClick={() => setCount(prev => (prev-1))}>Subtract</button>
+        <h1>Counter-3</h1>
+        <h1>{props.count}</h1>
 
-        <input type="number" name="inputVal" value={inputVal}
-        onChange={(e)=> setInputVal(parseInt(e.target.value))}/>
-    
-    <button onClick= {()=> setCount(inputVal)}> setCount </button>
+        {props.handleIncrement && (
+ <button onClick={props.handleIncrement}>increment</button>
+        )}
+       
+        {props.handleDecrement && (
+ <button onClick={props.handleDecrement}>decrement</button>
+        )}
+       
+       
     </div>
-  )
+  ) ;
 }
