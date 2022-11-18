@@ -1,5 +1,9 @@
 // import './components/NewsApp/News.css';
 
+import './App.css' ;
+import logo1 from "./logo1.png";
+import Profile from "./components/GitProfile/Profile";
+
 
 // import Layout from './components/NewsApp/Layout';
 // import Headlines from './components/NewsApp/Headlines';
@@ -12,7 +16,7 @@
 
 
 // import { Dice } from './components/DiceGame/Dice';
-import { Timer } from './components/Timer/Timer';
+// import { Timer } from './components/Timer/Timer';
 // import Api from './components/Movie-app/Api';
 
 
@@ -46,7 +50,12 @@ export function App(){
 <p>{3+6}</p> */}
 {/* <Api/> */}
 {/* <Dice /> */}
-<Timer />
+{/* <Timer /> */}
+
+<header className="App-header">
+        <img src={logo1} className="App-logo" alt="logo" />
+</header>
+<Profile />
 
 
 
