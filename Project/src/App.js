@@ -1,8 +1,11 @@
 // import './components/NewsApp/News.css';
 
-import './App.css' ;
+
+import "./App.css";
+
 import logo1 from "./logo1.png";
 import Profile from "./components/GitProfile/Profile";
+import { Quotes } from "./components/Quote/Quotes";
 
 
 // import Layout from './components/NewsApp/Layout';
@@ -42,6 +45,7 @@ export function App(){
 // }
 
 
+
   return (
 <>
 
@@ -56,6 +60,9 @@ export function App(){
         <img src={logo1} className="App-logo" alt="logo" />
 </header>
 <Profile />
+
+
+<Quotes/>
 
 
 
