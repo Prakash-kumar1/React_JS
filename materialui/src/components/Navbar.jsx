@@ -16,9 +16,21 @@ const Search = styled("div")(({ theme }) => ({
 }))
 
 const Icons = styled(Box)(({ theme }) => ({
+    display : "none" ,
+    alignItems : "center" ,
+    gap : "20px" ,
+    [theme.breakpoints.up("sm")] : {
+      display: "flex" 
+    }
+}))
+
+const UserBox = styled(Box)(({ theme }) => ({
     display : "flex" ,
     alignItems : "center" ,
-    gap : "20px"
+    gap : "10px" ,
+    [theme.breakpoints.up("sm")] : {
+      display: "none" 
+    }
 }))
 
 
@@ -37,8 +49,12 @@ export const Navbar = () => {
 <Badge badgeContent={4} color="error">
   <Notifications />
 </Badge>
-<Avatar sx={{ display: { xs: "block", sm: "none"}}} alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+<Avatar sx={{width:30 , height:30}} alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
             </Icons>
+            <UserBox>
+<Avatar sx={{width:30 , height:30}} alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+<Typography variant='span'>Light</Typography>
+            </UserBox>
         </StyledToolbar>
     </AppBar>
   )
