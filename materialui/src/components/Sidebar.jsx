@@ -13,4 +13,3 @@ export const Sidebar = () => {
   )
 }
 
-export default Sidebar
