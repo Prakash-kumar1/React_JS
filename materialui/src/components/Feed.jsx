@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Feed() {
+export const Feed = () => {
   return (
     <div>Feed</div>
   )

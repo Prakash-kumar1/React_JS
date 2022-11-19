@@ -1,12 +1,18 @@
+import Feed from "./components/Feed";
+import Rightbar from "./components/Rightbar";
+import Sidebar from "./components/Sidebar";
 
 
-function App() {
+export const App = () => {
   return (
     <div>
- 
-      
+      <Sidebar />
+      <Feed />
+      <Rightbar />
     </div>
   );
 }
 
-export default App;
+
+
+

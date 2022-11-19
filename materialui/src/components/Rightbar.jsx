@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Rightbar() {
+export const Rightbar = () => {
   return (
     <div>Rightbar</div>
   )
