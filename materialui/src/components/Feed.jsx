@@ -1,6 +1,6 @@
 import React from 'react';
-import {Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, IconButton, Stack, Typography} from "@mui/material" ;
-import { Favorite, MoreVert, Share } from '@mui/icons-material';
+import {Avatar, Box, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Stack, Typography} from "@mui/material" ;
+import { Favorite, FavoriteBorder, MoreVert, Share } from '@mui/icons-material';
 
 export const Feed = () => {
   return (
@@ -36,7 +36,8 @@ export const Feed = () => {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
-          <Favorite />
+          {/* <Favorite /> */}
+          <Checkbox icon={<FavoriteBorder/>} checkedIcon={<Favorite sx={{ color: "red" }} />} />
         </IconButton>
         <IconButton aria-label="share">
           <Share />
