@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Stack} from "@mui/material" ;
+import {Box, Stack, Typography} from "@mui/material" ;
 
 
 export const Rightbar = () => {
@@ -8,7 +8,7 @@ export const Rightbar = () => {
      //this default breakPoints
     sx={{ display: { xs: "none", sm: "block"}}}>    
         <Box position="fixed">
-          hello
+          <Typography variant='h6' fontWeight={100}>Online Friends</Typography>
         </Box>
     </Box>
   )
