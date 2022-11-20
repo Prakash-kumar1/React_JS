@@ -6,6 +6,7 @@
 // import {Counter2} from "./components/counter2/Counter2";
 import { useState } from "react";
 import { Counter3 } from "./components/counter3/Counter3";
+import Counter from "./Counter";
 
 export function App() {
 // const  skills = ["HTML","CSS","JavaScript"] ;
@@ -22,11 +23,12 @@ setCount((prev) => prev - 1) ;
 
   return (
     <div className="App">
+      <Counter/>
       {/* <Counter />
       <Greet />
       <Skills skills={skills}/>
       <Counter2 /> */}
-      <Counter3 count={count} handleIncrement = {handleIncrement}  handleDecrement = {handleDecrement} />
+      {/* <Counter3 count={count} handleIncrement = {handleIncrement}  handleDecrement = {handleDecrement} /> */}
     </div>
   );
 }
