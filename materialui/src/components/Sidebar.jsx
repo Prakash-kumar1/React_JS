@@ -3,7 +3,7 @@ import {Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Stack, 
 import { AccountBox, Group, Home, ModeNight, Pages, Person, Settings, Storefront } from '@mui/icons-material';
 
 
-export const Sidebar = () => {
+export const Sidebar = ({mode,setMode}) => {
   return (
     <Box  flex={1} p={2} 
      //this default breakPoints
@@ -80,7 +80,7 @@ export const Sidebar = () => {
               <ListItemIcon>
                 <ModeNight/>
               </ListItemIcon>
-              <Switch/>
+              <Switch  onChange={e=>setMode(mode === "light" ? "dark" : "light")}/>
             </ListItemButton>
           </ListItem>
 
