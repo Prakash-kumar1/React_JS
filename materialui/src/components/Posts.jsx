@@ -7,8 +7,7 @@ function Posts() {
   return (
     <div>
 
-
-<Card>
+<Card sx={{ margin: 5 }} >
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">

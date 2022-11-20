@@ -8,6 +8,8 @@ export const Sidebar = () => {
     <Box  flex={1} p={2} 
      //this default breakPoints
     sx={{ display: { xs: "none", sm: "block"}}}>
+
+      <Box position="fixed">
          <List>
 
           <ListItem disablePadding>
@@ -84,6 +86,7 @@ export const Sidebar = () => {
 
 
           </List>
+          </Box>
     </Box>
    
   )
