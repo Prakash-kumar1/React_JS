@@ -62,7 +62,7 @@ export function App(){
 <Profile />
 
 
-<Quotes/>
+{/* <Quotes/> */}
 
 
 
