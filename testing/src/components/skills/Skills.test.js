@@ -57,6 +57,3 @@ describe("Skills component", () => {
 }) ;
 
 
-
-
-
