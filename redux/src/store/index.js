@@ -19,4 +19,9 @@ const DEFAULT_STATE = {
     ]
 }
 
-
+const counterReducer = {state = DEFAULT_STATE, action} => {
+    if (action.type == 'increment'){
+        return {...state, counter: state.counter + 1}
+    }
+    return state 
+}
