@@ -19,9 +19,20 @@ const DEFAULT_STATE = {
     ]
 }
 
-const counterReducer = {state = DEFAULT_STATE, action} => {
-    if (action.type == 'increment'){
+// action = {
+//     "type" : "increment" ,
+//     "payload" : {
+//         "step" : 5
+//     }
+// }
+
+const counterReducer = (state = DEFAULT_STATE, action) => {
+    if (action.type === 'increment'){
         return {...state, counter: state.counter + 1}
     }
     return state 
 }
+
+const store = createStore(counterReducer)
+
+export default store ;
