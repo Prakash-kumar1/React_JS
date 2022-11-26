@@ -1,7 +1,7 @@
 import {createStore} from 'redux' ;
 
 const DEFAULT_STATE = {
-    counter: 10,
+    counter: 100,
     name: "Prakash",
     age: 22,
     city: "Obra",
@@ -27,9 +27,21 @@ const DEFAULT_STATE = {
 // }
 
 const counterReducer = (state = DEFAULT_STATE, action) => {
+    console.log("action", action) ;
+
     if (action.type === 'increment'){
-        return {...state, counter: state.counter + 1}
+        console.log("Step Increases", action.payload.step)
+        // return {...state, counter: state.counter + 1}
+    // OR
+        return {...state, counter: state.counter + action.payload.step} 
     }
+    else if (action.type === 'decrement'){
+        console.log("Step decreases", action.payload.step)
+        // return {...state, counter: state.counter - 1}
+        return {...state, counter: state.counter - action.payload.step} 
+
+    }
+
     return state 
 }
 
