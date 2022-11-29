@@ -1,84 +1,39 @@
-export default allUsers = [
+const allUsers = [
     {
-        "email" : "kumarsanju4881@gmail.com" ,
-        "password" : "dragon"
-    } ,
+        "email": "raghvendra@gmail.com",
+        "password": "pass"
+    },
     {
-        "email" : "prakashKr4881@gmail.com" ,
-        "password" : "Light"
-    } ,
+        "email": "kiran@gmail.com",
+        "password": "pass"
+    },
     {
-        "email" : "govindverma.gkv740@gmail.com" ,
-        "password" : "Govind"
-    } ,
+        "email": "prashant@gmail.com",
+        "password": "pass"
+    },
     {
-        "email" : "kolapkarabhishek1@gmail.com" ,
-        "password" : "Abhi"
-    } ,
+        "email": "shweta@gmail.com",
+        "password": "pass"
+    },
     {
-        "email" : "sadhna.khairia@gmail.com" ,
-        "password" : "meditation"
-    } ,
+        "email": "chandan@gmail.com",
+        "password": "pass"
+    },
     {
-        "email" : "puranchandra02@gmail.com" ,
-        "password" : "Lohar"
-    } ,
-    {
-        "email" : "kumarsanju4881@gmail.com" ,
-        "password" : "dragon"
-    } ,
-    {
-        "email" : "kumarsanju4881@gmail.com" ,
-        "password" : "dragon"
-    } ,
-    {
-        "email" : "kumarsanju4881@gmail.com" ,
-        "password" : "dragon"
-    } ,
-    {
-        "email" : "kumarsanju4881@gmail.com" ,
-        "password" : "dragon"
-    } ,
-    {
-        "email" : "kumarsanju4881@gmail.com" ,
-        "password" : "dragon"
-    } ,
-    {
-        "email" : "kumarsanju4881@gmail.com" ,
-        "password" : "dragon"
-    } ,
-    {
-        "email" : "kumarsanju4881@gmail.com" ,
-        "password" : "dragon"
-    } ,
-    {
-        "email" : "kumarsanju4881@gmail.com" ,
-        "password" : "dragon"
-    } 
+        "email": "parikshit@gmail.com",
+        "password": "pass"
+    },
 ]
 
 
+const mobiles = [
+    {
+        "company": "Apple",
+        "model": "iphone 11"
+    }
+]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default {
+    "allUsers": allUsers,
+    "mobiles": mobiles
+}
