@@ -1,5 +1,12 @@
 import { Routes , Route, Navigate} from 'react-router-dom';
 import './App.css';
+// import {useState} from "react";
+// import { Routes, Route } from "react-router-dom";
+// import axios from 'axios';
+
+// import Reunion from "./Component/Reunion";
+// import Header from "./Component/Header";
+// import { FavouritePage } from './Component/FavouritePage';
 
 import Blog from './components/pages/Blog';
 import Service from './components/pages/Service';
@@ -21,6 +28,8 @@ import PostDetail from './components/project/PostDetail';
 
 
 export function App(){
+
+  // const [fevProperty, setfevProperty] = useState([])
 
   let isLogged = true ;
   let data = {
@@ -87,6 +96,13 @@ export function App(){
 
    <Route  path = '*'  element  =  {<h1>Error 404 Page not Found !!</h1>} />
    </Routes>
+
+   {/* <Routes>
+        <Route path="/" element={<Header fevProperty={fevProperty} setfevProperty={setfevProperty}/>}>
+          <Route index element={<Reunion fevProperty={fevProperty} setfevProperty={setfevProperty}  />} />
+          <Route path="favouritepage" element={<FavouritePage fevProperty={fevProperty} setfevProperty={setfevProperty} />} /> 
+        </Route>
+    </Routes> */}
 </>
 
   );
