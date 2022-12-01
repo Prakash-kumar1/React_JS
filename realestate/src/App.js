@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import { Routes, Route } from "react-router-dom";
+import {useState} from "react";
 import './App.css';
 
-function App() {
+import {Property} from "./components/Property";
+import {Header} from "./components/Header";
+// import {Page } from './components/Page';
+
+export const App = () => {
+
+  const [favProperty, setfavProperty] = useState([])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <Routes>
+        <Route path="/" element= {<Header favProperty={favProperty} setfavProperty={setfavProperty}/>} >
+          <Route index element= {<Property favProperty={favProperty} setfavProperty={setfavProperty}  />} />
+          {/* <Route path="page" element= {<Page favProperty={favProperty} setfavProperty={setfavProperty} />} />  */}
+        </Route>
+    </Routes>
   );
+
 }
 
-export default App;
+
+
+
