@@ -1,5 +1,4 @@
 # Real Estate project Output
-<img src="./public/assets/Screenshot%20(143).png">
 <img src="./public/assets/Screenshot%20(144).png">
 <img src="./public/assets/Screenshot%20(145).png">
 <img src="./public/assets/Screenshot%20(146).png">
