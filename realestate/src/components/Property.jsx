@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import { Footer } from "./Footer";
-// import {Favourite} from "./Favourite";
+import {Favourite} from "./Favourite";
 
 import '../App.css'
 
@@ -71,7 +71,7 @@ export const Property = ({favProperty,setfavProperty}) => {
         <div id="content_container">
           <main>
             <div id="Searchbar">
-              <h1 style={{color : "red"}}>Don’t wait to buy real estate, buy real estate and wait.</h1>
+              <h1 style={{color : "rgb(133, 23, 237)"}}>Search Properties for Rent</h1>
               <input type={"text"} placeholder="Search" onChange={(e) => setquery(e.target.value)} />
             </div>
 
@@ -95,7 +95,7 @@ export const Property = ({favProperty,setfavProperty}) => {
               <div>
                 <p>Price</p>
                 <select name="price" onChange={handlePriceChange}>
-                <option value="" disabled> select</option>
+                <option value="All">All</option>
                   <option value="5000-8000">$5000-8000</option>
                   <option value="2000-4500">$2000-4500</option>
                   <option value="100-900">$100-900</option>
@@ -107,7 +107,7 @@ export const Property = ({favProperty,setfavProperty}) => {
               <div>
                 <p>Property type</p>
                 <select name="Type" onChange={handleChange}>
-                <option value="" disabled> select</option>                 
+                <option value="All">All</option>                
                   <option value="Palace">Palace</option>
                   <option value="Bunglow">Bunglow</option>
                   <option value="FarmHouse">FarmHouse</option>
@@ -132,7 +132,8 @@ export const Property = ({favProperty,setfavProperty}) => {
                       </div>
                       <div id="price_heart">
                         <p><strong>{price}</strong>/month</p>
-                        {/* <Favourite id={id} data={data} favProperty={favProperty} setfavProperty={setfavProperty} /> */}
+                        {/* <p><i className="fa fa-heart"></i></p> */}
+                        <Favourite id={id} data={data} favProperty={favProperty} setfavProperty={setfavProperty} />
                       </div>
                       <h3 id="property">{PropertyName}</h3>
                       <p id="adress">{address}</p>
