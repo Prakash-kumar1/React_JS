@@ -132,7 +132,6 @@ export const Property = ({favProperty,setfavProperty}) => {
                       </div>
                       <div id="price_heart">
                         <p><strong>{price}</strong>/month</p>
-                        {/* <p><i className="fa fa-heart"></i></p> */}
                         <Favourite id={id} data={data} favProperty={favProperty} setfavProperty={setfavProperty} />
                       </div>
                       <h3 id="property">{PropertyName}</h3>
