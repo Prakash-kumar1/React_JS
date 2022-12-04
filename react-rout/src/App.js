@@ -9,7 +9,6 @@ import Logout from './components/pages/Logout';
 import Post from './components/pages/Post';
 import Navbar from './components/Navbar';
 
-
 import {Feed} from './components/project/Feed';
 import About from './components/project/About';
 import {Contact} from './components/project/Contact';
