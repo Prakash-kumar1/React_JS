@@ -8,6 +8,9 @@ import store from './store/index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+// Provider is a wrapper component which gives the feature to access 
+// the store to all the child components .
     <Provider store={store}> 
     {/* // wrapped your app in the Provider */}
     <App />
