@@ -1,7 +1,8 @@
 // import Counter from "./components/Counter";
 
 import {useSelector} from 'react-redux';
-import Dashboard from "./components/Dashboard";
+// useSelector is a react hook , that helps us picking up the current state.
+import {Dashboard} from "./components/Dashboard";
 import Home from "./components/Home";
 import { Login } from "./components/LoginForm";
 
