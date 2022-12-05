@@ -52,19 +52,24 @@ import {createStore} from 'redux' ;
 
 const DEFAULT_STATE = {
     "loggedInUser": null,
+    "mobiles" : [] ,
+    "desktop" : [] ,
 }
 
-
+// Reducer is a function that updates Global state
 const authReducer = (state = DEFAULT_STATE, action) => {
 
     if(action.type==='SET_LOGIN_DATA'){
         return {"loggedInUser": action.payload}
     }
+    else if(action.type === "logout"){
+        return {"loggedInUser": action.payload}
+    }
 
-    return state
+    return state ;
 }
 
-
+// store is a central variable that stores the global state
 const store = createStore(authReducer)
 
 export default store ;
