@@ -5,6 +5,8 @@ import {useSelector} from 'react-redux';
 import {Dashboard} from "./components/Dashboard";
 import Home from "./components/Home";
 import { Login } from "./components/LoginForm";
+import { Coin } from './features/coin/Coin';
+import { Counter } from './features/counter/Counter';
 
 // Creating a Log In  &&  LogOut (Authentication) in Redux :-
 
@@ -35,7 +37,8 @@ function App() {
       <> <Home />
         <Login />
       </>}
-
+<Counter />
+<Coin />
     </>
   );
 }
