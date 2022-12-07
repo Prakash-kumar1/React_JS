@@ -4,7 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider } from 'react-redux' ;
-import store from './store/index';
+
+// This store from store folder with file index.js [manit]
+// import store from './store/index';
+
+// This store from app folder with file store.js [Geeky shows]
+import {store} from './app/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
