@@ -10,6 +10,7 @@ import { Login } from "./components/LoginForm";
 import { Coin } from './features/coin/Coin';
 import { Counter } from './features/counter/Counter';
 
+
 // Creating a Log In  &&  LogOut (Authentication) in Redux :-
 
 // Steps :=> (1) List of Registered Users .
@@ -26,19 +27,17 @@ function App() {
     return state.loggedInUser
   })
 
-
   return (
     <>
 
     {/* <Counter/> */}
     
-    {loggedInUser ? 
-      
-      <Dashboard /> : 
-      
+    {loggedInUser ? <Dashboard /> : 
       <> <Home />
         <Login />
-      </>}
+      </>
+      }
+      
 <Counter />
 <Coin />
     </>
