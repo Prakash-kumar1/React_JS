@@ -9,6 +9,7 @@ import { Login } from "./components/LoginForm";
 // !!!@@@###$$$%%%^^^&&& -->> Geeky Shows  <<-- !!!@@@###$$$%%%^^^&&&
 import { Coin } from './features/coin/Coin';
 import { Counter } from './features/counter/Counter';
+import { Theme } from './features/theme/Theme';
 
 
 // Creating a Log In  &&  LogOut (Authentication) in Redux :-
@@ -40,6 +41,7 @@ function App() {
       
 <Counter />
 <Coin />
+<Theme />
     </>
   );
 }
