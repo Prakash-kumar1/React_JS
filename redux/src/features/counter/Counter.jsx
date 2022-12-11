@@ -9,6 +9,7 @@ export const Counter = () => {
 
 // !!!@@@###$$$%%%^^^&&& -->> Creating Counter using Redux-Toolkit && using in Coin <<-- !!!@@@###$$$%%%^^^&&&
 const count = useSelector((state) => state.counter.count) ;
+const themeTextColor = useSelector((state) => state.theme.color) ;
 const dispatch = useDispatch() ;
 
 // !!!@@@###$$$%%%^^^&&& -->> Simple Counter using React <<-- !!!@@@###$$$%%%^^^&&&
@@ -18,7 +19,7 @@ const [num, setNum] = useState(0)
     <div>
 
    <button aria-label="Increment value" onClick={() => { dispatch(increment()) }}> + </button>
-    <h1>Counter by redux-Toolkit: {count}</h1>
+    <h1 style={{color: themeTextColor}}>Counter by redux-Toolkit: {count}</h1>
     <button aria-label="Decrement value" onClick={() => { dispatch(decrement()) }}> -</button>
 
     <button onClick={() => { dispatch(incrementByAmount(100)) }}> IncrementBy100 </button>
