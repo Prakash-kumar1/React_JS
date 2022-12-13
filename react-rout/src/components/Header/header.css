@@ -1,0 +1,121 @@
+header {
+  background-color: rgb(228, 241, 240);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 2px;
+}
+
+header > #logo_nav {
+  width: fit-content;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  display: flex;
+  height: 100%;
+  width: 20%;
+  align-items: center;
+  justify-content: right;
+}
+
+#logo > i {
+  font-size: 30px;
+  margin-right: 10px;
+  color: rgb(133, 23, 237);
+}
+
+#logo > p {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#navbar {
+  width: 100%;
+}
+
+#navbar > ul {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar > ul > li {
+  list-style-type: none;
+  margin: 0px 20px;
+  color: black;
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+}
+
+#navbar > ul > li:hover {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+#navbar > ul > li > i {
+  color: rgba(23, 237, 87, 0.721);
+  font-size: 20px;
+}
+
+#credential {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#credential > button {
+  margin: 10px;
+  background-color: rgb(133, 23, 237);
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 5px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ----- Header Responsiveness (started) ----- */
+
+@media screen and (max-width: 850px) {
+  header {
+    height: fit-content;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  header > #logo_nav {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  #navbar > ul {
+    gap: 5px;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  #credential {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: baseline;
+  }
+}
+
+/* ----- Header Responsiveness (Ended) ----- */
