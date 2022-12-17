@@ -15,9 +15,7 @@
 // getInitialState() => It is used to specify the default value of this.state. It is invoked before the creation of the component.
 
 
-
 // ######@@@@@@$$$$%%%%******-----------------------// ######@@@@@@$$$$%%%%******
-
 
 
 // (2) =>  Mounting  =>  In this phase, the instance of a component is created and inserted into the DOM. It consists of the following methods.
