@@ -24,7 +24,6 @@
 // } , [count] ) ;
 
 
-
 //Question =1 :: What does useEffect() do ?? 
 // Answer =>>  By using this hook , you tell React that your component needs to do something after render . React
 //             will  remember the function  you passed  and call it later after  performing  the  DOM  Updates .
