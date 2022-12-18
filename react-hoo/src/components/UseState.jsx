@@ -69,8 +69,6 @@ export function UseState() {
         setName(" ") ;       //It will make input box empty again for new values
     }
 
-
-
     return(
         <div>
             <h2>Name : {name}</h2>
