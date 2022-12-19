@@ -1,6 +1,6 @@
 // // import add from Index .js
 
-const add = require("../8-September/index") ;
+const add = require("./index") ;
 console.log(add(4,5)) ;
 console.log(add(14,0)) ;
 console.log(add(4,-5)) ;
@@ -8,7 +8,7 @@ console.log(add(4,-5)) ;
 // // Output ==>>  9 , 14  , -1
 
 
-const multiply = require("../8-September/index") ;
+const multiply = require("./index") ;
 console.log(multiply(4,5)) ;
 console.log(multiply(14,0)) ;
 console.log(multiply(4,-5)) ;
