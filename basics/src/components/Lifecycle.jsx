@@ -6,6 +6,7 @@
 // (3) =>  Updating 
 // (4) =>  Un-Mounting 
 
+
 // (1) =>  Intialization =>  It is the birth phase of the lifecycle of a ReactJS component. Here, the component starts its journey on a way to the DOM. In this phase, a component contains the default Props and initial State. These default properties are done in the constructor of a component. The initial phase only occurs once and consists of the following methods.
 
 
@@ -48,6 +49,4 @@
 // (4) =>  Un-Mounting Phase =>  It is the final phase of the react component lifecycle. It is called when a component instance is destroyed and unmounted from the DOM. This phase contains only one method and is given below.
 
 // componentWillUnmount() => This method is invoked immediately before a component is destroyed and unmounted  permanently. It performs any necessary cleanup related task such as invalidating timers, event listener, canceling  network requests, or cleaning up DOM elements. If a component instance is unmounted, you cannot mount it again.
-
-
 
