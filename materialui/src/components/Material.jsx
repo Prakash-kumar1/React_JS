@@ -104,14 +104,3 @@ export default function Material() {
     )
 }
 
-
-
-
-
-
-
-
-
-
-
-
