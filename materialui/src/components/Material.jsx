@@ -100,9 +100,6 @@ export default function Material() {
 <Checkbox checked={true} color='success' />
 <Checkbox icon={<AddReactionIcon sx={{color:'lightskyblue'}} />}  checkedIcon={<EmojiEmotionsIcon sx={{color:'hotpink'}}/>} />
 <Checkbox onChange={() => alert('checked Done') }/>
-
-
-
         </>
     )
 }
