@@ -21,7 +21,6 @@ import NavigationIcon from '@mui/icons-material/Navigation';
 
 import Checkbox from '@mui/material/Checkbox';
 
-
 export default function Material() {
     return (
         <>
