@@ -24,24 +24,7 @@ const News = (props) => {
         fetchData()
     }, [])
 
-    // const preBtnHandler = async()=>{
-    //       const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=e1d5f921911a46f48022936125f06baa&page=${page-1}&pageSize=9`
-    //       setLoading(true)
-    //       const data = await fetch(url)
-    //       const parsedData = await data.json()
-    //       setArticles(parsedData.articles)
-    //       setLoading(false)
-    //       setPage(page - 1)
-    //     }
-    //     const nextBtnHandler = async()=>{
-    //         const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=e1d5f921911a46f48022936125f06baa&page=${page+1}&pageSize=9`
-    //         setLoading(true)
-    //         const data = await fetch(url)
-    //         const parsedData = await data.json()
-    //         setArticles(parsedData.articles)
-    //         setLoading(false)
-    //         setPage(page + 1)
-    //     }
+   
     const fetchMoreData= async()=>{
        setPage(page+1)
         const url = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=e1d5f921911a46f48022936125f06baa&page=${page + 1}&pageSize=9`
@@ -73,12 +56,6 @@ const News = (props) => {
                         </div>
                         </InfiniteScroll>
                         </div>
-                        {/* <div className='d-flex justify-content-between '>
-
-                            <button disabled={page <= 1 ? true : false} type="button" class="btn btn-dark" onClick={preBtnHandler}>&larr; Previous</button>
-                            <button disabled={page + 1 > Math.ceil(totalResult  /9) ? true : false} type="button" class="btn btn-dark" onClick={nextBtnHandler}>Next &rarr;</button>
-
-                        </div> */}
                 </>
             }
 
