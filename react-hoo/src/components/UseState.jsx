@@ -45,19 +45,23 @@ export function UseState() {
         setQuote("I am deserving a life full of Luxury.") ;
     };
 
+
     const handleIncrement = () =>{
         setCount(count + 1) ;
     }
+
 
     function changeName() {
         console.log("clicked !!")
         return setName1("Ritesh Agarhari") ;
     }
 
+
     function changeFlag() {
         console.log("Flag clicked !!")
         return setFlag(!flag) ;
     }
+
 
     const addNames = (e) => {
         e.preventDefault() ;
