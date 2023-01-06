@@ -7,6 +7,7 @@
 // (4) =>  Un-Mounting 
 
 
+
 // (1) =>  Intialization =>  It is the birth phase of the lifecycle of a ReactJS component. Here, the component starts its journey on a way to the DOM. In this phase, a component contains the default Props and initial State. These default properties are done in the constructor of a component. The initial phase only occurs once and consists of the following methods.
 
 
