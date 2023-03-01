@@ -22,8 +22,8 @@ export function UseRef() {
 //########%%%%&&&&&&&&===>>>   Creating  a  Random  Counter    ########%%%%&&&&&&&&===>>>
 
 
-const [name , setName] = useState("") ;
-const [counter , setCounter] = useState(0) ;
+const [name, setName] = useState("") ;
+const [counter, setCounter] = useState(0) ;
 const inputEl =  useRef("") ;
 const previousCounterRef =  useRef("") ;
 console.log(inputEl) ;
